@@ -14,10 +14,6 @@ public class Person {
     private LocalDate birthDate;
     private int age;
 
-    private void setAge() {
-        this.age = Period.between(birthDate, LocalDate.now()).getYears();
-    }
-
     public Person(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, LocalDate birthDate) {
         this.id = id;
         this.nick = nick;
@@ -27,6 +23,16 @@ public class Person {
         this.height = height;
         this.weight = weight;
         this.birthDate = birthDate;
-        setAge();
+        getAndUpdateAge();
+    }
+
+    public int getAndUpdateAge() {
+        this.age = Period.between(birthDate, LocalDate.now()).getYears();
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + firstName + " " + lastName + " com naticionalidade " + nationality + " e com " + getAndUpdateAge() + " anos de idade";
     }
 }

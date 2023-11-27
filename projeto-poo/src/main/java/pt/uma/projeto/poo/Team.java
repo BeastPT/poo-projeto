@@ -12,7 +12,21 @@ public class Team {
     private Coach coach;
     private ArrayList<Player> players;
 
-    public Team(int id, String name, String code, String city, int foundationYear, Stadium stadium, Coach coach, Player[] players) {
+    private int attackStat;
+    private int defenseStat;
+
+    public Team(int id, String name, String code, String city, int foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players) {
+        this.id = id;
+        this.name = name;
+        this.code = code;
+        this.city = city;
+        this.foundationYear = foundationYear;
+        this.stadium = stadium;
+        this.coach = coach;
+        this.players = players;
+    }
+
+    public Team(int id, String name, String code, String city, int foundationYear, Stadium stadium, Coach coach) {
         this.id = id;
         this.name = name;
         this.code = code;
@@ -50,4 +64,20 @@ public class Team {
             return false;
         }
     }
+
+    public int getAttackStat() {
+        return attackStat;
+    }
+
+    public int getDefenseStat() {
+        return defenseStat;
+    }
+
+    @Override
+    public String toString() {
+        return "Equipa " + name + " com " + players.size() + " jogadores"
+                + "\nJogadores: " + players
+                + "\nTreinador: " + coach;
+    }
+
 }

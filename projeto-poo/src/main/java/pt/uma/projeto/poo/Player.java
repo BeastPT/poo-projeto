@@ -44,7 +44,16 @@ public class Player extends Person{
         return injured;
     }
 
+    public ArrayList<Injure> getInjuries() {
+        return injuries;
+    }
+
     public Injure getLastInjure() {
         return injuries.get(injuries.size()-1);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " com posição " + position + " e com " + attack + " de ataque e " + defense + " de defesa";
     }
 }

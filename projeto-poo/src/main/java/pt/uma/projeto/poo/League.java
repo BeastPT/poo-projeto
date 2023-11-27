@@ -53,4 +53,10 @@ public class League {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Liga " + name + " com " + teams.size() + " equipas e " + matches.size() + " jogos"
+                + "\nEquipas: " + teams;
+    }
 }
