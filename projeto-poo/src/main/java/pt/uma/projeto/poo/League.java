@@ -1,5 +1,6 @@
 package pt.uma.projeto.poo;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class League {
@@ -24,8 +25,32 @@ public class League {
         this.teams.add(team);
     }
 
+    public boolean removeTeam(Team team) {
+        return this.teams.remove(team);
+    }
+    public boolean removeTeam(int index) {
+        try {
+            this.teams.remove(index);
+            return true;
+        } catch (Exception e) {
+            System.out.println("Team index out of bound");
+            return false;
+        }
+    }
+
+    public ArrayList<Team> getTeams() {
+        return teams;
+    }
+
+    public Team getTeam(int index) {
+        return teams.get(index);
+    }
+
     public void addMatch(Match match) {
         this.matches.add(match);
     }
 
+    public String getName() {
+        return name;
+    }
 }

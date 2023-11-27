@@ -10,4 +10,12 @@ public class Coach extends Person{
         super(id, nick, firstName, lastName, nationality, height, weight, birthDate);
         this.tatic = tatic;
     }
+
+    public String getTatic() {
+        return tatic;
+    }
+
+    public void setTatic(String tatic) {
+        this.tatic = tatic;
+    }
 }
