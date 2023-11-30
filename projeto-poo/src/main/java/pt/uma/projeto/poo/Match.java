@@ -9,8 +9,11 @@ public class Match {
     private final LocalDate date;
     private final int matchHour;
     private final int matchMinute;
+
+    private boolean finished;
     private ArrayList<Goal> goals = new ArrayList<>();
     private ArrayList<Goal> sufferedGoals = new ArrayList<>();
+
 
     public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute) {
         this.homeTeam = homeTeam;
@@ -18,6 +21,7 @@ public class Match {
         this.date = date;
         this.matchHour = matchHour;
         this.matchMinute = matchMinute;
+        this.finished = false;
     }
 
     public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, ArrayList<Goal> goals, ArrayList<Goal> sufferedGoals) {
@@ -28,6 +32,7 @@ public class Match {
         this.matchMinute = matchMinute;
         this.goals = goals;
         this.sufferedGoals = sufferedGoals;
+        this.finished = false;
     }
 
     public Team getHomeTeam() {
@@ -68,6 +73,14 @@ public class Match {
 
     public void setSufferedGoals(ArrayList<Goal> sufferedGoals) {
         this.sufferedGoals = sufferedGoals;
+    }
+
+    public boolean hasEnded() {
+        return finished;
+    }
+
+    public void endMatch() {
+        finished = true;
     }
 
 }

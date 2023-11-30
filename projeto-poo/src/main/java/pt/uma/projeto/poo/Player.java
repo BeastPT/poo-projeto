@@ -4,12 +4,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Player extends Person{
-
-    private record  Injure(LocalDate when, LocalDate end) {}
     private boolean injured;
-
     private ArrayList<Injure> injuries;
-    private String position;
+    private final String position;
     private int attack;
     private int defense;
 
