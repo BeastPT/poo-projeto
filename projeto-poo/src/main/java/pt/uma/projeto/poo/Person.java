@@ -1,6 +1,7 @@
 package pt.uma.projeto.poo;
 
 import java.time.LocalDate;
+
 import java.time.Period;
 
 public class Person {
@@ -14,7 +15,7 @@ public class Person {
     private LocalDate birthDate;
     private int age;
 
-    public Person(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, LocalDate birthDate) {
+    public Person(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate) {
         this.id = id;
         this.nick = nick;
         this.firstName = firstName;
@@ -22,7 +23,7 @@ public class Person {
         this.nationality = nationality;
         this.height = height;
         this.weight = weight;
-        this.birthDate = birthDate;
+        this.birthDate = LocalDate.parse(birthDate);
         getAndUpdateAge();
     }
 

@@ -5,24 +5,7 @@ import java.util.ArrayList;
 
 public class Player extends Person{
 
-    public class Injure {
-
-        private final LocalDate when;
-        private final LocalDate end;
-
-        public Injure(LocalDate when, LocalDate end) {
-            this.when = when;
-            this.end = end;
-        }
-
-        public LocalDate getWhen() {
-            return when;
-        }
-
-        public LocalDate getEnd() {
-            return end;
-        }
-    }
+    private record  Injure(LocalDate when, LocalDate end) {}
     private boolean injured;
 
     private ArrayList<Injure> injuries;
@@ -30,7 +13,7 @@ public class Player extends Person{
     private int attack;
     private int defense;
 
-    public Player(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, LocalDate birthDate, String position) {
+    public Player(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate, String position) {
         super(id, nick, firstName, lastName, nationality, height, weight, birthDate);
         this.position = position;
     }

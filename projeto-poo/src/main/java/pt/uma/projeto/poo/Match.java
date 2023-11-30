@@ -20,6 +20,16 @@ public class Match {
         this.matchMinute = matchMinute;
     }
 
+    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, ArrayList<Goal> goals, ArrayList<Goal> sufferedGoals) {
+        this.homeTeam = homeTeam;
+        this.visitingTeam = visitingTeam;
+        this.date = date;
+        this.matchHour = matchHour;
+        this.matchMinute = matchMinute;
+        this.goals = goals;
+        this.sufferedGoals = sufferedGoals;
+    }
+
     public Team getHomeTeam() {
         return homeTeam;
     }
@@ -48,8 +58,16 @@ public class Match {
         goals.add(goal);
     }
 
+    public void setGoals(ArrayList<Goal> goals) {
+        this.goals = goals;
+    }
+
     public void addSufferedGoal(Goal goal) {
         sufferedGoals.add(goal);
+    }
+
+    public void setSufferedGoals(ArrayList<Goal> sufferedGoals) {
+        this.sufferedGoals = sufferedGoals;
     }
 
 }
