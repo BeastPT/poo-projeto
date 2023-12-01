@@ -83,4 +83,25 @@ public class Match {
         finished = true;
     }
 
+    public void simulateMatch() {
+        if (finished) return;
+        int homeTeamGoals = 0;
+        int visitingTeamGoals = 0;
+
+
+        int homeTeamAttack = (int) (homeTeam.getAttackStat()*1.1);
+        int homeTeamDefense = (int) (homeTeam.getDefenseStat()*1.1);
+
+        int visitingTeamAttack = visitingTeam.getAttackStat();
+        int visitingTeamDefense = visitingTeam.getDefenseStat();
+
+        int homeAttack = homeTeamAttack-visitingTeamDefense;
+        int visitingAttack = visitingTeamAttack-homeTeamDefense;
+
+
+        int lastGoal = 0;
+
+
+    }
+
 }
