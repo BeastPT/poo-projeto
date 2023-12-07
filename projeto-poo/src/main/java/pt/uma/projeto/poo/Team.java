@@ -48,7 +48,7 @@ public class Team {
     }
 
     public ArrayList<Player> getPlayers() {
-        return players;
+        return new ArrayList<>(players);
     }
 
     public boolean removePlayer(Player player) {

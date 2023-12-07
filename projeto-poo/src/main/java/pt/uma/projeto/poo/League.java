@@ -39,7 +39,7 @@ public class League {
     }
 
     public ArrayList<Team> getTeams() {
-        return teams;
+        return new ArrayList<>(teams);
     }
 
     public Team getTeam(int index) {
