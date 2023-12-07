@@ -9,4 +9,12 @@ public class Referee extends Person{
         super(id, nick, firstName, lastName, nationality, height, weight, birthDate);
         this.quality = quality;
     }
+
+    public int getQuality() {
+        return quality;
+    }
+
+    public void setQuality(int quality) {
+        this.quality = quality;
+    }
 }

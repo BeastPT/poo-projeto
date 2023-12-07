@@ -4,8 +4,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class League {
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
     private ArrayList<Team> teams = new ArrayList<>();
     private ArrayList<Match> matches = new ArrayList<>();
 

@@ -23,5 +23,43 @@ public class PlayerStats {
         this.fouls = fouls;
     }
 
+    public int getGoals() {
+        return goals;
+    }
 
+    public void addGoal() {
+        this.goals++;
+    }
+
+    public int getAssists() {
+        return assists;
+    }
+
+    public void addAssist() {
+        this.assists++;
+    }
+
+    public int getYellowCards() {
+        return yellowCards;
+    }
+
+    public void addYellowCard() {
+        this.yellowCards++;
+    }
+
+    public int getRedCards() {
+        return redCards;
+    }
+
+    public void addRedCard() {
+        this.redCards++;
+    }
+
+    public int getFouls() {
+        return fouls;
+    }
+
+    public void addFoul() {
+        this.fouls++;
+    }
 }

@@ -31,7 +31,8 @@ public class Menu {
         System.out.println("4 - Listar Jogos");
         System.out.println("5 - Listar Arbitros");
         System.out.println("6 - Listar Estatisticas");
-        System.out.println("7 - Voltar");
+        System.out.println("7 - Estádio"); // stadiumMenu()
+        System.out.println("8 - Voltar");
     }
 
     public static void playerMenu(){
@@ -52,5 +53,13 @@ public class Menu {
         System.out.println("5 - Listar Arbitros");
         System.out.println("6 - Listar Estatisticas");
         System.out.println("7 - Voltar");
+    }
+
+    public static void stadiumMenu() {
+        System.out.println("1 - Ver estádio");
+        System.out.println("2 - Mudar nome");
+        System.out.println("3 - Melhorar estádio");
+        System.out.println("4 - Criar novo estádio");
+        System.out.println("5 - Voltar");
     }
 }

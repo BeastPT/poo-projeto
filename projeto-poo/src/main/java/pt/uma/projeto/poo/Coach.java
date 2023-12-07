@@ -1,21 +1,19 @@
 package pt.uma.projeto.poo;
 
-import java.time.LocalDate;
-
 public class Coach extends Person{
 
-    private String tatic;
+    private String tactic;
 
-    public Coach(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate, String tatic) {
+    public Coach(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate, String tactic) {
         super(id, nick, firstName, lastName, nationality, height, weight, birthDate);
-        this.tatic = tatic;
+        this.tactic = tactic;
     }
 
-    public String getTatic() {
-        return tatic;
+    public String getTactic() {
+        return tactic;
     }
 
-    public void setTatic(String tatic) {
-        this.tatic = tatic;
+    public void setTactic(String tactic) {
+        this.tactic = tactic;
     }
 }

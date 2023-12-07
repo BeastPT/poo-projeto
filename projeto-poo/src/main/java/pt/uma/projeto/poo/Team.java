@@ -3,34 +3,31 @@ package pt.uma.projeto.poo;
 import java.util.ArrayList;
 
 public class Team {
-    private int id;
+    private final int id;
     private String name;
     private String code;
-    private String city;
-    private int foundationYear;
+    private final int foundationYear;
     private Stadium stadium;
     private Coach coach;
-    private ArrayList<Player> players;
+    private final ArrayList<Player> players;
 
     private int attackStat;
     private int defenseStat;
 
-    public Team(int id, String name, String code, String city, int foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players) {
+    public Team(int id, String name, String code, int foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players) {
         this.id = id;
         this.name = name;
         this.code = code;
-        this.city = city;
         this.foundationYear = foundationYear;
         this.stadium = stadium;
         this.coach = coach;
         this.players = players;
     }
 
-    public Team(int id, String name, String code, String city, int foundationYear, Stadium stadium, Coach coach) {
+    public Team(int id, String name, String code, int foundationYear, Stadium stadium, Coach coach) {
         this.id = id;
         this.name = name;
         this.code = code;
-        this.city = city;
         this.foundationYear = foundationYear;
         this.stadium = stadium;
         this.coach = coach;
@@ -45,6 +42,10 @@ public class Team {
             return players.add(player);
         }
         return false;
+    }
+
+    public void setCoach(Coach coach) {
+        this.coach = coach;
     }
 
     public ArrayList<Player> getPlayers() {
@@ -65,12 +66,25 @@ public class Team {
         }
     }
 
+    public void changeName(String name, String code) {
+        this.name = name;
+        this.code = code;
+    }
+
     public int getAttackStat() {
         return attackStat;
     }
 
+    public void setAttackStat(int attackStat) {
+        this.attackStat = attackStat;
+    }
+
     public int getDefenseStat() {
         return defenseStat;
+    }
+
+    public void setDefenseStat(int defenseStat) {
+        this.defenseStat = defenseStat;
     }
 
     @Override
@@ -80,4 +94,11 @@ public class Team {
                 + "\nTreinador: " + coach;
     }
 
+    public Stadium getStadium() {
+        return stadium;
+    }
+
+    public void setStadium(Stadium stadium) {
+        this.stadium = stadium;
+    }
 }
