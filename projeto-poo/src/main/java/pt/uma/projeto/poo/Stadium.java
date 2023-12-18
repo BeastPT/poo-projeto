@@ -1,14 +1,12 @@
 package pt.uma.projeto.poo;
 
 public class Stadium {
-    private final int id;
     private String name;
     private final String city;
     private final String address;
     private int capacity;
 
-    public Stadium(int id, String name, String city, String address, int capacity) {
-        this.id = id;
+    public Stadium(String name, String city, String address, int capacity) {
         this.name = name;
         this.city = city;
         this.address = address;

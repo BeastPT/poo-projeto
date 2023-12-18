@@ -11,8 +11,8 @@ public class Match {
     private final int matchMinute;
 
     private boolean finished;
-    private ArrayList<Goal> goals = new ArrayList<>();
-    private ArrayList<Goal> sufferedGoals = new ArrayList<>();
+    private ArrayList<Goal> goals;
+    private ArrayList<Goal> sufferedGoals;
 
 
     public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute) {
@@ -22,6 +22,8 @@ public class Match {
         this.matchHour = matchHour;
         this.matchMinute = matchMinute;
         this.finished = false;
+        this.goals = new ArrayList<>();
+        this.sufferedGoals = new ArrayList<>();
     }
 
     public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, ArrayList<Goal> goals, ArrayList<Goal> sufferedGoals) {

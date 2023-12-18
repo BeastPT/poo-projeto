@@ -1,22 +1,23 @@
 package pt.uma.projeto.poo;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class League {
-    private final int id;
     private final String name;
-    private ArrayList<Team> teams = new ArrayList<>();
-    private ArrayList<Match> matches = new ArrayList<>();
+    private final String country;
+    private final ArrayList<Team> teams;
+    private final ArrayList<Match> matches;
 
-    public League(int id, String name) {
-        this.id = id;
+    public League(String name, String country) {
         this.name = name;
+        this.country = country;
+        this.teams = new ArrayList<>();
+        this.matches = new ArrayList<>();
     }
 
-    public League(int id, String name, ArrayList<Team> teams, ArrayList<Match> matches) {
-        this.id = id;
+    public League(String name, String country, ArrayList<Team> teams, ArrayList<Match> matches) {
         this.name = name;
+        this.country = country;
         this.teams = teams;
         this.matches = matches;
     }
@@ -42,8 +43,17 @@ public class League {
         return new ArrayList<>(teams);
     }
 
-    public Team getTeam(int index) {
+    public Team getTeamByIndex(int index) {
         return teams.get(index);
+    }
+
+    public Team getTeamByName(String name) {
+        for (Team team : teams) {
+            if (team.getName().equals(name)) {
+                return team;
+            }
+        }
+        return null;
     }
 
     public void addMatch(Match match) {

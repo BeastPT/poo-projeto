@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class ProjetoPoo {
 
     public static void main(String[] args) {
-        Gson gson = new GsonBuilder()
+        /*Gson gson = new GsonBuilder()
                 .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
                 .create();
         // create for me a simple league with teams, players, coach, whatever for debugging
@@ -24,13 +24,14 @@ public class ProjetoPoo {
         team.addPlayer(player);
         team.addPlayer(player2);
         team.addPlayer(player3);
+        league.addTeam(team);
 
         try {
-            System.out.println(gson.toJson(team));
-        } catch (JsonIOException ex) {
+            System.out.println(gson.toJson(league));
+        } catch ( JsonIOException ex) {
             System.out.println("Error writing file");
             System.out.println(ex.getMessage());
             System.out.println(Arrays.toString(ex.getStackTrace()));
-        }
+        }*/
     }
 }

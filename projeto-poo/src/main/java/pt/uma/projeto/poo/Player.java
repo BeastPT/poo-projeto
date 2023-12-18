@@ -13,7 +13,7 @@ public class Player extends Person{
     private int defense;
 
     public Player(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate, String position, int aggressiveness) {
-        super(id, nick, firstName, lastName, nationality, height, weight, birthDate);
+        super(nick, firstName, lastName, nationality, height, weight, birthDate);
         this.position = position;
         this.aggressiveness = aggressiveness;
     }

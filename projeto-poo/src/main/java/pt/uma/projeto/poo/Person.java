@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Person {
-    private int id;
     private String nick;
     private String firstName;
     private String lastName;
@@ -15,8 +14,7 @@ public class Person {
     private LocalDate birthDate;
     private int age;
 
-    public Person(int id, String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate) {
-        this.id = id;
+    public Person(String nick, String firstName, String lastName, String nationality, int height, int weight, String birthDate) {
         this.nick = nick;
         this.firstName = firstName;
         this.lastName = lastName;

@@ -3,7 +3,6 @@ package pt.uma.projeto.poo;
 import java.util.ArrayList;
 
 public class Team {
-    private final int id;
     private String name;
     private String code;
     private final int foundationYear;
@@ -14,8 +13,7 @@ public class Team {
     private int attackStat;
     private int defenseStat;
 
-    public Team(int id, String name, String code, int foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players) {
-        this.id = id;
+    public Team(String name, String code, int foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players) {
         this.name = name;
         this.code = code;
         this.foundationYear = foundationYear;
@@ -24,8 +22,7 @@ public class Team {
         this.players = players;
     }
 
-    public Team(int id, String name, String code, int foundationYear, Stadium stadium, Coach coach) {
-        this.id = id;
+    public Team(String name, String code, int foundationYear, Stadium stadium, Coach coach) {
         this.name = name;
         this.code = code;
         this.foundationYear = foundationYear;
