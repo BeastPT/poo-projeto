@@ -11,6 +11,16 @@ public class Person {
     private String lastName;
     private Birth birth;
     private String nationality;
-    private int height;
-    private int weight;
+    private Integer height;
+    private Integer weight;
+
+    public Person(String name, String firstName, String lastName, Birth birth, String nationality, Integer height, Integer weight) {
+        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birth = birth;
+        this.nationality = nationality;
+        this.height = height;
+        this.weight = weight;
+    }
 }

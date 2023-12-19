@@ -11,4 +11,10 @@ public class CoachCareer {
     private String team;
     private LocalDate start;
     private LocalDate end;
+
+    public CoachCareer(String team, LocalDate start, LocalDate end) {
+        this.team = team;
+        this.start = start;
+        this.end = end;
+    }
 }
