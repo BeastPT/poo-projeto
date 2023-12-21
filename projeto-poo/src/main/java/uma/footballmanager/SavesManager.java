@@ -25,30 +25,27 @@ public class SavesManager {
                 .create();
     }
 
-    public static void loadData(String fileName) {
+    public static Game loadData(String fileName) {
+        StringBuilder json = new StringBuilder();
         try {
-            var path = Paths.get(System.getProperty("user.dir") + "\\saves\\"+fileName+".json");
+            var path = Paths.get(System.getProperty("user.dir") + "\\projeto-poo\\saves\\"+fileName+".json");
             var file = Files.newBufferedReader(
                     path,
                     Charset.defaultCharset());
-            String json;
             String newLine;
             while ((newLine = file.readLine()) != null) {
-                json = newLine;
+                json.append(newLine);
             }
             file.close();
-
-            // Load GSON
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         currentGameId = getGameId(fileName);
+        return gson.fromJson(json.toString(), Game.class);
     }
 
-    public static void saveGame() {
-        // Guardar o jogo atual
+    public static String saveGame(Game game) {
+        return gson.toJson(game);
     }
 
     private static Integer getGameId(String FileName) {
