@@ -81,7 +81,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 79,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -102,7 +102,7 @@
               "statistics": {
                 "defense": 66,
                 "attack": 22,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Defender"
             },
@@ -123,7 +123,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 72,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -144,7 +144,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -165,7 +165,7 @@
               "statistics": {
                 "defense": 24,
                 "attack": 96,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -186,7 +186,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 47,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Midfielder"
             },
@@ -207,7 +207,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Midfielder"
             },
@@ -228,7 +228,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Defender"
             },
@@ -249,7 +249,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -270,7 +270,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -291,7 +291,7 @@
               "statistics": {
                 "defense": 73,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -353,7 +353,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 64,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Attacker"
             },
@@ -374,7 +374,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -395,7 +395,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -416,7 +416,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 58
+                "aggressive": 58
               },
               "position": "Midfielder"
             },
@@ -437,7 +437,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -458,7 +458,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Midfielder"
             },
@@ -479,7 +479,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 13,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -500,7 +500,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Defender"
             },
@@ -521,7 +521,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Defender"
             },
@@ -542,7 +542,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Defender"
             },
@@ -563,7 +563,7 @@
               "statistics": {
                 "defense": 71,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -650,7 +650,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 54,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Attacker"
             },
@@ -671,7 +671,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 48,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -692,7 +692,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 79,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Attacker"
             },
@@ -713,7 +713,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Midfielder"
             },
@@ -734,7 +734,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -755,7 +755,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Midfielder"
             },
@@ -776,7 +776,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Midfielder"
             },
@@ -797,7 +797,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 35
+                "aggressive": 35
               },
               "position": "Defender"
             },
@@ -818,7 +818,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -839,7 +839,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -860,7 +860,7 @@
               "statistics": {
                 "defense": 83,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -937,7 +937,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -958,7 +958,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -979,7 +979,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -1000,7 +1000,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 38
+                "aggressive": 38
               },
               "position": "Midfielder"
             },
@@ -1021,7 +1021,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 47
+                "aggressive": 47
               },
               "position": "Midfielder"
             },
@@ -1042,7 +1042,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Defender"
             },
@@ -1063,7 +1063,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Defender"
             },
@@ -1084,7 +1084,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Defender"
             },
@@ -1105,7 +1105,7 @@
               "statistics": {
                 "defense": 75,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             },
@@ -1126,7 +1126,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 70,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -1147,7 +1147,7 @@
               "statistics": {
                 "defense": 11,
                 "attack": 46,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             }
@@ -1229,7 +1229,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -1250,7 +1250,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Attacker"
             },
@@ -1271,7 +1271,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -1292,7 +1292,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 49
+                "aggressive": 49
               },
               "position": "Midfielder"
             },
@@ -1313,7 +1313,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -1334,7 +1334,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -1355,7 +1355,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -1376,7 +1376,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -1397,7 +1397,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 35
+                "aggressive": 35
               },
               "position": "Defender"
             },
@@ -1418,7 +1418,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -1439,7 +1439,7 @@
               "statistics": {
                 "defense": 92,
                 "attack": 5,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -1516,7 +1516,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 50,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -1537,7 +1537,7 @@
               "statistics": {
                 "defense": 11,
                 "attack": 45,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -1558,7 +1558,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 24
+                "aggressive": 24
               },
               "position": "Midfielder"
             },
@@ -1579,7 +1579,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Midfielder"
             },
@@ -1600,7 +1600,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Midfielder"
             },
@@ -1621,7 +1621,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Defender"
             },
@@ -1642,7 +1642,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -1663,7 +1663,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 46
+                "aggressive": 46
               },
               "position": "Defender"
             },
@@ -1684,7 +1684,7 @@
               "statistics": {
                 "defense": 69,
                 "attack": 4,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             },
@@ -1705,7 +1705,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -1726,7 +1726,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Midfielder"
             }
@@ -1793,7 +1793,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 52,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Attacker"
             },
@@ -1814,7 +1814,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -1835,7 +1835,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 70,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -1856,7 +1856,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -1877,7 +1877,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Midfielder"
             },
@@ -1898,7 +1898,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -1919,7 +1919,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 54
+                "aggressive": 54
               },
               "position": "Defender"
             },
@@ -1940,7 +1940,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -1961,7 +1961,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -1982,7 +1982,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 60
+                "aggressive": 60
               },
               "position": "Defender"
             },
@@ -2003,7 +2003,7 @@
               "statistics": {
                 "defense": 88,
                 "attack": 5,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Goalkeeper"
             }
@@ -2090,7 +2090,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 15,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -2111,7 +2111,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Midfielder"
             },
@@ -2132,7 +2132,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Attacker"
             },
@@ -2153,7 +2153,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 68,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Attacker"
             },
@@ -2174,7 +2174,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 55,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -2195,7 +2195,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Midfielder"
             },
@@ -2216,7 +2216,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 57
+                "aggressive": 57
               },
               "position": "Midfielder"
             },
@@ -2237,7 +2237,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Defender"
             },
@@ -2258,7 +2258,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 38
+                "aggressive": 38
               },
               "position": "Defender"
             },
@@ -2279,7 +2279,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Defender"
             },
@@ -2300,7 +2300,7 @@
               "statistics": {
                 "defense": 91,
                 "attack": 5,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Goalkeeper"
             }
@@ -2367,7 +2367,7 @@
               "statistics": {
                 "defense": 85,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -2388,7 +2388,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 63,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -2409,7 +2409,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -2430,7 +2430,7 @@
               "statistics": {
                 "defense": 52,
                 "attack": 52,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Midfielder"
             },
@@ -2451,7 +2451,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -2472,7 +2472,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -2493,7 +2493,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 51,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Midfielder"
             },
@@ -2514,7 +2514,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -2535,7 +2535,7 @@
               "statistics": {
                 "defense": 66,
                 "attack": 22,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -2556,7 +2556,7 @@
               "statistics": {
                 "defense": 82,
                 "attack": 27,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Defender"
             },
@@ -2577,7 +2577,7 @@
               "statistics": {
                 "defense": 52,
                 "attack": 17,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             }
@@ -2654,7 +2654,7 @@
               "statistics": {
                 "defense": 84,
                 "attack": 4,
-                "aggressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             },
@@ -2675,7 +2675,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "aggressivity": 47
+                "aggressive": 47
               },
               "position": "Midfielder"
             },
@@ -2696,7 +2696,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "aggressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -2717,7 +2717,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 71,
-                "aggressivity": 48
+                "aggressive": 48
               },
               "position": "Midfielder"
             },
@@ -2738,7 +2738,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "aggressivity": 16
+                "aggressive": 16
               },
               "position": "Midfielder"
             },
@@ -2759,7 +2759,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "aggressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -2780,7 +2780,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "aggressivity": 30
+                "aggressive": 30
               },
               "position": "Defender"
             },
@@ -2801,7 +2801,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "aggressivity": 25
+                "aggressive": 25
               },
               "position": "Defender"
             },
@@ -2822,7 +2822,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "aggressivity": 47
+                "aggressive": 47
               },
               "position": "Attacker"
             },
@@ -2843,7 +2843,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "aggressivity": 8
+                "aggressive": 8
               },
               "position": "Attacker"
             },
@@ -2864,7 +2864,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 71,
-                "aggressivity": 48
+                "aggressive": 48
               },
               "position": "Attacker"
             }
@@ -2956,7 +2956,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 62,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Attacker"
             },
@@ -2977,7 +2977,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 58,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Attacker"
             },
@@ -2998,7 +2998,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Attacker"
             },
@@ -3019,7 +3019,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 71,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Attacker"
             },
@@ -3040,7 +3040,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Midfielder"
             },
@@ -3061,7 +3061,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Midfielder"
             },
@@ -3082,7 +3082,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 50
+                "aggressive": 50
               },
               "position": "Defender"
             },
@@ -3103,7 +3103,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -3124,7 +3124,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 37
+                "aggressive": 37
               },
               "position": "Defender"
             },
@@ -3145,7 +3145,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Defender"
             },
@@ -3166,7 +3166,7 @@
               "statistics": {
                 "defense": 87,
                 "attack": 5,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -3243,7 +3243,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Attacker"
             },
@@ -3264,7 +3264,7 @@
               "statistics": {
                 "defense": 23,
                 "attack": 91,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -3285,7 +3285,7 @@
               "statistics": {
                 "defense": 46,
                 "attack": 46,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Midfielder"
             },
@@ -3306,7 +3306,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Midfielder"
             },
@@ -3327,7 +3327,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -3348,7 +3348,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Midfielder"
             },
@@ -3369,7 +3369,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Defender"
             },
@@ -3390,7 +3390,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -3411,7 +3411,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -3432,7 +3432,7 @@
               "statistics": {
                 "defense": 82,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             },
@@ -3453,7 +3453,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             }
@@ -3540,7 +3540,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 63,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -3561,7 +3561,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -3582,7 +3582,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -3603,7 +3603,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -3624,7 +3624,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Midfielder"
             },
@@ -3645,7 +3645,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 47,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -3666,7 +3666,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Defender"
             },
@@ -3687,7 +3687,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -3708,7 +3708,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -3729,7 +3729,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 41
+                "aggressive": 41
               },
               "position": "Defender"
             },
@@ -3750,7 +3750,7 @@
               "statistics": {
                 "defense": 77,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -3847,7 +3847,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Attacker"
             },
@@ -3868,7 +3868,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Attacker"
             },
@@ -3889,7 +3889,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -3910,7 +3910,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Midfielder"
             },
@@ -3931,7 +3931,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 48,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Midfielder"
             },
@@ -3952,7 +3952,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -3973,7 +3973,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Defender"
             },
@@ -3994,7 +3994,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Defender"
             },
@@ -4015,7 +4015,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 28
+                "aggressive": 28
               },
               "position": "Defender"
             },
@@ -4036,7 +4036,7 @@
               "statistics": {
                 "defense": 88,
                 "attack": 5,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             },
@@ -4057,7 +4057,7 @@
               "statistics": {
                 "defense": 11,
                 "attack": 43,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             }
@@ -4119,7 +4119,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 50,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Attacker"
             },
@@ -4140,7 +4140,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Attacker"
             },
@@ -4161,7 +4161,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -4182,7 +4182,7 @@
               "statistics": {
                 "defense": 30,
                 "attack": 30,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -4203,7 +4203,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Midfielder"
             },
@@ -4224,7 +4224,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Midfielder"
             },
@@ -4245,7 +4245,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -4266,7 +4266,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Defender"
             },
@@ -4287,7 +4287,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -4308,7 +4308,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -4329,7 +4329,7 @@
               "statistics": {
                 "defense": 90,
                 "attack": 5,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Goalkeeper"
             }
@@ -4401,7 +4401,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 51,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -4422,7 +4422,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 51,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -4443,7 +4443,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 55,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -4464,7 +4464,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -4485,7 +4485,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -4506,7 +4506,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -4527,7 +4527,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -4548,7 +4548,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 78
+                "aggressive": 78
               },
               "position": "Defender"
             },
@@ -4569,7 +4569,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -4590,7 +4590,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 15,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -4611,7 +4611,7 @@
               "statistics": {
                 "defense": 82,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -4688,7 +4688,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 52,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Attacker"
             },
@@ -4709,7 +4709,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 54,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -4730,7 +4730,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 58,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Attacker"
             },
@@ -4751,7 +4751,7 @@
               "statistics": {
                 "defense": 25,
                 "attack": 25,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -4772,7 +4772,7 @@
               "statistics": {
                 "defense": 29,
                 "attack": 29,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Midfielder"
             },
@@ -4793,7 +4793,7 @@
               "statistics": {
                 "defense": 66,
                 "attack": 22,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Defender"
             },
@@ -4814,7 +4814,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Defender"
             },
@@ -4835,7 +4835,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -4856,7 +4856,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -4877,7 +4877,7 @@
               "statistics": {
                 "defense": 66,
                 "attack": 3,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -4898,7 +4898,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Attacker"
             }
@@ -4970,7 +4970,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Attacker"
             },
@@ -4991,7 +4991,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 64,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Attacker"
             },
@@ -5012,7 +5012,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 49,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Attacker"
             },
@@ -5033,7 +5033,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Attacker"
             },
@@ -5054,7 +5054,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -5075,7 +5075,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -5096,7 +5096,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -5117,7 +5117,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 46
+                "aggressive": 46
               },
               "position": "Defender"
             },
@@ -5138,7 +5138,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -5159,7 +5159,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -5180,7 +5180,7 @@
               "statistics": {
                 "defense": 81,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -5254,7 +5254,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 69,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Attacker"
             },
@@ -5275,7 +5275,7 @@
               "statistics": {
                 "defense": 10,
                 "attack": 40,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Attacker"
             },
@@ -5296,7 +5296,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 68,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Attacker"
             },
@@ -5317,7 +5317,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 66
+                "aggressive": 66
               },
               "position": "Midfielder"
             },
@@ -5338,7 +5338,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 49,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Midfielder"
             },
@@ -5359,7 +5359,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 47,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Midfielder"
             },
@@ -5380,7 +5380,7 @@
               "statistics": {
                 "defense": 67,
                 "attack": 22,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Defender"
             },
@@ -5401,7 +5401,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -5422,7 +5422,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Defender"
             },
@@ -5443,7 +5443,7 @@
               "statistics": {
                 "defense": 74,
                 "attack": 25,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Defender"
             },
@@ -5464,7 +5464,7 @@
               "statistics": {
                 "defense": 82,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -5556,7 +5556,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Midfielder"
             },
@@ -5577,7 +5577,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 55
+                "aggressive": 55
               },
               "position": "Attacker"
             },
@@ -5598,7 +5598,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 79,
-                "agressivity": 24
+                "aggressive": 24
               },
               "position": "Attacker"
             },
@@ -5619,7 +5619,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Midfielder"
             },
@@ -5640,7 +5640,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 41
+                "aggressive": 41
               },
               "position": "Defender"
             },
@@ -5661,7 +5661,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -5682,7 +5682,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Defender"
             },
@@ -5703,7 +5703,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 24
+                "aggressive": 24
               },
               "position": "Defender"
             },
@@ -5724,7 +5724,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Defender"
             },
@@ -5745,7 +5745,7 @@
               "statistics": {
                 "defense": 77,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -5766,7 +5766,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             }
@@ -5868,7 +5868,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 72
+                "aggressive": 72
               },
               "position": "Midfielder"
             },
@@ -5889,7 +5889,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Attacker"
             },
@@ -5910,7 +5910,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 74,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Attacker"
             },
@@ -5931,7 +5931,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Midfielder"
             },
@@ -5952,7 +5952,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 80,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Attacker"
             },
@@ -5973,7 +5973,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Midfielder"
             },
@@ -5994,7 +5994,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -6015,7 +6015,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Defender"
             },
@@ -6036,7 +6036,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Defender"
             },
@@ -6057,7 +6057,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             },
@@ -6078,7 +6078,7 @@
               "statistics": {
                 "defense": 86,
                 "attack": 5,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -6150,7 +6150,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -6171,7 +6171,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 50,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -6192,7 +6192,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -6213,7 +6213,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 37
+                "aggressive": 37
               },
               "position": "Midfielder"
             },
@@ -6234,7 +6234,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 52
+                "aggressive": 52
               },
               "position": "Midfielder"
             },
@@ -6255,7 +6255,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -6276,7 +6276,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 13,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -6297,7 +6297,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -6318,7 +6318,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 60
+                "aggressive": 60
               },
               "position": "Defender"
             },
@@ -6339,7 +6339,7 @@
               "statistics": {
                 "defense": 77,
                 "attack": 4,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Goalkeeper"
             },
@@ -6360,7 +6360,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 15,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             }
@@ -6467,7 +6467,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 82,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -6488,7 +6488,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Attacker"
             },
@@ -6509,7 +6509,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 76
+                "aggressive": 76
               },
               "position": "Midfielder"
             },
@@ -6530,7 +6530,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Midfielder"
             },
@@ -6551,7 +6551,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Midfielder"
             },
@@ -6572,7 +6572,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Midfielder"
             },
@@ -6593,7 +6593,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Defender"
             },
@@ -6614,7 +6614,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Defender"
             },
@@ -6635,7 +6635,7 @@
               "statistics": {
                 "defense": 90,
                 "attack": 5,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Goalkeeper"
             },
@@ -6656,7 +6656,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -6677,7 +6677,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Defender"
             }
@@ -6769,7 +6769,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -6790,7 +6790,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 55,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Attacker"
             },
@@ -6811,7 +6811,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Midfielder"
             },
@@ -6832,7 +6832,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -6853,7 +6853,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -6874,7 +6874,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Midfielder"
             },
@@ -6895,7 +6895,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Midfielder"
             },
@@ -6916,7 +6916,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 21,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Defender"
             },
@@ -6937,7 +6937,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -6958,7 +6958,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -6979,7 +6979,7 @@
               "statistics": {
                 "defense": 79,
                 "attack": 5,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Goalkeeper"
             }
@@ -7081,7 +7081,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -7102,7 +7102,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 51,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Midfielder"
             },
@@ -7123,7 +7123,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Attacker"
             },
@@ -7144,7 +7144,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -7165,7 +7165,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -7186,7 +7186,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -7207,7 +7207,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Midfielder"
             },
@@ -7228,7 +7228,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 48
+                "aggressive": 48
               },
               "position": "Defender"
             },
@@ -7249,7 +7249,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 50
+                "aggressive": 50
               },
               "position": "Defender"
             },
@@ -7270,7 +7270,7 @@
               "statistics": {
                 "defense": 69,
                 "attack": 23,
-                "agressivity": 50
+                "aggressive": 50
               },
               "position": "Defender"
             },
@@ -7291,7 +7291,7 @@
               "statistics": {
                 "defense": 76,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -7418,7 +7418,7 @@
               "statistics": {
                 "defense": 29,
                 "attack": 29,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -7439,7 +7439,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 46,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -7460,7 +7460,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 79,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Attacker"
             },
@@ -7481,7 +7481,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -7502,7 +7502,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Midfielder"
             },
@@ -7523,7 +7523,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Midfielder"
             },
@@ -7544,7 +7544,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             },
@@ -7565,7 +7565,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Defender"
             },
@@ -7586,7 +7586,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 21,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Defender"
             },
@@ -7607,7 +7607,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Defender"
             },
@@ -7628,7 +7628,7 @@
               "statistics": {
                 "defense": 81,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -7700,7 +7700,7 @@
               "statistics": {
                 "defense": 20,
                 "attack": 78,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -7721,7 +7721,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 21,
-                "agressivity": 58
+                "aggressive": 58
               },
               "position": "Defender"
             },
@@ -7742,7 +7742,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 72,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Attacker"
             },
@@ -7763,7 +7763,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Midfielder"
             },
@@ -7784,7 +7784,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 49,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Midfielder"
             },
@@ -7805,7 +7805,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 60,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Midfielder"
             },
@@ -7826,7 +7826,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -7847,7 +7847,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Midfielder"
             },
@@ -7868,7 +7868,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -7889,7 +7889,7 @@
               "statistics": {
                 "defense": 70,
                 "attack": 23,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -7910,7 +7910,7 @@
               "statistics": {
                 "defense": 79,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -8012,7 +8012,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Attacker"
             },
@@ -8033,7 +8033,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Midfielder"
             },
@@ -8054,7 +8054,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 58,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -8075,7 +8075,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Attacker"
             },
@@ -8096,7 +8096,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Midfielder"
             },
@@ -8117,7 +8117,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 61
+                "aggressive": 61
               },
               "position": "Midfielder"
             },
@@ -8138,7 +8138,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -8159,7 +8159,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Defender"
             },
@@ -8180,7 +8180,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Defender"
             },
@@ -8201,7 +8201,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Defender"
             },
@@ -8222,7 +8222,7 @@
               "statistics": {
                 "defense": 73,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -8339,7 +8339,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 58,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -8360,7 +8360,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 65,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Attacker"
             },
@@ -8381,7 +8381,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Attacker"
             },
@@ -8402,7 +8402,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Midfielder"
             },
@@ -8423,7 +8423,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Midfielder"
             },
@@ -8444,7 +8444,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -8465,7 +8465,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -8486,7 +8486,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -8507,7 +8507,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Defender"
             },
@@ -8528,7 +8528,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -8549,7 +8549,7 @@
               "statistics": {
                 "defense": 85,
                 "attack": 4,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Goalkeeper"
             }
@@ -8666,7 +8666,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 47,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -8687,7 +8687,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Attacker"
             },
@@ -8708,7 +8708,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 69,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Attacker"
             },
@@ -8729,7 +8729,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -8750,7 +8750,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Midfielder"
             },
@@ -8771,7 +8771,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Midfielder"
             },
@@ -8792,7 +8792,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -8813,7 +8813,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -8834,7 +8834,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Defender"
             },
@@ -8855,7 +8855,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 76
+                "aggressive": 76
               },
               "position": "Defender"
             },
@@ -8876,7 +8876,7 @@
               "statistics": {
                 "defense": 81,
                 "attack": 4,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Goalkeeper"
             }
@@ -8948,7 +8948,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 69,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Attacker"
             },
@@ -8969,7 +8969,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 72,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -8990,7 +8990,7 @@
               "statistics": {
                 "defense": 26,
                 "attack": 26,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -9011,7 +9011,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -9032,7 +9032,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 54,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Midfielder"
             },
@@ -9053,7 +9053,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             },
@@ -9074,7 +9074,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Defender"
             },
@@ -9095,7 +9095,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -9116,7 +9116,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -9137,7 +9137,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -9158,7 +9158,7 @@
               "statistics": {
                 "defense": 84,
                 "attack": 4,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -9235,7 +9235,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Defender"
             },
@@ -9256,7 +9256,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -9277,7 +9277,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 38
+                "aggressive": 38
               },
               "position": "Attacker"
             },
@@ -9298,7 +9298,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 63,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Attacker"
             },
@@ -9319,7 +9319,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Attacker"
             },
@@ -9340,7 +9340,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 68
+                "aggressive": 68
               },
               "position": "Midfielder"
             },
@@ -9361,7 +9361,7 @@
               "statistics": {
                 "defense": 50,
                 "attack": 50,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Midfielder"
             },
@@ -9382,7 +9382,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 46
+                "aggressive": 46
               },
               "position": "Midfielder"
             },
@@ -9403,7 +9403,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Defender"
             },
@@ -9424,7 +9424,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 21,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -9445,7 +9445,7 @@
               "statistics": {
                 "defense": 87,
                 "attack": 5,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -9517,7 +9517,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 58,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Attacker"
             },
@@ -9538,7 +9538,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -9559,7 +9559,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 52,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -9580,7 +9580,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Attacker"
             },
@@ -9601,7 +9601,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -9622,7 +9622,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -9643,7 +9643,7 @@
               "statistics": {
                 "defense": 50,
                 "attack": 17,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -9664,7 +9664,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 14,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Defender"
             },
@@ -9685,7 +9685,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Defender"
             },
@@ -9706,7 +9706,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 15,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -9727,7 +9727,7 @@
               "statistics": {
                 "defense": 85,
                 "attack": 3,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Goalkeeper"
             }
@@ -9819,7 +9819,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -9840,7 +9840,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -9861,7 +9861,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Midfielder"
             },
@@ -9882,7 +9882,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -9903,7 +9903,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 47,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Midfielder"
             },
@@ -9924,7 +9924,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Midfielder"
             },
@@ -9945,7 +9945,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -9966,7 +9966,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Defender"
             },
@@ -9987,7 +9987,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Defender"
             },
@@ -10008,7 +10008,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 41
+                "aggressive": 41
               },
               "position": "Defender"
             },
@@ -10029,7 +10029,7 @@
               "statistics": {
                 "defense": 73,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -10106,7 +10106,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 62,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -10127,7 +10127,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Attacker"
             },
@@ -10148,7 +10148,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 77
+                "aggressive": 77
               },
               "position": "Midfielder"
             },
@@ -10169,7 +10169,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -10190,7 +10190,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -10211,7 +10211,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 94
+                "aggressive": 94
               },
               "position": "Midfielder"
             },
@@ -10232,7 +10232,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Defender"
             },
@@ -10253,7 +10253,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Defender"
             },
@@ -10274,7 +10274,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -10295,7 +10295,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 38
+                "aggressive": 38
               },
               "position": "Defender"
             },
@@ -10316,7 +10316,7 @@
               "statistics": {
                 "defense": 87,
                 "attack": 5,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -10388,7 +10388,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 53,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -10409,7 +10409,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 54,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Attacker"
             },
@@ -10430,7 +10430,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Midfielder"
             },
@@ -10451,7 +10451,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 62,
-                "agressivity": 71
+                "aggressive": 71
               },
               "position": "Attacker"
             },
@@ -10472,7 +10472,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Midfielder"
             },
@@ -10493,7 +10493,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 42
+                "aggressive": 42
               },
               "position": "Midfielder"
             },
@@ -10514,7 +10514,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 15,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -10535,7 +10535,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Defender"
             },
@@ -10556,7 +10556,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -10577,7 +10577,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -10598,7 +10598,7 @@
               "statistics": {
                 "defense": 69,
                 "attack": 4,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -10660,7 +10660,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Midfielder"
             },
@@ -10681,7 +10681,7 @@
               "statistics": {
                 "defense": 83,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -10702,7 +10702,7 @@
               "statistics": {
                 "defense": 27,
                 "attack": 27,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -10723,7 +10723,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Attacker"
             },
@@ -10744,7 +10744,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Midfielder"
             },
@@ -10765,7 +10765,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Attacker"
             },
@@ -10786,7 +10786,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -10807,7 +10807,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 37
+                "aggressive": 37
               },
               "position": "Defender"
             },
@@ -10828,7 +10828,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Defender"
             },
@@ -10849,7 +10849,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 15,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Defender"
             },
@@ -10870,7 +10870,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             }
@@ -10997,7 +10997,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 72,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Attacker"
             },
@@ -11018,7 +11018,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Midfielder"
             },
@@ -11039,7 +11039,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 66
+                "aggressive": 66
               },
               "position": "Midfielder"
             },
@@ -11060,7 +11060,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Midfielder"
             },
@@ -11081,7 +11081,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Midfielder"
             },
@@ -11102,7 +11102,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Defender"
             },
@@ -11123,7 +11123,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -11144,7 +11144,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 52
+                "aggressive": 52
               },
               "position": "Defender"
             },
@@ -11165,7 +11165,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Defender"
             },
@@ -11186,7 +11186,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -11207,7 +11207,7 @@
               "statistics": {
                 "defense": 77,
                 "attack": 6,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -11301,7 +11301,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 63,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -11322,7 +11322,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 52,
-                "agressivity": 20
+                "aggressive": 20
               },
               "position": "Attacker"
             },
@@ -11343,7 +11343,7 @@
               "statistics": {
                 "defense": 19,
                 "attack": 75,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Attacker"
             },
@@ -11364,7 +11364,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 48,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Midfielder"
             },
@@ -11385,7 +11385,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -11406,7 +11406,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 54,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Midfielder"
             },
@@ -11427,7 +11427,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -11448,7 +11448,7 @@
               "statistics": {
                 "defense": 70,
                 "attack": 23,
-                "agressivity": 28
+                "aggressive": 28
               },
               "position": "Defender"
             },
@@ -11469,7 +11469,7 @@
               "statistics": {
                 "defense": 68,
                 "attack": 23,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -11490,7 +11490,7 @@
               "statistics": {
                 "defense": 71,
                 "attack": 24,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Defender"
             },
@@ -11511,7 +11511,7 @@
               "statistics": {
                 "defense": 81,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -11598,7 +11598,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 68,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Attacker"
             },
@@ -11619,7 +11619,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 70,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Attacker"
             },
@@ -11640,7 +11640,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 66,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Attacker"
             },
@@ -11661,7 +11661,7 @@
               "statistics": {
                 "defense": 46,
                 "attack": 46,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Midfielder"
             },
@@ -11682,7 +11682,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 35
+                "aggressive": 35
               },
               "position": "Midfielder"
             },
@@ -11703,7 +11703,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Midfielder"
             },
@@ -11724,7 +11724,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -11745,7 +11745,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -11766,7 +11766,7 @@
               "statistics": {
                 "defense": 79,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             },
@@ -11787,7 +11787,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -11808,7 +11808,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 49
+                "aggressive": 49
               },
               "position": "Defender"
             }
@@ -11925,7 +11925,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 58,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Attacker"
             },
@@ -11946,7 +11946,7 @@
               "statistics": {
                 "defense": 12,
                 "attack": 46,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -11967,7 +11967,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 68,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Attacker"
             },
@@ -11988,7 +11988,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 56
+                "aggressive": 56
               },
               "position": "Midfielder"
             },
@@ -12009,7 +12009,7 @@
               "statistics": {
                 "defense": 28,
                 "attack": 28,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -12030,7 +12030,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 42
+                "aggressive": 42
               },
               "position": "Midfielder"
             },
@@ -12051,7 +12051,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 60
+                "aggressive": 60
               },
               "position": "Defender"
             },
@@ -12072,7 +12072,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Defender"
             },
@@ -12093,7 +12093,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Defender"
             },
@@ -12114,7 +12114,7 @@
               "statistics": {
                 "defense": 90,
                 "attack": 5,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             },
@@ -12135,7 +12135,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             }
@@ -12247,7 +12247,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Midfielder"
             },
@@ -12268,7 +12268,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 48
+                "aggressive": 48
               },
               "position": "Midfielder"
             },
@@ -12289,7 +12289,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             },
@@ -12310,7 +12310,7 @@
               "statistics": {
                 "defense": 50,
                 "attack": 17,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Defender"
             },
@@ -12331,7 +12331,7 @@
               "statistics": {
                 "defense": 29,
                 "attack": 29,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -12352,7 +12352,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 51,
-                "agressivity": 38
+                "aggressive": 38
               },
               "position": "Attacker"
             },
@@ -12373,7 +12373,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 62,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Attacker"
             },
@@ -12394,7 +12394,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Attacker"
             },
@@ -12415,7 +12415,7 @@
               "statistics": {
                 "defense": 77,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -12436,7 +12436,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 49
+                "aggressive": 49
               },
               "position": "Midfielder"
             },
@@ -12457,7 +12457,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "agressivity": 53
+                "aggressive": 53
               },
               "position": "Defender"
             }
@@ -12544,7 +12544,7 @@
               "statistics": {
                 "defense": 21,
                 "attack": 85,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -12565,7 +12565,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 55,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Attacker"
             },
@@ -12586,7 +12586,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Midfielder"
             },
@@ -12607,7 +12607,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 70,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Attacker"
             },
@@ -12628,7 +12628,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Midfielder"
             },
@@ -12649,7 +12649,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 44,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -12670,7 +12670,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -12691,7 +12691,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 28
+                "aggressive": 28
               },
               "position": "Defender"
             },
@@ -12712,7 +12712,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 16,
-                "agressivity": 46
+                "aggressive": 46
               },
               "position": "Defender"
             },
@@ -12733,7 +12733,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 21,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -12754,7 +12754,7 @@
               "statistics": {
                 "defense": 71,
                 "attack": 4,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -12851,7 +12851,7 @@
               "statistics": {
                 "defense": 34,
                 "attack": 34,
-                "agressivity": 33
+                "aggressive": 33
               },
               "position": "Midfielder"
             },
@@ -12872,7 +12872,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Attacker"
             },
@@ -12893,7 +12893,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 53,
-                "agressivity": 41
+                "aggressive": 41
               },
               "position": "Attacker"
             },
@@ -12914,7 +12914,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Attacker"
             },
@@ -12935,7 +12935,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Midfielder"
             },
@@ -12956,7 +12956,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 21
+                "aggressive": 21
               },
               "position": "Defender"
             },
@@ -12977,7 +12977,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -12998,7 +12998,7 @@
               "statistics": {
                 "defense": 75,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             },
@@ -13019,7 +13019,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 13,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -13040,7 +13040,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Midfielder"
             },
@@ -13061,7 +13061,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 18
+                "aggressive": 18
               },
               "position": "Defender"
             }
@@ -13183,7 +13183,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -13204,7 +13204,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Attacker"
             },
@@ -13225,7 +13225,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 57
+                "aggressive": 57
               },
               "position": "Attacker"
             },
@@ -13246,7 +13246,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -13267,7 +13267,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -13288,7 +13288,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 14,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Defender"
             },
@@ -13309,7 +13309,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 41
+                "aggressive": 41
               },
               "position": "Defender"
             },
@@ -13330,7 +13330,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Defender"
             },
@@ -13351,7 +13351,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 16,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -13372,7 +13372,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 93
+                "aggressive": 93
               },
               "position": "Defender"
             },
@@ -13393,7 +13393,7 @@
               "statistics": {
                 "defense": 63,
                 "attack": 3,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             }
@@ -13470,7 +13470,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 56,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Attacker"
             },
@@ -13491,7 +13491,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -13512,7 +13512,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Midfielder"
             },
@@ -13533,7 +13533,7 @@
               "statistics": {
                 "defense": 42,
                 "attack": 42,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Midfielder"
             },
@@ -13554,7 +13554,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Midfielder"
             },
@@ -13575,7 +13575,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -13596,7 +13596,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -13617,7 +13617,7 @@
               "statistics": {
                 "defense": 67,
                 "attack": 22,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -13638,7 +13638,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -13659,7 +13659,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Defender"
             },
@@ -13680,7 +13680,7 @@
               "statistics": {
                 "defense": 82,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -13762,7 +13762,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 28
+                "aggressive": 28
               },
               "position": "Attacker"
             },
@@ -13783,7 +13783,7 @@
               "statistics": {
                 "defense": 11,
                 "attack": 46,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Attacker"
             },
@@ -13804,7 +13804,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -13825,7 +13825,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Attacker"
             },
@@ -13846,7 +13846,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Midfielder"
             },
@@ -13867,7 +13867,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 39,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -13888,7 +13888,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 29
+                "aggressive": 29
               },
               "position": "Defender"
             },
@@ -13909,7 +13909,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 13,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -13930,7 +13930,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -13951,7 +13951,7 @@
               "statistics": {
                 "defense": 70,
                 "attack": 4,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             },
@@ -13972,7 +13972,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Midfielder"
             }
@@ -14039,7 +14039,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Midfielder"
             },
@@ -14060,7 +14060,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 68,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -14081,7 +14081,7 @@
               "statistics": {
                 "defense": 22,
                 "attack": 88,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Attacker"
             },
@@ -14102,7 +14102,7 @@
               "statistics": {
                 "defense": 19,
                 "attack": 74,
-                "agressivity": 35
+                "aggressive": 35
               },
               "position": "Attacker"
             },
@@ -14123,7 +14123,7 @@
               "statistics": {
                 "defense": 48,
                 "attack": 48,
-                "agressivity": 24
+                "aggressive": 24
               },
               "position": "Midfielder"
             },
@@ -14144,7 +14144,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 40,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Midfielder"
             },
@@ -14165,7 +14165,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "agressivity": 54
+                "aggressive": 54
               },
               "position": "Defender"
             },
@@ -14186,7 +14186,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -14207,7 +14207,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 22,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Defender"
             },
@@ -14228,7 +14228,7 @@
               "statistics": {
                 "defense": 65,
                 "attack": 3,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Goalkeeper"
             },
@@ -14249,7 +14249,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 17
+                "aggressive": 17
               },
               "position": "Midfielder"
             }
@@ -14341,7 +14341,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 65,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Attacker"
             },
@@ -14362,7 +14362,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 52,
-                "agressivity": 25
+                "aggressive": 25
               },
               "position": "Attacker"
             },
@@ -14383,7 +14383,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 58,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Attacker"
             },
@@ -14404,7 +14404,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -14425,7 +14425,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 8
+                "aggressive": 8
               },
               "position": "Midfielder"
             },
@@ -14446,7 +14446,7 @@
               "statistics": {
                 "defense": 43,
                 "attack": 43,
-                "agressivity": 72
+                "aggressive": 72
               },
               "position": "Midfielder"
             },
@@ -14467,7 +14467,7 @@
               "statistics": {
                 "defense": 30,
                 "attack": 30,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Midfielder"
             },
@@ -14488,7 +14488,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 40
+                "aggressive": 40
               },
               "position": "Defender"
             },
@@ -14509,7 +14509,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 36
+                "aggressive": 36
               },
               "position": "Defender"
             },
@@ -14530,7 +14530,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -14551,7 +14551,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 3,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -14668,7 +14668,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Attacker"
             },
@@ -14689,7 +14689,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 60,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Attacker"
             },
@@ -14710,7 +14710,7 @@
               "statistics": {
                 "defense": 46,
                 "attack": 46,
-                "agressivity": 34
+                "aggressive": 34
               },
               "position": "Midfielder"
             },
@@ -14731,7 +14731,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 55
+                "aggressive": 55
               },
               "position": "Midfielder"
             },
@@ -14752,7 +14752,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -14773,7 +14773,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 6
+                "aggressive": 6
               },
               "position": "Midfielder"
             },
@@ -14794,7 +14794,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 45
+                "aggressive": 45
               },
               "position": "Defender"
             },
@@ -14815,7 +14815,7 @@
               "statistics": {
                 "defense": 60,
                 "attack": 20,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Defender"
             },
@@ -14836,7 +14836,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 14,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -14857,7 +14857,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Defender"
             },
@@ -14878,7 +14878,7 @@
               "statistics": {
                 "defense": 92,
                 "attack": 5,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -14995,7 +14995,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 62,
-                "agressivity": 65
+                "aggressive": 65
               },
               "position": "Attacker"
             },
@@ -15016,7 +15016,7 @@
               "statistics": {
                 "defense": 18,
                 "attack": 71,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Attacker"
             },
@@ -15037,7 +15037,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 55,
-                "agressivity": 31
+                "aggressive": 31
               },
               "position": "Attacker"
             },
@@ -15058,7 +15058,7 @@
               "statistics": {
                 "defense": 32,
                 "attack": 32,
-                "agressivity": 55
+                "aggressive": 55
               },
               "position": "Midfielder"
             },
@@ -15079,7 +15079,7 @@
               "statistics": {
                 "defense": 41,
                 "attack": 41,
-                "agressivity": 53
+                "aggressive": 53
               },
               "position": "Midfielder"
             },
@@ -15100,7 +15100,7 @@
               "statistics": {
                 "defense": 45,
                 "attack": 45,
-                "agressivity": 55
+                "aggressive": 55
               },
               "position": "Midfielder"
             },
@@ -15121,7 +15121,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Defender"
             },
@@ -15142,7 +15142,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 13,
-                "agressivity": 28
+                "aggressive": 28
               },
               "position": "Defender"
             },
@@ -15163,7 +15163,7 @@
               "statistics": {
                 "defense": 54,
                 "attack": 18,
-                "agressivity": 37
+                "aggressive": 37
               },
               "position": "Defender"
             },
@@ -15184,7 +15184,7 @@
               "statistics": {
                 "defense": 72,
                 "attack": 4,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Goalkeeper"
             },
@@ -15205,7 +15205,7 @@
               "statistics": {
                 "defense": 51,
                 "attack": 17,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             }
@@ -15282,7 +15282,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Attacker"
             },
@@ -15303,7 +15303,7 @@
               "statistics": {
                 "defense": 30,
                 "attack": 30,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -15324,7 +15324,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Attacker"
             },
@@ -15345,7 +15345,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 59,
-                "agressivity": 53
+                "aggressive": 53
               },
               "position": "Attacker"
             },
@@ -15366,7 +15366,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Midfielder"
             },
@@ -15387,7 +15387,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "agressivity": 10
+                "aggressive": 10
               },
               "position": "Midfielder"
             },
@@ -15408,7 +15408,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Defender"
             },
@@ -15429,7 +15429,7 @@
               "statistics": {
                 "defense": 72,
                 "attack": 24,
-                "agressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -15450,7 +15450,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -15471,7 +15471,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 11
+                "aggressive": 11
               },
               "position": "Defender"
             },
@@ -15492,7 +15492,7 @@
               "statistics": {
                 "defense": 85,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -15589,7 +15589,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 64,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Attacker"
             },
@@ -15610,7 +15610,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 13
+                "aggressive": 13
               },
               "position": "Attacker"
             },
@@ -15631,7 +15631,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 32
+                "aggressive": 32
               },
               "position": "Midfielder"
             },
@@ -15652,7 +15652,7 @@
               "statistics": {
                 "defense": 14,
                 "attack": 57,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -15673,7 +15673,7 @@
               "statistics": {
                 "defense": 46,
                 "attack": 46,
-                "agressivity": 43
+                "aggressive": 43
               },
               "position": "Midfielder"
             },
@@ -15694,7 +15694,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -15715,7 +15715,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 3
+                "aggressive": 3
               },
               "position": "Defender"
             },
@@ -15736,7 +15736,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 39
+                "aggressive": 39
               },
               "position": "Defender"
             },
@@ -15757,7 +15757,7 @@
               "statistics": {
                 "defense": 55,
                 "attack": 18,
-                "agressivity": 4
+                "aggressive": 4
               },
               "position": "Defender"
             },
@@ -15778,7 +15778,7 @@
               "statistics": {
                 "defense": 56,
                 "attack": 19,
-                "agressivity": 45
+                "aggressive": 45
               },
               "position": "Defender"
             },
@@ -15799,7 +15799,7 @@
               "statistics": {
                 "defense": 76,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -15866,7 +15866,7 @@
               "statistics": {
                 "defense": 16,
                 "attack": 64,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Attacker"
             },
@@ -15887,7 +15887,7 @@
               "statistics": {
                 "defense": 35,
                 "attack": 35,
-                "agressivity": 19
+                "aggressive": 19
               },
               "position": "Midfielder"
             },
@@ -15908,7 +15908,7 @@
               "statistics": {
                 "defense": 33,
                 "attack": 33,
-                "agressivity": 14
+                "aggressive": 14
               },
               "position": "Midfielder"
             },
@@ -15929,7 +15929,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 12
+                "aggressive": 12
               },
               "position": "Midfielder"
             },
@@ -15950,7 +15950,7 @@
               "statistics": {
                 "defense": 47,
                 "attack": 47,
-                "agressivity": 44
+                "aggressive": 44
               },
               "position": "Midfielder"
             },
@@ -15971,7 +15971,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Midfielder"
             },
@@ -15992,7 +15992,7 @@
               "statistics": {
                 "defense": 58,
                 "attack": 19,
-                "agressivity": 26
+                "aggressive": 26
               },
               "position": "Defender"
             },
@@ -16013,7 +16013,7 @@
               "statistics": {
                 "defense": 49,
                 "attack": 16,
-                "agressivity": 1
+                "aggressive": 1
               },
               "position": "Defender"
             },
@@ -16034,7 +16034,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 23
+                "aggressive": 23
               },
               "position": "Defender"
             },
@@ -16055,7 +16055,7 @@
               "statistics": {
                 "defense": 64,
                 "attack": 21,
-                "agressivity": 62
+                "aggressive": 62
               },
               "position": "Defender"
             },
@@ -16076,7 +16076,7 @@
               "statistics": {
                 "defense": 72,
                 "attack": 4,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Goalkeeper"
             }
@@ -16153,7 +16153,7 @@
               "statistics": {
                 "defense": 36,
                 "attack": 36,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Midfielder"
             },
@@ -16174,7 +16174,7 @@
               "statistics": {
                 "defense": 17,
                 "attack": 67,
-                "agressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -16195,7 +16195,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 53,
-                "agressivity": 7
+                "aggressive": 7
               },
               "position": "Attacker"
             },
@@ -16216,7 +16216,7 @@
               "statistics": {
                 "defense": 15,
                 "attack": 61,
-                "agressivity": 24
+                "aggressive": 24
               },
               "position": "Attacker"
             },
@@ -16237,7 +16237,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 37,
-                "agressivity": 88
+                "aggressive": 88
               },
               "position": "Midfielder"
             },
@@ -16258,7 +16258,7 @@
               "statistics": {
                 "defense": 57,
                 "attack": 19,
-                "agressivity": 30
+                "aggressive": 30
               },
               "position": "Defender"
             },
@@ -16279,7 +16279,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 15,
-                "agressivity": 15
+                "aggressive": 15
               },
               "position": "Defender"
             },
@@ -16300,7 +16300,7 @@
               "statistics": {
                 "defense": 59,
                 "attack": 20,
-                "agressivity": 22
+                "aggressive": 22
               },
               "position": "Defender"
             },
@@ -16321,7 +16321,7 @@
               "statistics": {
                 "defense": 53,
                 "attack": 18,
-                "agressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -16342,7 +16342,7 @@
               "statistics": {
                 "defense": 61,
                 "attack": 20,
-                "agressivity": 16
+                "aggressive": 16
               },
               "position": "Defender"
             },
@@ -16363,7 +16363,7 @@
               "statistics": {
                 "defense": 85,
                 "attack": 4,
-                "agressivity": 5
+                "aggressive": 5
               },
               "position": "Goalkeeper"
             }
@@ -16465,7 +16465,7 @@
               "statistics": {
                 "defense": 13,
                 "attack": 65,
-                "aggressivity": 23
+                "aggressive": 23
               },
               "position": "Attacker"
             },
@@ -16486,7 +16486,7 @@
               "statistics": {
                 "defense": 11,
                 "attack": 47,
-                "aggressivity": 9
+                "aggressive": 9
               },
               "position": "Attacker"
             },
@@ -16507,7 +16507,7 @@
               "statistics": {
                 "defense": 37,
                 "attack": 35,
-                "aggressivity": 13
+                "aggressive": 13
               },
               "position": "Midfielder"
             },
@@ -16528,7 +16528,7 @@
               "statistics": {
                 "defense": 40,
                 "attack": 45,
-                "aggressivity": 20
+                "aggressive": 20
               },
               "position": "Midfielder"
             },
@@ -16549,7 +16549,7 @@
               "statistics": {
                 "defense": 31,
                 "attack": 31,
-                "aggressivity": 16
+                "aggressive": 16
               },
               "position": "Attacker"
             },
@@ -16570,7 +16570,7 @@
               "statistics": {
                 "defense": 39,
                 "attack": 29,
-                "aggressivity": 27
+                "aggressive": 27
               },
               "position": "Midfielder"
             },
@@ -16591,7 +16591,7 @@
               "statistics": {
                 "defense": 62,
                 "attack": 21,
-                "aggressivity": 29
+                "aggressive": 29
               },
               "position": "Midfielder"
             },
@@ -16612,7 +16612,7 @@
               "statistics": {
                 "defense": 44,
                 "attack": 13,
-                "aggressivity": 0
+                "aggressive": 0
               },
               "position": "Defender"
             },
@@ -16633,7 +16633,7 @@
               "statistics": {
                 "defense": 46,
                 "attack": 19,
-                "aggressivity": 27
+                "aggressive": 27
               },
               "position": "Defender"
             },
@@ -16654,7 +16654,7 @@
               "statistics": {
                 "defense": 69,
                 "attack": 4,
-                "aggressivity": 10
+                "aggressive": 10
               },
               "position": "Goalkeeper"
             },
@@ -16675,7 +16675,7 @@
               "statistics": {
                 "defense": 38,
                 "attack": 38,
-                "aggressivity": 43
+                "aggressive": 43
               },
               "position": "Defender"
             }

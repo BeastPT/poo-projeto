@@ -16,4 +16,8 @@ public class League {
     public String getName() {
         return name;
     }
+
+    public ArrayList<Team> getTeams() {
+        return teams;
+    }
 }

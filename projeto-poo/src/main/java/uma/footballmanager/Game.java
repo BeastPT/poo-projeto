@@ -22,4 +22,8 @@ public class Game {
             System.out.println(league.getName());
         }
     }
+
+    public ArrayList<League> getLeagues() {
+        return leagues;
+    }
 }
