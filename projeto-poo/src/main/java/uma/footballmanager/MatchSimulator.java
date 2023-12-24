@@ -2,6 +2,8 @@ package uma.footballmanager;
 
 import java.util.TreeMap;
 
+import static uma.footballmanager.Utils.getRandomInt;
+
 public class MatchSimulator {
 
     private final Team homeTeam;
@@ -99,12 +101,14 @@ public class MatchSimulator {
     }
 
     private boolean simulateGoal(int i) {
-        int random = (int) (Math.random()*100);
+        int random = getRandomInt();
         int attack;
+        boolean homeTeamGoal = false;
         Team team;
-        if (Math.random() < 0.5) {
+        if (getRandomInt() < 50) {
             attack = homeAttack;
             team = homeTeam;
+            homeTeamGoal = true;
         } else {
             attack = visitingAttack;
             team = visitingTeam;
@@ -113,9 +117,9 @@ public class MatchSimulator {
         if (random < attack) {
             Positions pos = getGoalPosition();
             var playersByPos = team.getPlayersByPosition(pos);
-            int randomIndex = (int) (Math.random()*playersByPos.size());
+            int randomIndex = getRandomInt(0, playersByPos.size());
             Player player = playersByPos.get(randomIndex);
-            addGoal(i, player, false);
+            addGoal(i, player, homeTeamGoal);
             return true;
         }
         return false;
@@ -124,26 +128,33 @@ public class MatchSimulator {
     public MatchSimulator simulate() {
         fixAttacks();
 
-        int startChance = (int) (Math.random()*100);
+        int startChance = getRandomInt();
         buffStartingTeam(startChance);
-        int buffTime = (int) (Math.random()*20+10);
+        int buffStartingTeamTime = getRandomInt(10, 20);
 
         boolean debuffStarting = false;
         boolean buffAgressive = false;
 
+        boolean debuffGoals = false;
+        int debuffGoalsTime = 0;
+
+
         for (int i = 0; i < 90; i++) {
-            if (i>buffTime && !debuffStarting) {
+            if (i>buffStartingTeamTime && !debuffStarting) {
                 debuffStartingTeam(startChance);
                 debuffStarting = true;
             }
 
             buffAgressive = changeAggressivity(buffAgressive);
 
-            if ((simulateGoal(i))) {
-                i += (int) (Math.random()*8+1);
+            if (!debuffGoals && (simulateGoal(i))) {
+                debuffGoals = true;
+                debuffGoalsTime = getRandomInt(1, 8);
+            } else {
+                debuffGoalsTime = (debuffGoalsTime == 0) ? 0 : debuffGoalsTime - 1;
             }
 
-            // Probabilidade de faltas
+            // TODO: Simulate injuries
 
         }
         System.out.println("Resultado: " + goals.size() + " - " + sufferedGoals.size());
@@ -151,11 +162,12 @@ public class MatchSimulator {
     }
 
     private Positions getGoalPosition(){
-        if (Math.random()*100 < 2) {
+        int random = getRandomInt();
+        if (random < 2) {
             return Positions.GOALKEEPER;
-        } else if (Math.random()*100 < 13) {
+        } else if (random < 13) {
             return Positions.DEFENDER;
-        } else if (Math.random()*100 < 42) {
+        } else if (random < 42) {
             return Positions.MIDFIELDER;
         } else {
             return Positions.ATTACKER;
@@ -169,8 +181,6 @@ public class MatchSimulator {
             this.sufferedGoals.put(minute, player);
         }
     }
-
-
     public TreeMap<Integer, Player> getGoals() {
         return goals;
     }

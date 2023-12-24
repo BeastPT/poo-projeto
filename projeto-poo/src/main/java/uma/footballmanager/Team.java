@@ -66,15 +66,11 @@ public class Team {
         this.Aggressive = (int) (newAggressivity/playerCounter);
     }
 
-    private int disperseValues(int value, int originalMin, int originalMax) {
-        return (int) (((value - originalMin) * 100) / (originalMax - originalMin));
-    }
-
     private int disperseValues(int value, boolean disperseAttack) {
         if (disperseAttack) {
-            return disperseValues(value, 300, 1100);
+            return Utils.disperseValues(value, 300, 1100);
         } else {
-            return disperseValues(value, 600, 1200);
+            return Utils.disperseValues(value, 600, 1200);
         }
     }
     public String getName() {
