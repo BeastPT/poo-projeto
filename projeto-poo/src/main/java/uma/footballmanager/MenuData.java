@@ -1,5 +1,5 @@
 package uma.footballmanager;
 
-public interface MenuString {
+public interface MenuData {
     public void showData();
 }
