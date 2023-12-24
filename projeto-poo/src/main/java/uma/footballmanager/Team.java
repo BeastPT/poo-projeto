@@ -63,7 +63,7 @@ public class Team {
         }
         this.Attack = disperseValues(newAttack, true);
         this.Defense = disperseValues(newDefense, false);
-        this.Aggressive = (int) (newAggressivity/playerCounter);
+        this.Aggressive = Utils.disperseValues(((int) (newAggressivity/playerCounter)), 0, 34);
     }
 
     private int disperseValues(int value, boolean disperseAttack) {
@@ -91,6 +91,15 @@ public class Team {
         return Defense;
     }
 
+    public void addInjure(Player player, MatchSimulator match) {
+        Player p = getPlayer(player);
+        if (p != null) {
+            p.setInjured(true);
+        }
+        updateStats();
+        match.updateStats();
+    }
+
     public int getAggressive() {
         if (Aggressive == null) {
             updateStats();
@@ -100,6 +109,14 @@ public class Team {
 
     public ArrayList<Player> getPlayersByPosition(Positions position) {
         return players.stream().filter(player -> player.getPosition() == position).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
+    }
+
+    public Player getPlayer(Player player) {
+        return players.stream().filter(player1 -> player1.equals(player)).findFirst().orElse(null);
+    }
+
+    public ArrayList<Player> getInjuredPlayers() {
+        return players.stream().filter(Player::isInjured).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
 
     @Override

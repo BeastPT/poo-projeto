@@ -8,12 +8,12 @@ import java.util.TreeMap;
 public class FootballManager {
     public static void main(String[] args) {
         Game game = SavesManager.loadData("singleJson");
-        //game.printLeagues();
-
+        //game.getLeagues().get(2).getTeams().forEach(team -> System.out.println(team.getName() + " " + team.getAggressive()));
+        debugMatch(game);
 
     }
 
-    private void debugMatch(Game game) {
+    private static void debugMatch(Game game) {
         var a1 = game.getLeagues().get(2).getTeams();
         for (int i = 0; i < 10; i++) {
             var team1 = a1.get((int) (Math.random()*a1.size()));

@@ -23,4 +23,8 @@ public class Person {
         this.height = height;
         this.weight = weight;
     }
+
+    public String getName() {
+        return name;
+    }
 }

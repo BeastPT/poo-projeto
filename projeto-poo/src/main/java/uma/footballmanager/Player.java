@@ -9,6 +9,12 @@ public class Player extends Person{
 
     private boolean injured;
 
+    public Player(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, PlayerStats stats, Positions position) {
+        super(name, firstName, lastName, birth, nationality, height, weight);
+        this.stats = stats;
+        this.position = position;
+        this.injured = false;
+    }
     public Player(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, PlayerStats stats, Positions position, boolean injured) {
         super(name, firstName, lastName, birth, nationality, height, weight);
         this.stats = stats;
@@ -26,5 +32,9 @@ public class Player extends Person{
 
     public boolean isInjured() {
         return injured;
+    }
+
+    public void setInjured(boolean injured) {
+        this.injured = injured;
     }
 }
