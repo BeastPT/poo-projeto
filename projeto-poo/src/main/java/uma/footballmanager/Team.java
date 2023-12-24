@@ -12,7 +12,7 @@ public class Team {
     private Integer foundationYear;
     private Stadium stadium;
     private Coach coach;
-    private ArrayList<Player> players;
+    private final ArrayList<Player> players;
 
     private Integer Attack;
     private Integer Defense;
@@ -110,6 +110,7 @@ public class Team {
     public ArrayList<Player> getPlayersByPosition(Positions position) {
         return players.stream().filter(player -> player.getPosition() == position).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
+
 
     public Player getPlayer(Player player) {
         return players.stream().filter(player1 -> player1.equals(player)).findFirst().orElse(null);

@@ -3,7 +3,6 @@ package uma.footballmanager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -22,6 +21,8 @@ public class SavesManager {
         currentGameId = null;
         gson = new GsonBuilder()
                 .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .registerTypeAdapter(League.class, new LeagueAdapter())
+                .registerTypeAdapter(Match.class, new MatchAdapter())
                 .create();
     }
 

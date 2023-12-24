@@ -2,6 +2,8 @@ package uma.footballmanager;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Objects;
+
 public class Player extends Person implements MenuData {
     @SerializedName("statistics")
     private PlayerStats stats;
@@ -44,5 +46,15 @@ public class Player extends Person implements MenuData {
         System.out.println("Posição: " + getPosition());
         System.out.println("Lesão: " + isInjured());
         System.out.println("Estatisticas do jogador: " + getStats());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Player player = (Player) o;
+
+        return getName().equals(player.getName());
     }
 }

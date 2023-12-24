@@ -9,8 +9,8 @@ public class MatchSimulator {
     private final Team homeTeam;
     private final Team visitingTeam;
 
-    private final TreeMap<Integer, Player> goals;
-    private final TreeMap<Integer, Player> sufferedGoals;
+    private final TreeMap<Integer, String> goals;
+    private final TreeMap<Integer, String> sufferedGoals;
 
     private int homeTeamAttack;
     private int homeTeamDefense;
@@ -145,9 +145,9 @@ public class MatchSimulator {
 
     private void simulateInjure() {
         Positions pos = getInjurePosition();
-        var playersByPos = homeTeam.getPlayersByPosition(pos);
-        int randomIndex = getRandomInt(0, playersByPos.size()-1);
         Team team = (getRandomInt() < 50) ? homeTeam : visitingTeam;
+        var playersByPos = team.getPlayersByPosition(pos);
+        int randomIndex = getRandomInt(0, playersByPos.size()-1);
         Player player = playersByPos.get(randomIndex);
         System.out.println("Jogador " + player.getName() + " da equipa " + team.getName() + " lesionado");
         team.addInjure(player, this);
@@ -225,17 +225,17 @@ public class MatchSimulator {
 
     private void addGoal(int minute, Player player, boolean homeTeam) {
         if (homeTeam) {
-            this.goals.put(minute, player);
+            this.goals.put(minute, player.getName());
         } else {
-            this.sufferedGoals.put(minute, player);
+            this.sufferedGoals.put(minute, player.getName());
         }
     }
 
-    public TreeMap<Integer, Player> getGoals() {
+    public TreeMap<Integer, String> getGoals() {
         return goals;
     }
 
-    public TreeMap<Integer, Player> getSufferedGoals() {
+    public TreeMap<Integer, String> getSufferedGoals() {
         return sufferedGoals;
     }
 }
