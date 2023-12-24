@@ -13,27 +13,11 @@ public class Stadium implements MenuData {
         this.capacity = capacity;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public Integer getCapacity() {
-        return capacity;
-    }
-
     @Override
     public void showData() {
-        System.out.println("Nome do Estadio: " + getName());
-        System.out.println("Localidade: " + getAddress());
-        System.out.println("Ciadde: " + getCity());
-        System.out.println("Capacidae: " + getCapacity());
+        System.out.println("Nome do Estadio: " + name);
+        System.out.println("Localidade: " + address);
+        System.out.println("Ciadde: " + city);
+        System.out.println("Capacidae: " + capacity);
     }
 }

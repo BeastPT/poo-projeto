@@ -14,11 +14,11 @@ public class Coach extends Person implements MenuData {
 
     @Override
     public void showData() {
-        System.out.println("Nome: " + name);
-        System.out.println("Data de Nascimento: " + birth);
-        System.out.println("Nacionalidade: " + nationality);
-        System.out.println("Altura: " + height);
-        System.out.println("Peso: " + weight);
+        System.out.println("Nome: " + getName());
+        System.out.println("Data de Nascimento: " + getBirth().date().getDayOfMonth() + "/" + getBirth().date().getMonth() + "/" + getBirth().date().getYear());
+        System.out.println("Nacionalidade: " + getNationality());
+        System.out.println("Altura: " + getHeight());
+        System.out.println("Peso: " + getWeight());
         System.out.println("Tatica utilizada: " + tactic);
         System.out.println("Carreira: " + career);
     }

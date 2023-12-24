@@ -27,4 +27,20 @@ public class Person {
     public String getName() {
         return name;
     }
+
+    public Birth getBirth() {
+        return birth;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
 }
