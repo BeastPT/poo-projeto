@@ -2,7 +2,7 @@ package uma.footballmanager;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Player extends Person{
+public class Player extends Person implements MenuData {
     @SerializedName("statistics")
     private PlayerStats stats;
     private Positions position;
@@ -26,5 +26,13 @@ public class Player extends Person{
 
     public boolean isInjured() {
         return injured;
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Nome do jogador: " + getName());
+        System.out.println("Posição: " + getPosition());
+        System.out.println("Lesão: " + isInjured());
+        System.out.println("Estatisticas do jogador: " + getStats());
     }
 }
