@@ -16,8 +16,8 @@ public class SavesManager {
     private static String currentGameId;
     private final static Gson gson;
     private final static String EXTENSION = ".json";
-    public static void createGame() {
-        loadData("defaultGame");
+    public static Game createGame() {
+        return loadData("defaultGame");
     }
 
     static {

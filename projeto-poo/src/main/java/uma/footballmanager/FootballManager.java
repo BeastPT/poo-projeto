@@ -7,9 +7,9 @@ import java.time.LocalDate;
 
 public class FootballManager {
     public static void main(String[] args) {
-        Game game = SavesManager.loadData("singleJson");
-        debugMatch(game);
-        //SavesManager.saveGame(game);
+        Game game = SavesManager.loadData("ozwpk7nxv0-1703530248863");
+        //debugMatch(game);
+        SavesManager.saveGame(game);
     }
 
     private static void debugMatch(Game game) {

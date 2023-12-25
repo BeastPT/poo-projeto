@@ -14,6 +14,8 @@ public class Match {
     private boolean finished;
     private TreeMap<Integer, String> goals;
     private TreeMap<Integer, String> sufferedGoals;
+
+    private Referee referee;
     // TODO:  ADICIONAR ARBITRO DA PARTIDA
     public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals) {
         this.date = date;
@@ -33,6 +35,16 @@ public class Match {
     public void setVisitingTeam(Team visitingTeam) {
         if (this.visitingTeam != null) {
             this.visitingTeam = visitingTeam;
+        }
+    }
+
+    public Referee getReferee() {
+        return referee;
+    }
+
+    public void setReferee(Referee referee) {
+        if (this.referee != null) {
+            this.referee = referee;
         }
     }
 

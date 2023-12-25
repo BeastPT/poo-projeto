@@ -43,6 +43,13 @@ public class JsonAdapter {
                 matches.add(context.serialize(match, Match.class));
             }
             League.add("matches", matches);
+
+            JsonArray referees = new JsonArray();
+            for (Referee referee : league.getReferees()) {
+                referees.add(context.serialize(referee, Referee.class));
+            }
+            League.add("referees", referees);
+
             return League;
         }
         @Override
@@ -63,19 +70,37 @@ public class JsonAdapter {
                 matches = new JsonArray();
             }
 
+            JsonArray referees;
+            if (League.has("referees")) {
+                referees = League.get("referees").getAsJsonArray();
+            } else {
+                referees = new JsonArray();
+            }
+
             ArrayList<Team> teamsList = new ArrayList<>();
             ArrayList<Match> matchesList = new ArrayList<>();
+            ArrayList<Referee> refereeList = new ArrayList<>();
+
             for (JsonElement team : teams) {
                 teamsList.add(context.deserialize(team, Team.class));
             }
             League league = new League(name, country, teamsList);
             for (JsonElement match : matches) {
                 Match newMatch = context.deserialize(match, Match.class);
-                newMatch.setHomeTeam(league.getTeam(newMatch.getHomeTeam().getName()));
-                newMatch.setVisitingTeam(league.getTeam(newMatch.getVisitingTeam().getName()));
+                JsonObject matchObject = match.getAsJsonObject();
+                newMatch.setHomeTeam(league.getTeam(matchObject.get("home_team").getAsString()));
+                newMatch.setVisitingTeam(league.getTeam(matchObject.get("visiting_team").getAsString()));
+                var referee = matchObject.get("referee_name");
+                if (referee != null) {
+                    newMatch.setReferee(league.getReferee(referee.getAsString()));
+                }
                 matchesList.add(newMatch);
             }
-            return new League(name, country, teamsList, matchesList);
+
+            for (JsonElement referee : referees) {
+                refereeList.add(context.deserialize(referee, Referee.class));
+            }
+            return new League(name, country, teamsList, matchesList, refereeList);
         }
 
     }
@@ -84,11 +109,20 @@ public class JsonAdapter {
         @Override
         public JsonElement serialize(Match match, Type type, JsonSerializationContext context) {
             JsonObject Match = new JsonObject();
-            Match.addProperty("home_team", match.getHomeTeam().getName());
-            Match.addProperty("visiting_team", match.getVisitingTeam().getName());
+            if (match.getHomeTeam() != null) {
+                Match.addProperty("home_team", match.getHomeTeam().getName());
+            }
+            if (match.getVisitingTeam() != null) {
+                Match.addProperty("visiting_team", match.getVisitingTeam().getName());
+            }
             Match.addProperty("date", context.serialize(match.getDate()).getAsString());
             Match.addProperty("time", match.getMatchHour()+":"+match.getMatchMinute());
             Match.addProperty("finished", match.isFinished());
+            String refereeName = null;
+            if (match.getReferee() != null) {
+                refereeName = match.getReferee().getName();
+            }
+            Match.addProperty("referee_name", refereeName);
             JsonObject goals = new JsonObject();
             for (Integer minute : match.getGoals().keySet()) {
                 goals.addProperty(minute.toString(), match.getGoals().get(minute));

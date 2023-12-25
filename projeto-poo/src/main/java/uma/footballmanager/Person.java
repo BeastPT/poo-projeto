@@ -29,6 +29,16 @@ public class Person {
         this.weight = weight;
     }
 
+    public Person(String name, String firstName, String lastName, Birth birth, String nationality) {
+        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birth = birth;
+        this.nationality = nationality;
+        this.height = null;
+        this.weight = null;
+    }
+
     public String getName() {
         return name;
     }
