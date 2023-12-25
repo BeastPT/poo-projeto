@@ -28,4 +28,34 @@ public class Coach extends Person implements MenuData {
         System.out.println("Tatica utilizada: " + tactic);
         System.out.println("Carreira: " + career);
     }
+    public static Coach generateCoach() {
+        Person person = Person.generatePerson();
+
+        System.out.println("Digite a tática utilizada (por exemplo 4-3-3, 4-4-2):");
+        Scanner sc = new Scanner(System.in);
+        String tactic = sc.nextLine().trim();
+
+        while (!isValidTactic(tactic)) {
+            System.out.println("A tática é inválida. Por favor, digite novamente:");
+            tactic = sc.nextLine().trim();
+        }
+
+        return new Coach(person.getName(), person.getFirstName(), person.getLastName(), person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(), tactic);
+    }
+
+    private static boolean isValidTactic(String tactic) {
+        String[] parts = tactic.split("-");
+        int sum = 0;
+
+        for (String part : parts) {
+            try {
+                int number = Integer.parseInt(part);
+                sum += number;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+
+        return sum == 10;
+    }
 }
