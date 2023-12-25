@@ -1,3 +1,6 @@
+package uma.footballmanager;
+
+import com.google.gson.annotations.SerializedName;
 import java.util.Scanner;
 
 public class Person {
