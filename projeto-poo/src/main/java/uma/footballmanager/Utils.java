@@ -35,4 +35,16 @@ public class Utils {
         return (int) (((value - originalMin) * 100) / (originalMax - originalMin));
     }
 
+    /**
+     * @param length Tamanho da string
+     * @return String aleatória com o tamanho especificado de a-z e 0-9
+     */
+    public static String generateRandomString(int length) {
+        String chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder sb = new StringBuilder(length);
+        for (int i = 0; i < length; i++) {
+            sb.append(chars.charAt(random.nextInt(chars.length())));
+        }
+        return sb.toString();
+    }
 }

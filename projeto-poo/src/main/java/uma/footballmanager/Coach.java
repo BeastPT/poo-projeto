@@ -4,12 +4,18 @@ import java.util.ArrayList;
 
 public class Coach extends Person implements MenuData {
     private String tactic;
-    private ArrayList<CoachCareer> career;
+    private final ArrayList<CoachCareer> career;
 
     public Coach(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, String tactic, ArrayList<CoachCareer> career) {
         super(name, firstName, lastName, birth, nationality, height, weight);
         this.tactic = tactic;
         this.career = career;
+    }
+
+    public Coach(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, String tactic) {
+        super(name, firstName, lastName, birth, nationality, height, weight);
+        this.tactic = tactic;
+        this.career = new ArrayList<>();
     }
 
     @Override

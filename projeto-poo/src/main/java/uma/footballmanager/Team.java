@@ -120,6 +120,14 @@ public class Team {
         return players.stream().filter(Player::isInjured).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
 
+    public Coach getCoach() {
+        return coach;
+    }
+
+    public void setCoach(Coach coach) {
+        this.coach = coach;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

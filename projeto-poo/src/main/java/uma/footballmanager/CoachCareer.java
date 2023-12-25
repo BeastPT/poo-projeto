@@ -1,7 +1,6 @@
 package uma.footballmanager;
 
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.annotations.Since;
 
 import java.time.LocalDate;
 

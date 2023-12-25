@@ -8,9 +8,8 @@ import java.time.LocalDate;
 public class FootballManager {
     public static void main(String[] args) {
         Game game = SavesManager.loadData("singleJson");
-        //game.getLeagues().get(2).getTeams().forEach(team -> System.out.println(team.getName() + " " + team.getAggressive()));
         debugMatch(game);
-
+        //SavesManager.saveGame(game);
     }
 
     private static void debugMatch(Game game) {
@@ -25,13 +24,6 @@ public class FootballManager {
             match.simulateMatch();
             leg.addMatch(match);
         }
-        Gson gson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
-                .registerTypeAdapter(League.class, new LeagueAdapter())
-                .registerTypeAdapter(Match.class, new MatchAdapter())
-                .create();
-
-        System.out.println(gson.toJson(leg));
     }
 
 

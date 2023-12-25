@@ -14,7 +14,7 @@ public class Match {
     private boolean finished;
     private TreeMap<Integer, String> goals;
     private TreeMap<Integer, String> sufferedGoals;
-
+    // TODO:  ADICIONAR ARBITRO DA PARTIDA
     public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals) {
         this.date = date;
         this.matchHour = matchHour;

@@ -154,6 +154,7 @@ public class MatchSimulator {
     }
 
     public MatchSimulator simulate() {
+        // TODO: Influencia do Arbitro
         int startChance = getRandomInt();
         buffStartingTeam(startChance);
         int buffStartingTeamTime = getRandomInt(10, 20);
