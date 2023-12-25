@@ -14,6 +14,7 @@ public class Referee extends Person {
         this.experience = experience;
     }
 
-    // TODO: ARMAZENAMENTO DOS REFEREES
-    // Provavelmente cria-los numa array na League e depois referencia-los nos Matchs
+    public int getExperience() {
+        return experience;
+    }
 }

@@ -15,6 +15,10 @@ public class Stadium implements MenuData {
         this.capacity = capacity;
     }
 
+    public String getCity() {
+        return city;
+    }
+
     @Override
     public void showData() {
         System.out.println("Nome do Estádio: " + name);

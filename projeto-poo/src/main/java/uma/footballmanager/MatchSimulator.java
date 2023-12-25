@@ -25,7 +25,9 @@ public class MatchSimulator {
     private int visitingAggressivity;
     private int gameAggressivity;
 
-    public MatchSimulator(Team homeTeam, Team visitingTeam) {
+    private final Referee referee;
+
+    public MatchSimulator(Team homeTeam, Team visitingTeam, Referee referee) {
         this.homeTeam = homeTeam;
         this.visitingTeam = visitingTeam;
         this.goals = new TreeMap<>();
@@ -44,6 +46,7 @@ public class MatchSimulator {
 
         this.gameAggressivity = (int) ((homeAggressivity + visitingAggressivity)/2);
         fixAttacks();
+        this.referee = referee;
     }
 
     public void updateStats() {
@@ -61,6 +64,10 @@ public class MatchSimulator {
 
         this.gameAggressivity = (int) ((homeAggressivity + visitingAggressivity)/2);
         fixAttacks();
+    }
+
+    private boolean riggedMatch() {
+        return Utils.getRandomInt() < referee.getExperience() && referee.getBirth().place().equals(homeTeam.getStadium().getCity());
     }
 
     private void fixAttacks() {
@@ -123,7 +130,7 @@ public class MatchSimulator {
         int attack;
         boolean homeTeamGoal = false;
         Team team;
-        if (getRandomInt() < 50) {
+        if (random < 50) {
             attack = homeAttack;
             team = homeTeam;
             homeTeamGoal = true;
@@ -131,7 +138,9 @@ public class MatchSimulator {
             attack = visitingAttack;
             team = visitingTeam;
         }
-
+        if (riggedMatch()) {
+            attack += Utils.getRandomInt(1, 10);
+        }
         if (random < attack) {
             Positions pos = getGoalPosition();
             var playersByPos = team.getPlayersByPosition(pos);
@@ -154,7 +163,6 @@ public class MatchSimulator {
     }
 
     public MatchSimulator simulate() {
-        // TODO: Influencia do Arbitro
         int startChance = getRandomInt();
         buffStartingTeam(startChance);
         int buffStartingTeamTime = getRandomInt(10, 20);

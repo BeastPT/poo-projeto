@@ -128,6 +128,10 @@ public class Team {
         this.coach = coach;
     }
 
+    public Stadium getStadium() {
+        return stadium;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

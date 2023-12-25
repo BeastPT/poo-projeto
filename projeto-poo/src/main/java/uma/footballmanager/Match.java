@@ -16,7 +16,6 @@ public class Match {
     private TreeMap<Integer, String> sufferedGoals;
 
     private Referee referee;
-    // TODO:  ADICIONAR ARBITRO DA PARTIDA
     public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals) {
         this.date = date;
         this.matchHour = matchHour;
@@ -24,6 +23,16 @@ public class Match {
         this.finished = finished;
         this.goals = goals;
         this.sufferedGoals = sufferedGoals;
+    }
+
+    public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals, Referee referee) {
+        this.date = date;
+        this.matchHour = matchHour;
+        this.matchMinute = matchMinute;
+        this.finished = finished;
+        this.goals = goals;
+        this.sufferedGoals = sufferedGoals;
+        this.referee = referee;
     }
 
     public void setHomeTeam(Team homeTeam) {
@@ -73,7 +82,7 @@ public class Match {
     public void simulateMatch() {
         if (finished) return;
 
-        MatchSimulator simulation = new MatchSimulator(homeTeam, visitingTeam).simulate();
+        MatchSimulator simulation = new MatchSimulator(homeTeam, visitingTeam, referee).simulate();
 
         goals = simulation.getGoals();
         sufferedGoals = simulation.getSufferedGoals();
