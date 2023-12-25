@@ -1,6 +1,8 @@
 package uma.footballmanager;
 
 import com.google.gson.annotations.SerializedName;
+
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Person {
@@ -50,8 +52,8 @@ public class Person {
     public static Person generatePerson() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Escreva o seu nick name:")
-        String name = sc.nextLine():
+        System.out.println("Escreva o seu nick name:");
+        String name = sc.nextLine();
 
         System.out.println("Escreva o seu ultimo nome:");
         String lastName = sc.nextLine();
@@ -66,6 +68,14 @@ public class Person {
         System.out.println("Escreva a sua nacionalidade:");
         String nationality = sc.nextLine();
 
+        System.out.println("Escreva o país que nasceu:");
+        String country = sc.nextLine();
+
+        System.out.println("Escreva a localidade em que nasceu:");
+        String place = sc.nextLine();
+
+        Birth birth = new Birth(dateOfBirth, country, place);
+
         System.out.println("Digite qual a sua altura:");
         Integer height = sc.nextInt();
 
@@ -75,5 +85,13 @@ public class Person {
         sc.close();
 
         return new Person(name, firstName, lastName, birth, nationality, height, weight);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }

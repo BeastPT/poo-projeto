@@ -1,6 +1,7 @@
 package uma.footballmanager;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Coach extends Person implements MenuData {
     private String tactic;

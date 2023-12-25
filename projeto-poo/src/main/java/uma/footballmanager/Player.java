@@ -70,16 +70,16 @@ public class Player extends Person implements MenuData {
 
                 switch (choice) {
                     case 'A':
-                        playerPosition = Positions.AVANCADO;
+                        playerPosition = Positions.ATTACKER;
                         break;
                     case 'M':
-                        playerPosition = Positions.MEDIO;
+                        playerPosition = Positions.MIDFIELDER;
                         break;
                     case 'D':
-                        playerPosition = Positions.DEFESA;
+                        playerPosition = Positions.DEFENDER;
                         break;
                     case 'G':
-                        playerPosition = Positions.GUARDA_REDES;
+                        playerPosition = Positions.GOALKEEPER;
                         break;
                     default:
                         System.out.println("Escolha inválida. Tente novamente.");
