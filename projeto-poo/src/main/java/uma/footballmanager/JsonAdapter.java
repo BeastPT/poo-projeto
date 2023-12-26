@@ -84,7 +84,10 @@ public class JsonAdapter {
             for (JsonElement team : teams) {
                 teamsList.add(context.deserialize(team, Team.class));
             }
-            League league = new League(name, country, teamsList);
+            for (JsonElement referee : referees) {
+                refereeList.add(context.deserialize(referee, Referee.class));
+            }
+            League league = new League(name, teamsList, country, refereeList);
             for (JsonElement match : matches) {
                 Match newMatch = context.deserialize(match, Match.class);
                 JsonObject matchObject = match.getAsJsonObject();
@@ -95,10 +98,6 @@ public class JsonAdapter {
                     newMatch.setReferee(league.getReferee(referee.getAsString()));
                 }
                 matchesList.add(newMatch);
-            }
-
-            for (JsonElement referee : referees) {
-                refereeList.add(context.deserialize(referee, Referee.class));
             }
             return new League(name, country, teamsList, matchesList, refereeList);
         }

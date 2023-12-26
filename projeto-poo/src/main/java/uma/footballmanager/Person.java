@@ -153,4 +153,12 @@ public class Person {
 
         return new Person(name, firstName, lastName, birth, nationality, height, weight);
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
 }

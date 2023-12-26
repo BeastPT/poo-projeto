@@ -36,13 +36,13 @@ public class Match {
     }
 
     public void setHomeTeam(Team homeTeam) {
-        if (this.homeTeam != null) {
+        if (this.homeTeam == null) {
             this.homeTeam = homeTeam;
         }
     }
 
     public void setVisitingTeam(Team visitingTeam) {
-        if (this.visitingTeam != null) {
+        if (this.visitingTeam == null) {
             this.visitingTeam = visitingTeam;
         }
     }
@@ -52,7 +52,7 @@ public class Match {
     }
 
     public void setReferee(Referee referee) {
-        if (this.referee != null) {
+        if (this.referee == null) {
             this.referee = referee;
         }
     }

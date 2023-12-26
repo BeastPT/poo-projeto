@@ -7,8 +7,8 @@ import java.time.LocalDate;
 
 public class FootballManager {
     public static void main(String[] args) {
-        Game game = SavesManager.loadData("ozwpk7nxv0-1703530248863");
-        //debugMatch(game);
+        Game game = SavesManager.createGame();
+        debugMatch(game);
         SavesManager.saveGame(game);
     }
 
@@ -21,6 +21,8 @@ public class FootballManager {
             var team2 = a1.get((int) (Math.random()*a1.size()));
             System.out.println(team2.getName());
             Match match = new Match(team1, team2, LocalDate.now(), 20, 0);
+            var ref = leg.getReferee();
+            match.setReferee(ref);
             match.simulateMatch();
             leg.addMatch(match);
         }

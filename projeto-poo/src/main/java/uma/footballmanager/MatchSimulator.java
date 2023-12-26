@@ -2,6 +2,7 @@ package uma.footballmanager;
 
 import java.util.TreeMap;
 
+import static uma.footballmanager.Utils.disperseValues;
 import static uma.footballmanager.Utils.getRandomInt;
 
 public class MatchSimulator {
@@ -70,43 +71,37 @@ public class MatchSimulator {
         return Utils.getRandomInt() < referee.getExperience() && referee.getBirth().place().equals(homeTeam.getStadium().getCity());
     }
 
-    private void fixAttacks() {
-        int hAbs = Math.abs(homeAttack);
-        int vAbs = Math.abs(visitingAttack);
+    private int disperseAttacks(int attack) {
+        return disperseValues(attack, -85, 70);
+    }
 
-        if (homeAttack < 0 && visitingAttack < 0) {
-            int temp = homeAttack;
-            homeAttack = vAbs;
-            visitingAttack = Math.abs(temp);
-        } else if (homeAttack < 0 || visitingAttack < 0) {
-            if (hAbs > vAbs) {
-                homeAttack = hAbs;
-                visitingAttack = vAbs;
-            } else if (vAbs > hAbs) {
-                homeAttack = vAbs;
-                visitingAttack = hAbs;
-            } else {
-                homeAttack = hAbs;
-                visitingAttack = vAbs;
-            }
+    private void fixAttacks() {
+        //System.out.println("--PreSH: " + homeAttack);
+        //System.out.println("--PreSV: " + visitingAttack);
+        homeAttack = disperseAttacks(homeAttack);
+        visitingAttack = disperseAttacks(visitingAttack);
+        if (homeAttack < 0 || visitingAttack < 0) {
+            throw new RuntimeException("NEGATIVE VALUES ATTACKS");
         }
+        //System.out.println("--SH: " + homeAttack);
+        //System.out.println("--SV: " + visitingAttack);
     }
 
     private void buffStartingTeam(int chance){
         if (chance < 50) {
             System.out.println("A equipa da casa começa com a bola");
-            homeAttack += 10;
+            homeAttack = (int) (homeAttack*1.15);
         } else {
             System.out.println("A equipa visitante começa com a bola");
-            visitingAttack += 10;
+            visitingAttack = (int) (visitingAttack*1.15);
         }
     }
 
     private void debuffStartingTeam(int chance){
         if (chance < 50) {
-            homeAttack -= 10;
+            homeAttack = (int) (homeAttack*0.85);
         } else {
-            visitingAttack -= 10;
+            visitingAttack = (int) (visitingAttack*0.85);
         }
     }
 
@@ -126,11 +121,10 @@ public class MatchSimulator {
     }
 
     private boolean simulateGoal(int i) {
-        int random = getRandomInt();
         int attack;
         boolean homeTeamGoal = false;
         Team team;
-        if (random < 50) {
+        if (getRandomInt() < 50) {
             attack = homeAttack;
             team = homeTeam;
             homeTeamGoal = true;
@@ -141,7 +135,8 @@ public class MatchSimulator {
         if (riggedMatch()) {
             attack += Utils.getRandomInt(1, 10);
         }
-        if (random < attack) {
+
+        if (getRandomInt() < attack) {
             Positions pos = getGoalPosition();
             var playersByPos = team.getPlayersByPosition(pos);
             int randomIndex = getRandomInt(0, playersByPos.size()-1);
@@ -232,8 +227,9 @@ public class MatchSimulator {
         }
     }
 
-    private void addGoal(int minute, Player player, boolean homeTeam) {
-        if (homeTeam) {
+    private void addGoal(int minute, Player player, boolean isHomeTeam) {
+        //System.out.println("Golo do jogador " + player.getName() + " da equipa " + ((isHomeTeam) ? homeTeam.getName() : visitingTeam.getName()) + " no minuto " + minute);
+        if (isHomeTeam) {
             this.goals.put(minute, player.getName());
         } else {
             this.sufferedGoals.put(minute, player.getName());

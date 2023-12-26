@@ -92,4 +92,8 @@ public class League implements MenuData {
         }
         return null;
     }
+
+    public Referee getReferee() {
+        return referees.get(Utils.getRandomInt(0, referees.size()-1));
+    }
 }
