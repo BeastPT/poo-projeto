@@ -62,46 +62,95 @@ public class Person {
     public static Person generatePerson() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Escreva o seu nick name:");
+        System.out.println("Escreva o seu nickname:");
         String name = sc.nextLine();
 
-        System.out.println("Escreva o seu ultimo nome:");
-        String lastName = sc.nextLine();
+        while (name.trim().isEmpty()) {
+            System.out.println("Nome inválido. Insira novamente o seu nickname:");
+            name = sc.nextLine();
+        }
 
         System.out.println("Escreva o seu primeiro nome:");
         String firstName = sc.nextLine();
 
-        System.out.println("Escreva a sua data de nascimento (no formato YYYY-MM-DD):");
-        String dateOfBirthString = sc.nextLine();
-        LocalDate dateOfBirth = LocalDate.parse(dateOfBirthString);
+        while (firstName.trim().isEmpty()) {
+            System.out.println("Primeiro nome inválido. Insira novamente o seu primeiro nome:");
+            firstName = sc.nextLine();
+        }
+
+        System.out.println("Escreva o seu ultimo nome:");
+        String lastName = sc.nextLine();
+
+        while (lastName.trim().isEmpty()) {
+            System.out.println("Ultimo nome inválido. Insira novamente o seu ultimo nome:");
+            lastName = sc.nextLine();
+        }
+
+        System.out.println("Escreva a sua data de nascimento (no formato AAAA-MM-DD):");
+        String dateString = sc.nextLine();
+
+        LocalDate date = null;
+        while (date == null) {
+            try {
+                date = LocalDate.parse(dateString);
+            } catch (Exception e) {
+                System.out.println("Data de nascimento inválida. Por favor, insira novamente (no formato AAAA-MM-DD):");
+                dateString = sc.nextLine();
+            }
+        }
+
+        System.out.println("Escreva o país de nascimento:");
+        String country = sc.nextLine();
+
+        while (country.trim().isEmpty()) {
+            System.out.println("Inválido, coloque novamente o pais onde nasceu");
+            country = sc.nextLine();
+        }
+
+        System.out.println("Escreva o local de nascimento:");
+        String place = sc.nextLine();
+
+        while (place.trim().isEmpty()) {
+            System.out.println("Inválido, coloque novamente o local onde nasceu:");
+            place = sc.nextLine();
+        }
+
+        Birth birth = new Birth(date, country, place);
 
         System.out.println("Escreva a sua nacionalidade:");
         String nationality = sc.nextLine();
 
-        System.out.println("Escreva o país que nasceu:");
-        String country = sc.nextLine();
+        while (nationality.trim().isEmpty()) {
+            System.out.println("Nacionalidade incorreta. Insira novamente a sua nacionalidade:");
+            nationality = sc.nextLine();
+        }
 
-        System.out.println("Escreva a localidade em que nasceu:");
-        String place = sc.nextLine();
+        System.out.println("Digite qual é a sua altura em numero inteiro:");
+        Integer height = null;
 
-        Birth birth = new Birth(dateOfBirth, country, place);
-
-        System.out.println("Digite qual a sua altura:");
-        Integer height = sc.nextInt();
+        while (height == null) {
+            try {
+                height = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Altura inválida. Por favor coloque a sua altura em numero inteiro por exemplo(170):");
+                sc.nextLine();
+            }
+        }
 
         System.out.println("Digite qual o seu peso:");
-        Integer weight = sc.nextInt();
+        Integer weight = null;
+
+        while (weight == null) {
+            try {
+                weight = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Por favor insira o seu peso corretamente em número inteiro:");
+                sc.nextLine();
+            }
+        }
 
         sc.close();
 
         return new Person(name, firstName, lastName, birth, nationality, height, weight);
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 }
