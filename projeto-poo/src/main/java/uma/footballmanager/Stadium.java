@@ -14,9 +14,15 @@ public class Stadium implements MenuData {
         this.city = city;
         this.capacity = capacity;
     }
-
+    
     public String getCity() {
         return city;
+    }
+    public String getName() {
+        return name;
+    }
+    public Integer getCapacity(){
+        return capacity;
     }
 
     @Override

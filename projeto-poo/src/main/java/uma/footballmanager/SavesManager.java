@@ -34,7 +34,7 @@ public class SavesManager {
     public static Game loadData(String fileName) {
         StringBuilder json = new StringBuilder();
         try {
-            var path = Paths.get(System.getProperty("user.dir") + "\\projeto-poo\\saves\\"+fileName+EXTENSION);
+            var path = Paths.get(System.getProperty("user.dir") + "\\saves\\"+fileName+EXTENSION);
             var file = Files.newBufferedReader(
                     path,
                     Charset.defaultCharset());
@@ -52,7 +52,7 @@ public class SavesManager {
 
     public static void saveGame(Game game) {
         String fileName = currentGameId + "-" + new Timestamp(System.currentTimeMillis()).getTime()+EXTENSION;
-        var path = Paths.get(System.getProperty("user.dir") + "\\projeto-poo\\saves\\"+fileName);
+        var path = Paths.get(System.getProperty("user.dir") + "\\saves\\"+fileName);
         try {
             var file = Files.newBufferedWriter(
                     path,

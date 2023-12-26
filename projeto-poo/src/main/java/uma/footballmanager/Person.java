@@ -125,7 +125,7 @@ public class Person {
             nationality = sc.nextLine();
         }
 
-        System.out.println("Digite qual é a sua altura em numero inteiro:");
+        System.out.println("Digite qual é a sua altura (cm) em numero inteiro:");
         Integer height = null;
 
         while (height == null) {

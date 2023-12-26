@@ -1,5 +1,6 @@
 package uma.footballmanager;
 
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
@@ -89,6 +90,10 @@ public class Team {
             updateStats();
         }
         return Defense;
+    }
+    
+    public List<Player> getPlayers() {
+    return players;
     }
 
     public void addInjure(Player player, MatchSimulator match) {
