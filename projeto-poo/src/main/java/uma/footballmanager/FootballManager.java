@@ -13,24 +13,11 @@ import static java.lang.Integer.parseInt;
 
 public class FootballManager {
     public static void main(String[] args) {
-<<<<<<< Updated upstream
         //Game game = SavesManager.createGame();
-       // game.getLeagues().get(0).generateMatches();
+        // game.getLeagues().get(0).generateMatches();
         //debugMatch(game);
-       // SavesManager.saveGame(game);
+        // SavesManager.saveGame(game);
         Menu.mainMenu();
-        
-=======
-        Menu.saveMenu();
-//        Game game = SavesManager.createGame();
-//        League l = game.getLeagues().get(0);
-//        l.generateMatches();
-//        l.getMatches();
-//        for (Match match : l.getMatches()) {
-//            match.simulateMatch();
-//        }
-//        debugMatch(game);
->>>>>>> Stashed changes
     }
     private static void debugMatch(Game game) {
         League leg = game.getLeagues().get(2);

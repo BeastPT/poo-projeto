@@ -64,12 +64,10 @@ public class Menu {
                 saveMenu();
                 break;
             case 3:
-<<<<<<< Updated upstream
-=======
                 playerMenu();
                 break;
             case 4:
-                matchMenu();
+                //matchMenu();
                 break;
             case 5:
                 stadiumMenu();
@@ -81,7 +79,6 @@ public class Menu {
                 saveMenu();
                 break;
             case 8:
->>>>>>> Stashed changes
                 System.out.println("Sair do jogo.");
                 System.exit(0);
                 break;
@@ -92,8 +89,6 @@ public class Menu {
     }
 
      public static void saveMenu() {
-         System.out.println("Save Menu ");
-         
         String[] menuOptions = {
                 "Criar novo jogo",
                 "Guardar",
@@ -124,10 +119,8 @@ public class Menu {
                 break;
         }   
     }
-   
-<<<<<<< Updated upstream
-=======
-   private static void savedGamesMenu(ArrayList<String> savedGames) {
+
+    private static void savedGamesMenu(ArrayList<String> savedGames) {
         if (savedGames.isEmpty()) {
             saveMenu();
             return;
@@ -140,9 +133,7 @@ public class Menu {
             game = SavesManager.loadData(fileName);
             mainMenu();
         }
-   }
-
->>>>>>> Stashed changes
+    }
      public static void leagueMenu() {
         System.out.println("League Menu "); 
          
