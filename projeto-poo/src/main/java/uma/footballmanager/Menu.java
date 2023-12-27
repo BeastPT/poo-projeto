@@ -1,5 +1,6 @@
 package uma.footballmanager;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
@@ -63,6 +64,24 @@ public class Menu {
                 saveMenu();
                 break;
             case 3:
+<<<<<<< Updated upstream
+=======
+                playerMenu();
+                break;
+            case 4:
+                matchMenu();
+                break;
+            case 5:
+                stadiumMenu();
+                break;
+            case 6:
+                playernameMenu();
+                break;
+            case 7:
+                saveMenu();
+                break;
+            case 8:
+>>>>>>> Stashed changes
                 System.out.println("Sair do jogo.");
                 System.exit(0);
                 break;
@@ -87,12 +106,15 @@ public class Menu {
         switch (options) {
             case 1:
                 game = SavesManager.createGame();
+                mainMenu();
                 break;
             case 2:
                 SavesManager.saveGame(game);
+                mainMenu();
                 break;
             case 3:
-                // TODO: Criar static menu na class SavesManager para listar os saves
+                savedGamesMenu(SavesManager.showSavedMenu());
+                System.out.println("Carregado com sucesso.");
                 break;
             case 4:
                 mainMenu();
@@ -103,6 +125,24 @@ public class Menu {
         }   
     }
    
+<<<<<<< Updated upstream
+=======
+   private static void savedGamesMenu(ArrayList<String> savedGames) {
+        if (savedGames.isEmpty()) {
+            saveMenu();
+            return;
+        }
+        int opt = getUserOption(savedGames.size()+1);
+        if (opt == savedGames.size()+1) {
+            saveMenu();
+        } else {
+            String fileName = savedGames.get(opt-1);
+            game = SavesManager.loadData(fileName);
+            mainMenu();
+        }
+   }
+
+>>>>>>> Stashed changes
      public static void leagueMenu() {
         System.out.println("League Menu "); 
          

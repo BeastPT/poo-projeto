@@ -59,6 +59,10 @@ public class Game {
     }
 
     public LocalDate getCurrentDate() {
-        return currentDate;
+        return DateManager.getCurrentDate();
+    }
+
+    public void setCurrentDate(LocalDate currentDate) {
+        this.currentDate = currentDate;
     }
 }

@@ -63,26 +63,46 @@ public class League implements IMenuData {
         return new ArrayList<>(referees);
     }
 
+    private void generateMatch(Team team1, Team team2) {
+        if (team1.equals(team2)) return;
+
+        LocalDate matchHDate = DateManager.getRandomDate();
+        LocalDate matchVDate = DateManager.getRandomDate();
+
+        Match match = new Match(team1, team2, matchHDate, Utils.getRandomInt(15, 21), 0, getReferee());
+        addMatch(match);
+        Match match2 = new Match(team2, team1, matchVDate, Utils.getRandomInt(15, 21), 0, getReferee());
+        addMatch(match2);
+    }
+
     public void generateMatches() {
-        LocalDate date = LocalDate.of(2023, 8, 18);
-        ArrayList<LocalDate> test = new ArrayList<>();
         for (int i = 0; i < teams.size(); i++) {
             for (int j = i+1; j < teams.size(); j++) {
                 Team team1 = teams.get(i);
                 Team team2 = teams.get(j);
-                if (team1.equals(team2)) continue;
-                // TODO: Arranjar forma de pegar current date do Game, provavelmente criar class TimeManager
-                LocalDate gameDate = date.plusDays(Utils.getRandomInt(0, 7)).plusMonths(Utils.getRandomInt(0, 8));
-                test.add(gameDate);
-                //System.out.println(gameDate.toString());
-                //Match match = new Match(date.team1, team2);
+                generateMatch(team1, team2);
             }
         }
-        Collections.sort(test);
-        for (LocalDate localDate : test) {
-            //System.out.println(localDate.toString());
-        }
+        sortMatchByDate();
+    }
 
+    private void generateMatches(Team team) {
+        for (Team team1 : teams) {
+            generateMatch(team, team1);
+        }
+        sortMatchByDate();
+    }
+
+    private void sortMatchByDate() {
+        matches.sort((o1, o2) -> {
+            if (o1.getDate().isBefore(o2.getDate())) {
+                return -1;
+            } else if (o1.getDate().isAfter(o2.getDate())) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
     }
 
     @Override
@@ -115,6 +135,11 @@ public class League implements IMenuData {
             }
         }
         return null;
+    }
+
+    public void addTeam(Team team) {
+        this.teams.add(team);
+        generateMatches(team);
     }
 
     public Referee getReferee() {

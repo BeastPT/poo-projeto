@@ -35,6 +35,29 @@ public class Match {
         this.referee = referee;
     }
 
+    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute) {
+        this.homeTeam = homeTeam;
+        this.visitingTeam = visitingTeam;
+        this.date = date;
+        this.matchHour = matchHour;
+        this.matchMinute = matchMinute;
+        this.finished = false;
+        this.goals = new TreeMap<>();
+        this.sufferedGoals = new TreeMap<>();
+    }
+
+    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, Referee referee) {
+        this.homeTeam = homeTeam;
+        this.visitingTeam = visitingTeam;
+        this.date = date;
+        this.matchHour = matchHour;
+        this.matchMinute = matchMinute;
+        this.finished = false;
+        this.goals = new TreeMap<>();
+        this.sufferedGoals = new TreeMap<>();
+        this.referee = referee;
+    }
+
     public void setHomeTeam(Team homeTeam) {
         if (this.homeTeam == null) {
             this.homeTeam = homeTeam;
@@ -55,28 +78,6 @@ public class Match {
         if (this.referee == null) {
             this.referee = referee;
         }
-    }
-
-    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute) {
-        this.homeTeam = homeTeam;
-        this.visitingTeam = visitingTeam;
-        this.date = date;
-        this.matchHour = matchHour;
-        this.matchMinute = matchMinute;
-        this.finished = false;
-        this.goals = new TreeMap<>();
-        this.sufferedGoals = new TreeMap<>();
-    }
-
-    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals) {
-        this.homeTeam = homeTeam;
-        this.visitingTeam = visitingTeam;
-        this.date = date;
-        this.matchHour = matchHour;
-        this.matchMinute = matchMinute;
-        this.finished = finished;
-        this.goals = goals;
-        this.sufferedGoals = sufferedGoals;
     }
 
     public void simulateMatch() {
@@ -121,5 +122,46 @@ public class Match {
 
     public TreeMap<Integer, String> getSufferedGoals() {
         return new TreeMap<>(sufferedGoals);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("Jogo realizado em ").append(date)
+                .append(" às ").append(matchHour).append(":").append(String.format("%02d", matchMinute));
+
+        if (finished) {
+            result.append(" (Finalizado)");
+            result.append("\nResultado: ").append(goals.size()).append(" - ").append(sufferedGoals.size());
+        } else {
+            result.append(" (Em espera)");
+        }
+
+        result.append("\nEquipa da Casa: ").append(homeTeam.getName())
+                .append("\nEquipa visitante: ").append(visitingTeam.getName());
+
+        if (referee != null) {
+            result.append("\nÁrbitro: ").append(referee.getName());
+        }
+
+        result.append("\nGolos: ");
+        appendGoals(result, goals);
+
+        result.append("\nGolos Sofridos: ");
+        appendGoals(result, sufferedGoals);
+
+        result.append("\n\n");
+
+        return result.toString();
+    }
+
+    private void appendGoals(StringBuilder result, TreeMap<Integer, String> goalMap) {
+        if (goalMap.isEmpty()) {
+            result.append("Nenhum");
+        } else {
+            for (Integer minute : goalMap.keySet()) {
+                result.append("\n").append(minute).append("' ").append(goalMap.get(minute));
+            }
+        }
     }
 }

@@ -10964,10 +10964,7 @@
               "height": 199,
               "weight": 88
             }
-          ],
-          "Attack": 70,
-          "Defense": 85,
-          "Aggressive": 52
+          ]
         },
         {
           "name": "FC Porto",
@@ -11030,7 +11027,7 @@
                 "aggressive": 14
               },
               "position": "Attacker",
-              "injured": true,
+              "injured": false,
               "name": "Evanilson",
               "firstname": "Francisco Evanilson",
               "lastname": "de Lima Barbosa",
@@ -11242,10 +11239,7 @@
               "height": 187,
               "weight": 82
             }
-          ],
-          "Attack": 46,
-          "Defense": 66,
-          "Aggressive": 52
+          ]
         },
         {
           "name": "Moreirense",
@@ -11550,10 +11544,7 @@
               "height": 175,
               "weight": 70
             }
-          ],
-          "Attack": 53,
-          "Defense": 78,
-          "Aggressive": 76
+          ]
         },
         {
           "name": "Portimonense",
@@ -11848,10 +11839,7 @@
               "nationality": "Portugal",
               "height": 179
             }
-          ],
-          "Attack": 60,
-          "Defense": 48,
-          "Aggressive": 79
+          ]
         },
         {
           "name": "SC Braga",
@@ -12125,10 +12113,7 @@
               "height": 190,
               "weight": 86
             }
-          ],
-          "Attack": 67,
-          "Defense": 60,
-          "Aggressive": 55
+          ]
         },
         {
           "name": "Boavista",
@@ -12411,10 +12396,7 @@
               "height": 178,
               "weight": 70
             }
-          ],
-          "Attack": 48,
-          "Defense": 47,
-          "Aggressive": 44
+          ]
         },
         {
           "name": "Chaves",
@@ -12571,7 +12553,7 @@
                 "aggressive": 9
               },
               "position": "Midfielder",
-              "injured": true,
+              "injured": false,
               "name": "Rúben Lameiras",
               "firstname": "Rúben",
               "lastname": "Barcelos de Sousa Lameiras",
@@ -12722,10 +12704,7 @@
               "height": 199,
               "weight": 95
             }
-          ],
-          "Attack": 35,
-          "Defense": 40,
-          "Aggressive": 79
+          ]
         },
         {
           "name": "Guimaraes",
@@ -12990,10 +12969,7 @@
               "height": 191,
               "weight": 84
             }
-          ],
-          "Attack": 43,
-          "Defense": 91,
-          "Aggressive": 38
+          ]
         },
         {
           "name": "Rio Ave",
@@ -13255,10 +13231,7 @@
               "height": 184,
               "weight": 75
             }
-          ],
-          "Attack": 58,
-          "Defense": 37,
-          "Aggressive": 52
+          ]
         },
         {
           "name": "Sporting CP",
@@ -13362,7 +13335,7 @@
                 "aggressive": 35
               },
               "position": "Attacker",
-              "injured": true,
+              "injured": false,
               "name": "M. Edwards",
               "firstname": "Marcus",
               "lastname": "Edwards",
@@ -13512,10 +13485,7 @@
               "height": 176,
               "weight": 73
             }
-          ],
-          "Attack": 61,
-          "Defense": 44,
-          "Aggressive": 73
+          ]
         },
         {
           "name": "Estoril",
@@ -14100,10 +14070,7 @@
               "height": 188,
               "weight": 83
             }
-          ],
-          "Attack": 46,
-          "Defense": 74,
-          "Aggressive": 64
+          ]
         },
         {
           "name": "Arouca",
@@ -14896,7 +14863,7 @@
                 "aggressive": 4
               },
               "position": "Defender",
-              "injured": true,
+              "injured": false,
               "name": "Né Lopes",
               "firstname": "Manuel Alberto",
               "lastname": "Cunha Lopes",
@@ -14946,10 +14913,7 @@
               "nationality": "Brazil",
               "height": 189
             }
-          ],
-          "Attack": 56,
-          "Defense": 41,
-          "Aggressive": 50
+          ]
         },
         {
           "name": "Vizela",
@@ -15191,10 +15155,7 @@
               "height": 194,
               "weight": 90
             }
-          ],
-          "Attack": 38,
-          "Defense": 67,
-          "Aggressive": 55
+          ]
         },
         {
           "name": "Casa Pia",
@@ -15746,250 +15707,7 @@
           ]
         }
       ],
-      "matches": [
-        {
-          "home_team": "Portimonense",
-          "visiting_team": "Chaves",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Carla",
-          "goals": {
-            "11": "Guga",
-            "21": "Rildo Filho",
-            "29": "R. Carrillo",
-            "35": "Rildo Filho",
-            "53": "D. Adeniran",
-            "56": "R. Carrillo",
-            "73": "Rildo Filho",
-            "78": "Estrela"
-          },
-          "suffered_goals": {
-            "1": "H. Sylla",
-            "44": "Jô",
-            "62": "Jô",
-            "69": "H. Sylla",
-            "82": "Benny"
-          }
-        },
-        {
-          "home_team": "FC Porto",
-          "visiting_team": "Benfica",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Ana",
-          "goals": {
-            "19": "Pepê Aquino",
-            "25": "Pepê Aquino",
-            "28": "Pepê Aquino",
-            "34": "Evanilson",
-            "53": "Pepe",
-            "65": "Pepê Aquino"
-          },
-          "suffered_goals": {
-            "1": "António Silva",
-            "8": "Arthur Cabral",
-            "16": "Á. Di María",
-            "43": "C. Tengstedt",
-            "73": "C. Tengstedt",
-            "84": "Arthur Cabral"
-          }
-        },
-        {
-          "home_team": "Farense",
-          "visiting_team": "Rio Ave",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Pedro",
-          "goals": {
-            "0": "Zé Luís",
-            "13": "Bruno Duarte",
-            "16": "Mattheus Oliveira",
-            "34": "Mattheus Oliveira",
-            "43": "Zé Luís",
-            "66": "Pastor"
-          },
-          "suffered_goals": {
-            "4": "Fábio Ronaldo",
-            "26": "Ukra",
-            "52": "Ukra",
-            "60": "Hernâni",
-            "72": "Fábio Ronaldo",
-            "85": "Ukra"
-          }
-        },
-        {
-          "home_team": "GIL Vicente",
-          "visiting_team": "Rio Ave",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "João",
-          "goals": {
-            "1": "Félix Correia",
-            "17": "Félix Correia",
-            "28": "J. Castillo"
-          },
-          "suffered_goals": {
-            "6": "Fábio Ronaldo",
-            "25": "A. Oudrhiri",
-            "35": "Fábio Ronaldo",
-            "44": "Miguel Nóbrega",
-            "55": "Vitor Gomes",
-            "64": "Hernâni",
-            "68": "Ukra",
-            "75": "Jhonatan",
-            "82": "Costinha"
-          }
-        },
-        {
-          "home_team": "Guimaraes",
-          "visiting_team": "Portimonense",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Carla",
-          "goals": {
-            "13": "Alisson Safira",
-            "30": "Alisson Safira",
-            "51": "Alisson Safira",
-            "59": "Nelson da Luz",
-            "63": "Nelson da Luz",
-            "74": "Alisson Safira",
-            "86": "M. Villanueva"
-          },
-          "suffered_goals": {
-            "1": "R. Carrillo",
-            "17": "Estrela",
-            "40": "S. Jasper",
-            "77": "S. Jasper"
-          }
-        },
-        {
-          "home_team": "Chaves",
-          "visiting_team": "Vizela",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Sofia",
-          "goals": {
-            "21": "Jô",
-            "34": "Jô"
-          },
-          "suffered_goals": {
-            "1": "Samu",
-            "11": "João Escoval",
-            "25": "A. Méndez",
-            "30": "Kiko Bondoso",
-            "42": "Alberto Soro",
-            "52": "Kiko Bondoso",
-            "55": "Hugo Oliveira",
-            "68": "A. Méndez",
-            "74": "A. Méndez",
-            "80": "Kiko Bondoso",
-            "84": "A. Busnić"
-          }
-        },
-        {
-          "home_team": "Boavista",
-          "visiting_team": "Rio Ave",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Catarina",
-          "goals": {
-            "0": "Bruno Lourenço",
-            "17": "Masa",
-            "25": "Luís dos Santos",
-            "29": "Luís dos Santos",
-            "51": "Luís dos Santos",
-            "66": "Bruno Lourenço"
-          },
-          "suffered_goals": {
-            "9": "J. Lomboto",
-            "35": "Hernâni",
-            "41": "A. Oudrhiri",
-            "61": "A. Oudrhiri",
-            "71": "Fábio Ronaldo",
-            "83": "Fábio Ronaldo",
-            "86": "Vitor Gomes"
-          }
-        },
-        {
-          "home_team": "Moreirense",
-          "visiting_team": "Sporting CP",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Pedro",
-          "goals": {
-            "10": "Rúben Ismael",
-            "17": "J. Antonisse",
-            "23": "J. Antonisse",
-            "52": "Alan",
-            "69": "André Luís",
-            "79": "Alan"
-          },
-          "suffered_goals": {
-            "1": "O. Diomande",
-            "34": "Paulinho",
-            "44": "Paulinho",
-            "60": "V. Gyökeres",
-            "84": "M. Edwards"
-          }
-        },
-        {
-          "home_team": "SC Braga",
-          "visiting_team": "Chaves",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Sofia",
-          "goals": {
-            "4": "Castro",
-            "13": "S. Niakaté",
-            "24": "João Moutinho",
-            "48": "S. Niakaté",
-            "60": "Ricardo Horta",
-            "84": "Bruma"
-          },
-          "suffered_goals": {
-            "1": "Rúben Lameiras",
-            "19": "Paulo Victor",
-            "33": "Rúben Lameiras",
-            "40": "I. Abass",
-            "53": "I. Abass",
-            "64": "Paulo Victor",
-            "74": "Rúben Lameiras"
-          }
-        },
-        {
-          "home_team": "GIL Vicente",
-          "visiting_team": "Boavista",
-          "date": "2023-12-26",
-          "time": "20:0",
-          "finished": true,
-          "referee_name": "Rui",
-          "goals": {
-            "5": "J. Castillo",
-            "11": "Félix Correia",
-            "22": "M. Dominguez",
-            "27": "M. Dominguez",
-            "38": "Depú",
-            "47": "Gabriel Pereira",
-            "56": "A. Alipour",
-            "65": "Andrew",
-            "75": "Depú"
-          },
-          "suffered_goals": {
-            "0": "I. Vukotić",
-            "19": "Bruno Lourenço",
-            "86": "Salvador Agra"
-          }
-        }
-      ],
+      "matches": [],
       "referees": [
         {
           "experience": 15,

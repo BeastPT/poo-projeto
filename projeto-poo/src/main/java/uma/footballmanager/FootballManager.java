@@ -3,18 +3,35 @@ package uma.footballmanager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import static java.lang.Integer.parseInt;
 
 public class FootballManager {
     public static void main(String[] args) {
+<<<<<<< Updated upstream
         //Game game = SavesManager.createGame();
        // game.getLeagues().get(0).generateMatches();
         //debugMatch(game);
        // SavesManager.saveGame(game);
         Menu.mainMenu();
         
+=======
+        Menu.saveMenu();
+//        Game game = SavesManager.createGame();
+//        League l = game.getLeagues().get(0);
+//        l.generateMatches();
+//        l.getMatches();
+//        for (Match match : l.getMatches()) {
+//            match.simulateMatch();
+//        }
+//        debugMatch(game);
+>>>>>>> Stashed changes
     }
-
     private static void debugMatch(Game game) {
         League leg = game.getLeagues().get(2);
         var a1 = leg.getTeams();

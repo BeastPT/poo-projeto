@@ -72,7 +72,7 @@ public class MatchSimulator {
     }
 
     private int disperseAttacks(int attack) {
-        return disperseValues(attack, -85, 70);
+        return disperseValues(attack, -90, 70);
     }
 
     private void fixAttacks() {
@@ -124,6 +124,7 @@ public class MatchSimulator {
         int attack;
         boolean homeTeamGoal = false;
         Team team;
+        if (getRandomInt() < 30) return false; // Limitar um pouco o número de golos na partida
         if (getRandomInt() < 50) {
             attack = homeAttack;
             team = homeTeam;
@@ -157,7 +158,7 @@ public class MatchSimulator {
         team.addInjure(player, this);
     }
 
-    public MatchSimulator simulate() {
+    public MatchSimulator simulate(){
         int startChance = getRandomInt();
         buffStartingTeam(startChance);
         int buffStartingTeamTime = getRandomInt(10, 20);
@@ -195,6 +196,14 @@ public class MatchSimulator {
                 simulateInjure();
                 debuffInjures = getRandomInt(4, 12);
             }
+            // TODO: Pensar se vamos criar sistema de assistir jogo ou não
+            // Caso assista jogo, fazer um sleep de 200ms e mostrar mensagens
+            // Caso não assista jogo, nao usar sleep e nao mostrar mensagens
+//            try {
+//                Thread.sleep(200);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
 
         }
         System.out.println("Resultado: " + goals.size() + " - " + sufferedGoals.size());
