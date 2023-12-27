@@ -16,6 +16,7 @@ public class Match {
     private TreeMap<Integer, String> sufferedGoals;
 
     private Referee referee;
+
     public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals) {
         this.date = date;
         this.matchHour = matchHour;

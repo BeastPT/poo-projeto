@@ -11,6 +11,7 @@ public class Game implements IMenuData {
     private LocalDate currentDate;
 
     private User user;
+
     public Game(ArrayList<League> leagues, LocalDate currentDate) {
         this.leagues = leagues;
         this.currentDate = currentDate;
@@ -65,8 +66,8 @@ public class Game implements IMenuData {
         System.out.println("Ligas:");
         for (int i = 0; i < leagues.size(); i++) {
             League cLeague = leagues.get(i);
-            System.out.println(i+1 + " - " + cLeague.getName() + " - " + cLeague.getCountry());
+            System.out.println(i + 1 + " - " + cLeague.getName() + " - " + cLeague.getCountry());
         }
-        System.out.println(leagues.size()+1 + " - " + "Voltar");
+        System.out.println(leagues.size() + 1 + " - " + "Voltar");
     }
 }

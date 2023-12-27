@@ -52,6 +52,7 @@ public class JsonAdapter {
 
             return League;
         }
+
         @Override
         public League deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context) throws JsonParseException {
             JsonObject League = jsonElement.getAsJsonObject();
@@ -115,7 +116,7 @@ public class JsonAdapter {
                 Match.addProperty("visiting_team", match.getVisitingTeam().getName());
             }
             Match.addProperty("date", context.serialize(match.getDate()).getAsString());
-            Match.addProperty("time", match.getMatchHour()+":"+match.getMatchMinute());
+            Match.addProperty("time", match.getMatchHour() + ":" + match.getMatchMinute());
             Match.addProperty("finished", match.isFinished());
             String refereeName = null;
             if (match.getReferee() != null) {

@@ -6,17 +6,17 @@ import java.util.Scanner;
 
 public enum Positions {
     @SerializedName("Goalkeeper")
-    GOALKEEPER ("Guarda-Redes"),
+    GOALKEEPER("Guarda-Redes"),
     @SerializedName("Defender")
-    DEFENDER ("Defesa"),
+    DEFENDER("Defesa"),
     @SerializedName("Midfielder")
-    MIDFIELDER ("Médio"),
+    MIDFIELDER("Médio"),
     @SerializedName("Attacker")
-    ATTACKER ("Avançado");
+    ATTACKER("Avançado");
 
     private final String name;
 
-    private Positions(String position) {
+    Positions(String position) {
         this.name = position;
     }
 

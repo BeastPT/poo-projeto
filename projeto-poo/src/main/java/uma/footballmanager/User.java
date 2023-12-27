@@ -2,7 +2,7 @@ package uma.footballmanager;
 
 import java.util.ArrayList;
 
-public class User extends Coach{
+public class User extends Coach {
     private String userLeague;
     private String userTeam;
 

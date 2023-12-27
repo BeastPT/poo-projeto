@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class Player extends Person implements IMenuData {
     @SerializedName("statistics")
     private PlayerStats stats;
-    private Positions position;
+    private final Positions position;
 
     private boolean injured;
 
@@ -50,12 +50,12 @@ public class Player extends Person implements IMenuData {
         return getName().equals(player.getName());
     }
 
-     public static Player generatePlayer() {
+    public static Player generatePlayer() {
         Person person = Person.generatePerson();
         Positions position = Positions.generetePosition();
         PlayerStats stats = PlayerStats.generetePlayerStats();
 
-        return new Player(person.getName(), person.getFirstName(), person.getLastName(),person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(),stats, position);
+        return new Player(person.getName(), person.getFirstName(), person.getLastName(), person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(), stats, position);
     }
 
 

@@ -33,8 +33,8 @@ public class MatchSimulator {
         this.visitingTeam = visitingTeam;
         this.goals = new TreeMap<>();
         this.sufferedGoals = new TreeMap<>();
-        this.homeTeamAttack = (int) (homeTeam.getAttack()*1.1);
-        this.homeTeamDefense = (int) (homeTeam.getDefense()*1.1);
+        this.homeTeamAttack = (int) (homeTeam.getAttack() * 1.1);
+        this.homeTeamDefense = (int) (homeTeam.getDefense() * 1.1);
 
         this.visitingTeamAttack = visitingTeam.getAttack();
         this.visitingTeamDefense = visitingTeam.getDefense();
@@ -45,14 +45,14 @@ public class MatchSimulator {
         this.homeAggressivity = homeTeam.getAggressive();
         this.visitingAggressivity = visitingTeam.getAggressive();
 
-        this.gameAggressivity = (int) ((homeAggressivity + visitingAggressivity)/2);
+        this.gameAggressivity = (homeAggressivity + visitingAggressivity) / 2;
         fixAttacks();
         this.referee = referee;
     }
 
     public void updateStats() {
-        this.homeTeamAttack = (int) (homeTeam.getAttack()*1.1);
-        this.homeTeamDefense = (int) (homeTeam.getDefense()*1.1);
+        this.homeTeamAttack = (int) (homeTeam.getAttack() * 1.1);
+        this.homeTeamDefense = (int) (homeTeam.getDefense() * 1.1);
 
         this.visitingTeamAttack = visitingTeam.getAttack();
         this.visitingTeamDefense = visitingTeam.getDefense();
@@ -63,7 +63,7 @@ public class MatchSimulator {
         this.homeAggressivity = homeTeam.getAggressive();
         this.visitingAggressivity = visitingTeam.getAggressive();
 
-        this.gameAggressivity = (int) ((homeAggressivity + visitingAggressivity)/2);
+        this.gameAggressivity = (homeAggressivity + visitingAggressivity) / 2;
         fixAttacks();
     }
 
@@ -87,30 +87,30 @@ public class MatchSimulator {
         //System.out.println("--SV: " + visitingAttack);
     }
 
-    private void buffStartingTeam(int chance){
+    private void buffStartingTeam(int chance) {
         if (chance < 50) {
             System.out.println("A equipa da casa começa com a bola");
-            homeAttack = (int) (homeAttack*1.15);
+            homeAttack = (int) (homeAttack * 1.15);
         } else {
             System.out.println("A equipa visitante começa com a bola");
-            visitingAttack = (int) (visitingAttack*1.15);
+            visitingAttack = (int) (visitingAttack * 1.15);
         }
     }
 
-    private void debuffStartingTeam(int chance){
+    private void debuffStartingTeam(int chance) {
         if (chance < 50) {
-            homeAttack = (int) (homeAttack*0.85);
+            homeAttack = (int) (homeAttack * 0.85);
         } else {
-            visitingAttack = (int) (visitingAttack*0.85);
+            visitingAttack = (int) (visitingAttack * 0.85);
         }
     }
 
     private boolean changeAggressivity(boolean buffAgressive) {
         if (goals.size() > sufferedGoals.size() && !buffAgressive) {
-            visitingAggressivity = (int) (visitingAggressivity*1.1);
+            visitingAggressivity = (int) (visitingAggressivity * 1.1);
             return true;
         } else if (goals.size() < sufferedGoals.size() && !buffAgressive) {
-            homeAggressivity = (int) (homeAggressivity*1.1);
+            homeAggressivity = (int) (homeAggressivity * 1.1);
             return true;
         } else if (goals.size() == sufferedGoals.size() && buffAgressive) {
             visitingAggressivity = visitingTeam.getAggressive();
@@ -140,7 +140,7 @@ public class MatchSimulator {
         if (getRandomInt() < attack) {
             Positions pos = getGoalPosition();
             var playersByPos = team.getPlayersByPosition(pos);
-            int randomIndex = getRandomInt(0, playersByPos.size()-1);
+            int randomIndex = getRandomInt(0, playersByPos.size() - 1);
             Player player = playersByPos.get(randomIndex);
             addGoal(i, player, homeTeamGoal);
             return true;
@@ -152,13 +152,13 @@ public class MatchSimulator {
         Positions pos = getInjurePosition();
         Team team = (getRandomInt() < 50) ? homeTeam : visitingTeam;
         var playersByPos = team.getPlayersByPosition(pos);
-        int randomIndex = getRandomInt(0, playersByPos.size()-1);
+        int randomIndex = getRandomInt(0, playersByPos.size() - 1);
         Player player = playersByPos.get(randomIndex);
         System.out.println("Jogador " + player.getName() + " da equipa " + team.getName() + " lesionado");
         team.addInjure(player, this);
     }
 
-    public MatchSimulator simulate(){
+    public MatchSimulator simulate() {
         int startChance = getRandomInt();
         buffStartingTeam(startChance);
         int buffStartingTeamTime = getRandomInt(10, 20);
@@ -171,7 +171,7 @@ public class MatchSimulator {
         int debuffInjures = 0;
 
         for (int i = 0; i < 90; i++) {
-            if (i>buffStartingTeamTime && !debuffStarting) {
+            if (i > buffStartingTeamTime && !debuffStarting) {
                 debuffStartingTeam(startChance);
                 debuffStarting = true;
             }
@@ -188,8 +188,8 @@ public class MatchSimulator {
                     debuffGoalsTime--;
             }
 
-            double prob = (double) gameAggressivity/getRandomInt(50, 100);
-            if (Math.random()*100< prob && debuffInjures == 0) {
+            double prob = (double) gameAggressivity / getRandomInt(50, 100);
+            if (Math.random() * 100 < prob && debuffInjures == 0) {
                 simulateInjure();
                 debuffInjures = getRandomInt(4, 12);
             }
@@ -212,7 +212,7 @@ public class MatchSimulator {
         }
     }
 
-    private Positions getGoalPosition(){
+    private Positions getGoalPosition() {
         int random = getRandomInt();
         if (random < 2) {
             return Positions.GOALKEEPER;

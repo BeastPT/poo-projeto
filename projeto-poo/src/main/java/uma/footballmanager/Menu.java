@@ -89,7 +89,7 @@ public class Menu {
             case 1:
                 game.showData();
                 int val = getUserOption(game.getLeagues().size() + 1);
-                if (val == game.getLeagues().size()+1) {
+                if (val == game.getLeagues().size() + 1) {
                     mainMenu();
                     break;
                 }
@@ -132,7 +132,7 @@ public class Menu {
                 league.showData();
                 int val = getUserOption(league.getTeams().size() + 1);
                 teamMenu(league.getTeams().get(val - 1), league);
-                if (val == league.getTeams().size()+1) {
+                if (val == league.getTeams().size() + 1) {
                     leagueMenu(league);
                     break;
                 }
@@ -141,7 +141,7 @@ public class Menu {
                 var matchs = league.getMatches();
                 league.showMatchs(matchs);
                 int val2 = getUserOption(matchs.size() + 1);
-                if (val2 == matchs.size()+1) {
+                if (val2 == matchs.size() + 1) {
                     leagueMenu(league);
                     break;
                 }
@@ -151,7 +151,7 @@ public class Menu {
                 var matchs2 = league.getMatchesUnfinished();
                 league.showMatchs(matchs2);
                 int val3 = getUserOption(matchs2.size() + 1);
-                if (val3 == matchs2.size()+1) {
+                if (val3 == matchs2.size() + 1) {
                     leagueMenu(league);
                     break;
                 }
@@ -160,7 +160,7 @@ public class Menu {
             case 4:
                 league.showReferees();
                 int val4 = getUserOption(league.getReferees().size() + 1);
-                if (val4 == league.getReferees().size()+1) {
+                if (val4 == league.getReferees().size() + 1) {
                     leagueMenu(league);
                     break;
                 }
@@ -211,7 +211,7 @@ public class Menu {
                 var matcs = league.getMatches(team, true);
                 league.showMatchs(matcs);
                 int val2 = getUserOption(matcs.size() + 1);
-                if (val2 == matcs.size()+1) {
+                if (val2 == matcs.size() + 1) {
                     teamMenu(team, league);
                     break;
                 }
@@ -221,7 +221,7 @@ public class Menu {
                 var matcs2 = league.getMatches(team, false);
                 league.showMatchs(matcs2);
                 int val3 = getUserOption(matcs2.size() + 1);
-                if (val3 == matcs2.size()+1) {
+                if (val3 == matcs2.size() + 1) {
                     teamMenu(team, league);
                     break;
                 }
@@ -342,15 +342,15 @@ public class Menu {
             }
             return;
         }
-        int opt = getUserOption(savedGames.size()+1);
-        if (opt == savedGames.size()+1) {
+        int opt = getUserOption(savedGames.size() + 1);
+        if (opt == savedGames.size() + 1) {
             if (isPrevInitial) {
                 initialMenu();
             } else {
                 saveMenu();
             }
         } else {
-            String fileName = savedGames.get(opt-1);
+            String fileName = savedGames.get(opt - 1);
             game = SavesManager.loadData(fileName);
             mainMenu();
         }

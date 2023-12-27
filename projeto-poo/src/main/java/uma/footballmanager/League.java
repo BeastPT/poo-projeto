@@ -2,8 +2,6 @@ package uma.footballmanager;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Locale;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -29,6 +27,7 @@ public class League implements IMenuData {
         this.matches = matches;
         this.referees = new ArrayList<>();
     }
+
     public League(String name, ArrayList<Team> teams, String country, ArrayList<Referee> referees) {
         this.name = name;
         this.country = country;
@@ -98,7 +97,7 @@ public class League implements IMenuData {
 
     public void generateMatches() {
         for (int i = 0; i < teams.size(); i++) {
-            for (int j = i+1; j < teams.size(); j++) {
+            for (int j = i + 1; j < teams.size(); j++) {
                 Team team1 = teams.get(i);
                 Team team2 = teams.get(j);
                 generateMatch(team1, team2);
@@ -134,9 +133,9 @@ public class League implements IMenuData {
         System.out.println("Selecione uma das seguintes equipas: ");
         for (int i = 0; i < teams.size(); i++) {
             Team team = teams.get(i);
-            System.out.println(i+1 + " - " + team.getName() + " - " + team.getCoach().getName());
+            System.out.println(i + 1 + " - " + team.getName() + " - " + team.getCoach().getName());
         }
-        System.out.println(teams.size()+1 + " - Voltar");
+        System.out.println(teams.size() + 1 + " - Voltar");
     }
 
     public void showMatchs(ArrayList<Match> sMatchs) {
@@ -149,10 +148,10 @@ public class League implements IMenuData {
         }
         for (int i = 0; i < sMatchs.size(); i++) {
             Match match = sMatchs.get(i);
-            System.out.println(i+1 + " - " + match.getHomeTeam().getName() + " - " + match.getVisitingTeam().getName());
+            System.out.println(i + 1 + " - " + match.getHomeTeam().getName() + " - " + match.getVisitingTeam().getName());
         }
 
-        System.out.println(sMatchs.size()+1 + " - Voltar");
+        System.out.println(sMatchs.size() + 1 + " - Voltar");
     }
 
     public void addReferee(Referee referee) {
@@ -204,13 +203,13 @@ public class League implements IMenuData {
         System.out.println("Selecione um dos seguintes árbitros: ");
         for (int i = 0; i < referees.size(); i++) {
             Referee referee = referees.get(i);
-            System.out.println(i+1 + " - " + referee.getName());
+            System.out.println(i + 1 + " - " + referee.getName());
         }
-        System.out.println(referees.size()+1 + " - Voltar");
+        System.out.println(referees.size() + 1 + " - Voltar");
     }
 
     public Referee getReferee() {
-        return referees.get(Utils.getRandomInt(0, referees.size()-1));
+        return referees.get(Utils.getRandomInt(0, referees.size() - 1));
     }
 
     public static League generateLeague() {

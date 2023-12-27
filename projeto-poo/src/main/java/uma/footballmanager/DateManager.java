@@ -32,6 +32,6 @@ public class DateManager {
     public static LocalDate getRandomDate() {
         LocalDate endSeason = LocalDate.of(2024, 5, 31);
         var dates = currentDate.datesUntil(endSeason).toList();
-        return dates.get(Utils.getRandomInt(0, dates.size()-1));
+        return dates.get(Utils.getRandomInt(0, dates.size() - 1));
     }
 }

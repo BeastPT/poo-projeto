@@ -26,13 +26,13 @@ public class Utils {
     }
 
     /**
-     * @param value Valor a dispersar
+     * @param value       Valor a dispersar
      * @param originalMin Valor mínimo original
      * @param originalMax Valor máximo original
      * @return Valor disperso entre 0 e 100
      */
     public static int disperseValues(int value, int originalMin, int originalMax) {
-        return (int) (((value - originalMin) * 100) / (originalMax - originalMin));
+        return ((value - originalMin) * 100) / (originalMax - originalMin);
     }
 
     /**

@@ -19,7 +19,7 @@ public class Coach extends Person implements IMenuData {
         this.tactic = tactic;
         this.career = new ArrayList<>();
     }
-    
+
     public String tactic() {
         return tactic;
     }
@@ -34,6 +34,7 @@ public class Coach extends Person implements IMenuData {
         System.out.println("Tatica utilizada: " + tactic);
         System.out.println("Carreira: " + career);
     }
+
     public static Coach generateCoach() {
         Person person = Person.generatePerson();
 

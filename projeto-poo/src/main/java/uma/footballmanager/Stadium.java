@@ -18,10 +18,12 @@ public class Stadium implements IMenuData {
     public String getCity() {
         return city;
     }
+
     public String getName() {
         return name;
     }
-    public Integer getCapacity(){
+
+    public Integer getCapacity() {
         return capacity;
     }
 

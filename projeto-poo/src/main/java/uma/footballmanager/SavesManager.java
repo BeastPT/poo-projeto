@@ -21,7 +21,7 @@ public class SavesManager {
     private static String currentGameId;
     private final static Gson gson;
     private final static String EXTENSION = ".json";
-    private final static String PATH = System.getProperty("user.dir") + "\\projeto-poo\\saves\\";
+    private final static String PATH = System.getProperty("user.dir") + "\\saves\\";
 
     private final static String DEFAULT_GAME = "defaultGame";
 
@@ -35,8 +35,10 @@ public class SavesManager {
                 .create();
 
     }
+
     /**
      * Cria um novo jogo com os dados do ficheiro default
+     *
      * @return Uma instância do Jogo
      */
     public static Game createGame() {
@@ -45,13 +47,14 @@ public class SavesManager {
 
     /**
      * Carrega o jogo a partir de um ficheiro com um certo nome
+     *
      * @param fileName String
      * @return Uma instância do Jogo
      */
     public static Game loadData(String fileName) {
         StringBuilder json = new StringBuilder();
         try {
-            var path = Paths.get(PATH+fileName+EXTENSION);
+            var path = Paths.get(PATH + fileName + EXTENSION);
             var file = Files.newBufferedReader(
                     path,
                     Charset.defaultCharset());
@@ -69,11 +72,12 @@ public class SavesManager {
 
     /**
      * Armazena o jogo na pasta predefinida
+     *
      * @param game Jogo a ser guardado
      */
     public static void saveGame(Game game) {
-        String fileName = currentGameId + "-" + new Timestamp(System.currentTimeMillis()).getTime()+EXTENSION;
-        var path = Paths.get(PATH+fileName);
+        String fileName = currentGameId + "-" + new Timestamp(System.currentTimeMillis()).getTime() + EXTENSION;
+        var path = Paths.get(PATH + fileName);
         try {
             var file = Files.newBufferedWriter(
                     path,
@@ -106,6 +110,7 @@ public class SavesManager {
 
     /**
      * Retorna uma lista com os nomes dos ficheiros de saves
+     *
      * @return ArrayList<String>
      */
     private static ArrayList<String> getSavedGames() {
@@ -122,6 +127,7 @@ public class SavesManager {
 
     /**
      * Retorna uma lista com os nomes dos ficheiros de saves ordenados por data
+     *
      * @return ArrayList<String>
      */
     public static ArrayList<String> getSortedSavedGames() {
@@ -132,6 +138,7 @@ public class SavesManager {
 
     /**
      * Mostra o menu de saves
+     *
      * @return ArrayList<String>
      */
     public static ArrayList<String> showSavedMenu() {
@@ -146,9 +153,9 @@ public class SavesManager {
                 Long timestamp = getGameTimestamp(saves.get(i));
                 var dateFormate = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
                 String value = dateFormate.format(new Date(timestamp));
-                menu.append(i+1).append(" - ").append(gameId).append(" - ").append(value).append("\n");
+                menu.append(i + 1).append(" - ").append(gameId).append(" - ").append(value).append("\n");
             }
-            menu.append(saves.size()+1).append(" - Voltar\n");
+            menu.append(saves.size() + 1).append(" - Voltar\n");
 
         }
         System.out.println(menu);

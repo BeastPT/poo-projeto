@@ -1,14 +1,12 @@
 package uma.footballmanager;
 
-import java.util.List;
-
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Team implements IMenuData{
+public class Team implements IMenuData {
     private final String name;
     private final String code;
     @SerializedName("founded")
@@ -22,7 +20,7 @@ public class Team implements IMenuData{
 
     private Integer Aggressive;
 
-    public Team(String name, String code, Integer foundationYear,ArrayList<Player> players) {
+    public Team(String name, String code, Integer foundationYear, ArrayList<Player> players) {
         this.name = name;
         this.code = code;
         this.foundationYear = foundationYear;
@@ -43,15 +41,15 @@ public class Team implements IMenuData{
             switch (player.getPosition()) {
                 case GOALKEEPER:
                     newAttack += (int) (playerAttack * 0.5);
-                    newDefense += (int) (playerDefense * 5);
+                    newDefense += playerDefense * 5;
                     break;
                 case DEFENDER:
-                    newAttack += (int) (playerAttack * 1);
-                    newDefense += (int) (playerDefense * 2);
+                    newAttack += playerAttack;
+                    newDefense += playerDefense * 2;
                     break;
                 case MIDFIELDER:
-                    newAttack += (int) (playerAttack * 2);
-                    newDefense += (int) (playerDefense * 1);
+                    newAttack += playerAttack * 2;
+                    newDefense += playerDefense;
                     break;
                 case ATTACKER:
                     newAttack += (int) (playerAttack * 2.5);
@@ -61,7 +59,7 @@ public class Team implements IMenuData{
         }
         this.Attack = disperseValues(newAttack, true);
         this.Defense = disperseValues(newDefense, false);
-        this.Aggressive = Utils.disperseValues(((int) (newAggressivity / playerCounter)), 0, 34);
+        this.Aggressive = Utils.disperseValues(newAggressivity / playerCounter, 0, 34);
     }
 
     private int disperseValues(int value, boolean disperseAttack) {
@@ -137,7 +135,8 @@ public class Team implements IMenuData{
     public Integer getYearFounded() {
         return foundationYear;
     }
-    public String getCode(){
+
+    public String getCode() {
         return code;
     }
 
@@ -189,7 +188,7 @@ public class Team implements IMenuData{
         System.out.println("Treinador: " + coach.getName());
         for (int i = 0; i < players.size(); i++) {
             Player player = players.get(i);
-            System.out.println(i+1 + " - " + player.getName() + " - " + player.getPosition());
+            System.out.println(i + 1 + " - " + player.getName() + " - " + player.getPosition());
         }
     }
 }
