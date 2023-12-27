@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Coach extends Person implements IMenuData {
-    private String tactic;
+    private final String tactic;
     private final ArrayList<CoachCareer> career;
 
     public Coach(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, String tactic, ArrayList<CoachCareer> career) {

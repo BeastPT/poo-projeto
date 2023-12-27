@@ -170,9 +170,6 @@ public class MatchSimulator {
         int debuffGoalsTime = 0;
         int debuffInjures = 0;
 
-        System.out.println("Ataque da equipa da casa: " + homeAttack);
-        System.out.println("Ataque da equipa visitante: " + visitingAttack);
-
         for (int i = 0; i < 90; i++) {
             if (i>buffStartingTeamTime && !debuffStarting) {
                 debuffStartingTeam(startChance);
@@ -196,14 +193,6 @@ public class MatchSimulator {
                 simulateInjure();
                 debuffInjures = getRandomInt(4, 12);
             }
-            // TODO: Pensar se vamos criar sistema de assistir jogo ou não
-            // Caso assista jogo, fazer um sleep de 200ms e mostrar mensagens
-            // Caso não assista jogo, nao usar sleep e nao mostrar mensagens
-//            try {
-//                Thread.sleep(200);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
 
         }
         System.out.println("Resultado: " + goals.size() + " - " + sufferedGoals.size());
@@ -237,7 +226,7 @@ public class MatchSimulator {
     }
 
     private void addGoal(int minute, Player player, boolean isHomeTeam) {
-        //System.out.println("Golo do jogador " + player.getName() + " da equipa " + ((isHomeTeam) ? homeTeam.getName() : visitingTeam.getName()) + " no minuto " + minute);
+        System.out.println("Golo do jogador " + player.getName() + " da equipa " + ((isHomeTeam) ? homeTeam.getName() : visitingTeam.getName()) + " no minuto " + minute);
         if (isHomeTeam) {
             this.goals.put(minute, player.getName());
         } else {

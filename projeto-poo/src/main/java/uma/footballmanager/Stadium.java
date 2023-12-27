@@ -3,10 +3,10 @@ package uma.footballmanager;
 import java.util.Scanner;
 
 public class Stadium implements IMenuData {
-    private String name;
-    private String address;
-    private String city;
-    private Integer capacity;
+    private final String name;
+    private final String address;
+    private final String city;
+    private final Integer capacity;
 
     public Stadium(String name, String address, String city, Integer capacity) {
         this.name = name;

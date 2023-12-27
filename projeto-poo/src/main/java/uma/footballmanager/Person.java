@@ -5,8 +5,8 @@ import com.google.gson.annotations.SerializedName;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Person {
-    private String name;
+public class Person implements IMenuData {
+    private final String name;
 
     @SerializedName("firstname")
     private String firstName;
@@ -14,10 +14,10 @@ public class Person {
     @SerializedName("lastname")
     private String lastName;
 
-    private Birth birth;
-    private String nationality;
-    private Integer height;
-    private Integer weight;
+    private final Birth birth;
+    private final String nationality;
+    private final Integer height;
+    private final Integer weight;
 
     public Person(String name, String firstName, String lastName, Birth birth, String nationality, Integer height, Integer weight) {
         this.name = name;
@@ -158,5 +158,14 @@ public class Person {
 
     public String getLastName() {
         return lastName;
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Nome: " + name);
+        System.out.println("Primeiro nome: " + firstName);
+        System.out.println("Ultimo nome: " + lastName);
+        System.out.println("Data de nascimento: " + birth.date());
+        System.out.println("Local de nascimento: " + birth.place());
     }
 }

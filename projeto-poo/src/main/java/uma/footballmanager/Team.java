@@ -6,10 +6,11 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Scanner;
 
-public class Team {
-    private String name;
-    private String code;
+public class Team implements IMenuData{
+    private final String name;
+    private final String code;
     @SerializedName("founded")
     private Integer foundationYear;
     private Stadium stadium;
@@ -21,16 +22,11 @@ public class Team {
 
     private Integer Aggressive;
 
-    public Team(String name, String code, Integer foundationYear, Stadium stadium, Coach coach, ArrayList<Player> players, Integer Attack, Integer Defense, Integer Aggressive) {
+    public Team(String name, String code, Integer foundationYear,ArrayList<Player> players) {
         this.name = name;
         this.code = code;
         this.foundationYear = foundationYear;
-        this.stadium = stadium;
-        this.coach = coach;
         this.players = players;
-        this.Attack = Attack;
-        this.Defense = Defense;
-        this.Aggressive = Aggressive;
     }
 
     public void updateStats() {
@@ -88,7 +84,7 @@ public class Team {
     }
 
     public int getDefense() {
-        if (Attack == null) {
+        if (Defense == null) {
             updateStats();
         }
         return Defense;
@@ -118,7 +114,6 @@ public class Team {
         return players.stream().filter(player -> player.getPosition() == position).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
 
-
     public Player getPlayer(Player player) {
         return players.stream().filter(player1 -> player1.equals(player)).findFirst().orElse(null);
     }
@@ -138,10 +133,13 @@ public class Team {
     public Stadium getStadium() {
         return stadium;
     }
-    public void setStadium(Stadium stadium) {
-        this.stadium = stadium;
+
+    public Integer getYearFounded() {
+        return foundationYear;
     }
-     
+    public String getCode(){
+        return code;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -151,5 +149,47 @@ public class Team {
         Team team = (Team) o;
 
         return Objects.equals(name, team.name);
+    }
+
+    public static Team generateTeam() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escreva o nome da sua equipa:");
+        String name = sc.nextLine();
+
+        System.out.println("Escrevas as Siglas da sua equipa (por exemplo, BEN):");
+        String code = sc.nextLine();
+
+        System.out.println("Digite o ano de fundação:");
+        int yearFounded = sc.nextInt();
+        sc.nextLine();
+
+        ArrayList<Player> players = new ArrayList<>();
+
+        for (int i = 1; i < 12; i++) {
+            System.out.println("Escreva o nome do jogador " + i + ":");
+            players.add(Player.generatePlayer());
+            // não verifica a tática
+        }
+
+        return new Team(name, code, yearFounded, players);
+    }
+
+    public void replacePlayer(Player previousPlayer, Player player) {
+        int index = players.indexOf(previousPlayer);
+        players.set(index, player);
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Nome: " + name);
+        System.out.println("Código: " + code);
+        System.out.println("Ano de Fundação: " + foundationYear);
+        System.out.println("Estádio: " + stadium.getName());
+        System.out.println("Treinador: " + coach.getName());
+        for (int i = 0; i < players.size(); i++) {
+            Player player = players.get(i);
+            System.out.println(i+1 + " - " + player.getName() + " - " + player.getPosition());
+        }
     }
 }

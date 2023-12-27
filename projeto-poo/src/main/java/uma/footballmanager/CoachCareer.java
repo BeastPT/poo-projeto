@@ -8,12 +8,16 @@ public class CoachCareer {
 
     @SerializedName("team_name")
     private String team;
-    private LocalDate start;
+    private final LocalDate start;
     private LocalDate end;
 
     public CoachCareer(String team, LocalDate start, LocalDate end) {
         this.team = team;
         this.start = start;
+        this.end = end;
+    }
+
+    public void setEnd(LocalDate end) {
         this.end = end;
     }
 }

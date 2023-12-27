@@ -6,13 +6,24 @@ import java.util.Scanner;
 
 public enum Positions {
     @SerializedName("Goalkeeper")
-    GOALKEEPER,
+    GOALKEEPER ("Guarda-Redes"),
     @SerializedName("Defender")
-    DEFENDER,
+    DEFENDER ("Defesa"),
     @SerializedName("Midfielder")
-    MIDFIELDER,
+    MIDFIELDER ("Médio"),
     @SerializedName("Attacker")
-    ATTACKER;
+    ATTACKER ("Avançado");
+
+    private final String name;
+
+    private Positions(String position) {
+        this.name = position;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 
     public static Positions generetePosition() {
         Scanner sc = new Scanner(System.in);
@@ -42,4 +53,5 @@ public enum Positions {
         }
         return playerPosition;
     }
+
 }

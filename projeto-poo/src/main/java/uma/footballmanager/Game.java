@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Game {
+public class Game implements IMenuData {
     private final ArrayList<League> leagues;
     @SerializedName("current_date")
     private LocalDate currentDate;
@@ -14,7 +14,6 @@ public class Game {
     public Game(ArrayList<League> leagues, LocalDate currentDate) {
         this.leagues = leagues;
         this.currentDate = currentDate;
-        // TODO: Caso seja um novo jogo, pedir o nome do utilizador, escolher a liga e a equipa (POR NOMES)
     }
 
     public Game(ArrayList<League> leagues, LocalDate currentDate, User user) {
@@ -48,12 +47,6 @@ public class Game {
         this.leagues.add(league);
     }
 
-    public void printLeagues() {
-        for (League league : this.leagues) {
-            System.out.println(league.getName());
-        }
-    }
-
     public ArrayList<League> getLeagues() {
         return new ArrayList<>(leagues);
     }
@@ -64,5 +57,16 @@ public class Game {
 
     public void setCurrentDate(LocalDate currentDate) {
         this.currentDate = currentDate;
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Data atual: " + DateManager.getCurrentDate());
+        System.out.println("Ligas:");
+        for (int i = 0; i < leagues.size(); i++) {
+            League cLeague = leagues.get(i);
+            System.out.println(i+1 + " - " + cLeague.getName() + " - " + cLeague.getCountry());
+        }
+        System.out.println(leagues.size()+1 + " - " + "Voltar");
     }
 }

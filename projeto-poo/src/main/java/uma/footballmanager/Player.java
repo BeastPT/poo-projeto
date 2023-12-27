@@ -16,13 +16,6 @@ public class Player extends Person implements IMenuData {
         this.injured = false;
     }
 
-    public Player(String name, String firstName, String lastName, Birth birth, String nationality, int height, int weight, PlayerStats stats, Positions position, boolean injured) {
-        super(name, firstName, lastName, birth, nationality, height, weight);
-        this.stats = stats;
-        this.position = position;
-        this.injured = injured;
-    }
-
     public PlayerStats getStats() {
         return stats;
     }
@@ -42,9 +35,9 @@ public class Player extends Person implements IMenuData {
     @Override
     public void showData() {
         System.out.println("Nome do jogador: " + getName());
-        System.out.println("Posição: " + getPosition());
-        System.out.println("Lesão: " + isInjured());
-        System.out.println("Estatísticas do jogador: " + getStats());
+        System.out.println("Posição: " + getPosition().toString());
+        System.out.println("Lesão: " + ((isInjured()) ? "Sim" : "Não"));
+        getStats().showData();
     }
 
     @Override
@@ -60,7 +53,7 @@ public class Player extends Person implements IMenuData {
      public static Player generatePlayer() {
         Person person = Person.generatePerson();
         Positions position = Positions.generetePosition();
-        PlayerStats stats = PlayerStats.genereteEntity();
+        PlayerStats stats = PlayerStats.generetePlayerStats();
 
         return new Player(person.getName(), person.getFirstName(), person.getLastName(),person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(),stats, position);
     }

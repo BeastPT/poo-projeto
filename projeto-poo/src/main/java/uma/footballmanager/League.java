@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class League implements IMenuData {
     private final String name;
@@ -43,6 +45,14 @@ public class League implements IMenuData {
         this.referees = new ArrayList<>();
     }
 
+    public League(String name, String country) {
+        this.name = name;
+        this.country = country;
+        this.teams = new ArrayList<>();
+        this.matches = new ArrayList<>();
+        this.referees = new ArrayList<>();
+    }
+
     public void addMatch(Match match) {
         this.matches.add(match);
     }
@@ -59,9 +69,20 @@ public class League implements IMenuData {
         return new ArrayList<>(matches);
     }
 
+    public ArrayList<Match> getMatchesUnfinished() {
+        return new ArrayList<>(matches.stream().filter(match -> !match.isFinished()).toList());
+    }
+
     public ArrayList<Referee> getReferees() {
         return new ArrayList<>(referees);
     }
+
+
+    public void replaceTeam(Team previousTeam, Team team) {
+        int index = teams.indexOf(previousTeam);
+        teams.set(index, team);
+    }
+
 
     private void generateMatch(Team team1, Team team2) {
         if (team1.equals(team2)) return;
@@ -110,9 +131,43 @@ public class League implements IMenuData {
         System.out.println("Nome da Liga: " + name);
         System.out.println("Pais: " + country);
         System.out.println("Equipas: ");
-        for (Team team : teams) {
-            System.out.println(" - " + team.getName());
+        System.out.println("Selecione uma das seguintes equipas: ");
+        for (int i = 0; i < teams.size(); i++) {
+            Team team = teams.get(i);
+            System.out.println(i+1 + " - " + team.getName() + " - " + team.getCoach().getName());
         }
+        System.out.println(teams.size()+1 + " - Voltar");
+    }
+
+    public void showMatchs(ArrayList<Match> sMatchs) {
+        System.out.println("Jogos da Liga: " + name);
+        System.out.println("Pais: " + country);
+        System.out.println("Jogos: ");
+        System.out.println("Selecione um dos seguintes jogos: ");
+        if (sMatchs.isEmpty()) {
+            System.out.println("Não existem jogos para mostrar");
+        }
+        for (int i = 0; i < sMatchs.size(); i++) {
+            Match match = sMatchs.get(i);
+            System.out.println(i+1 + " - " + match.getHomeTeam().getName() + " - " + match.getVisitingTeam().getName());
+        }
+
+        System.out.println(sMatchs.size()+1 + " - Voltar");
+    }
+
+    public void addReferee(Referee referee) {
+        this.referees.add(referee);
+    }
+
+    public ArrayList<Match> getMatches(Team team, boolean allMatchs) {
+        if (allMatchs)
+            return matches.stream()
+                    .filter(match -> match.getHomeTeam().equals(team) || match.getVisitingTeam().equals(team))
+                    .collect(Collectors.toCollection(ArrayList::new));
+        else
+            return getMatchesUnfinished().stream()
+                    .filter(match -> match.getHomeTeam().equals(team) || match.getVisitingTeam().equals(team))
+                    .collect(Collectors.toCollection(ArrayList::new));
     }
 
     public String getCountry() {
@@ -142,7 +197,31 @@ public class League implements IMenuData {
         generateMatches(team);
     }
 
+    public void showReferees() {
+        System.out.println("Árbitros da Liga: " + name);
+        System.out.println("Pais: " + country);
+        System.out.println("Árbitros: ");
+        System.out.println("Selecione um dos seguintes árbitros: ");
+        for (int i = 0; i < referees.size(); i++) {
+            Referee referee = referees.get(i);
+            System.out.println(i+1 + " - " + referee.getName());
+        }
+        System.out.println(referees.size()+1 + " - Voltar");
+    }
+
     public Referee getReferee() {
         return referees.get(Utils.getRandomInt(0, referees.size()-1));
+    }
+
+    public static League generateLeague() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o nome da liga:");
+        String name = sc.nextLine();
+
+        System.out.println("Digite o paÃ­s da liga:");
+        String country = sc.nextLine();
+
+        return new League(name, country);
     }
 }

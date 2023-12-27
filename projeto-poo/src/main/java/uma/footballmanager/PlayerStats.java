@@ -2,8 +2,8 @@ package uma.footballmanager;
 
 import java.util.Scanner;
 
-public record PlayerStats(Integer defense, Integer attack, Integer aggressive) {
-    public static PlayerStats genereteEntity() {
+public record PlayerStats(Integer defense, Integer attack, Integer aggressive) implements IMenuData {
+    public static PlayerStats generetePlayerStats() {
         Scanner sc = new Scanner(System.in);
         int attackStats, defenseStats, aggression;
 
@@ -33,11 +33,18 @@ public record PlayerStats(Integer defense, Integer attack, Integer aggressive) {
             }
             aggression = sc.nextInt();
         } while (isInvalidStats(aggression));
-        sc.close();
         return new PlayerStats(attackStats, defenseStats, aggression);
     }
 
     private static boolean isInvalidStats(int stats) {
         return stats < 0 || stats > 100;
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Estatísticas do jogador: ");
+        System.out.println(" - Ataque: " + attack());
+        System.out.println(" - Defesa: " + defense());
+        System.out.println(" - Agressividade: " + aggressive());
     }
 }

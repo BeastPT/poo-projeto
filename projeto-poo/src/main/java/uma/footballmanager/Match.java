@@ -25,27 +25,6 @@ public class Match {
         this.sufferedGoals = sufferedGoals;
     }
 
-    public Match(LocalDate date, int matchHour, int matchMinute, boolean finished, TreeMap<Integer, String> goals, TreeMap<Integer, String> sufferedGoals, Referee referee) {
-        this.date = date;
-        this.matchHour = matchHour;
-        this.matchMinute = matchMinute;
-        this.finished = finished;
-        this.goals = goals;
-        this.sufferedGoals = sufferedGoals;
-        this.referee = referee;
-    }
-
-    public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute) {
-        this.homeTeam = homeTeam;
-        this.visitingTeam = visitingTeam;
-        this.date = date;
-        this.matchHour = matchHour;
-        this.matchMinute = matchMinute;
-        this.finished = false;
-        this.goals = new TreeMap<>();
-        this.sufferedGoals = new TreeMap<>();
-    }
-
     public Match(Team homeTeam, Team visitingTeam, LocalDate date, int matchHour, int matchMinute, Referee referee) {
         this.homeTeam = homeTeam;
         this.visitingTeam = visitingTeam;
@@ -81,7 +60,10 @@ public class Match {
     }
 
     public void simulateMatch() {
-        if (finished) return;
+        if (finished) {
+            System.out.println("Já foi simulado");
+            return;
+        }
 
         MatchSimulator simulation = new MatchSimulator(homeTeam, visitingTeam, referee).simulate();
 
@@ -127,30 +109,35 @@ public class Match {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Jogo realizado em ").append(date)
-                .append(" às ").append(matchHour).append(":").append(String.format("%02d", matchMinute));
-
         if (finished) {
+            result.append("Jogo realizado em ").append(date)
+                    .append(" às ").append(matchHour).append(":").append(String.format("%02d", matchMinute));
+
             result.append(" (Finalizado)");
             result.append("\nResultado: ").append(goals.size()).append(" - ").append(sufferedGoals.size());
+
+            result.append("\nEquipa da Casa: ").append(homeTeam.getName())
+                    .append("\nEquipa visitante: ").append(visitingTeam.getName());
+
+            if (referee != null) {
+                result.append("\nÁrbitro: ").append(referee.getName());
+            }
+
+            result.append("\nGolos: ");
+            appendGoals(result, goals);
+
+            result.append("\nGolos Sofridos: ");
+            appendGoals(result, sufferedGoals);
         } else {
-            result.append(" (Em espera)");
+            result.append("Jogo por realizar em ").append(date)
+                    .append(" às ").append(matchHour).append(":").append(String.format("%02d", matchMinute));
+            result.append("\nEquipa da Casa: ").append(homeTeam.getName())
+                    .append("\nEquipa visitante: ").append(visitingTeam.getName());
+
+            if (referee != null) {
+                result.append("\nÁrbitro: ").append(referee.getName());
+            }
         }
-
-        result.append("\nEquipa da Casa: ").append(homeTeam.getName())
-                .append("\nEquipa visitante: ").append(visitingTeam.getName());
-
-        if (referee != null) {
-            result.append("\nÁrbitro: ").append(referee.getName());
-        }
-
-        result.append("\nGolos: ");
-        appendGoals(result, goals);
-
-        result.append("\nGolos Sofridos: ");
-        appendGoals(result, sufferedGoals);
-
-        result.append("\n\n");
 
         return result.toString();
     }
