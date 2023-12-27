@@ -149,8 +149,6 @@ public class Person {
             }
         }
 
-        sc.close();
-
         return new Person(name, firstName, lastName, birth, nationality, height, weight);
     }
 
