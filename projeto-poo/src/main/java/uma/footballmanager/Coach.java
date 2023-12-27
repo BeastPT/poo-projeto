@@ -3,6 +3,7 @@ package uma.footballmanager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Coach extends Person implements IMenuData {
     private String tactic;
     private final ArrayList<CoachCareer> career;
@@ -17,6 +18,10 @@ public class Coach extends Person implements IMenuData {
         super(name, firstName, lastName, birth, nationality, height, weight);
         this.tactic = tactic;
         this.career = new ArrayList<>();
+    }
+    
+    public String tactic() {
+        return tactic;
     }
 
     @Override

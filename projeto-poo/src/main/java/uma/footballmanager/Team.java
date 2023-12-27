@@ -138,6 +138,10 @@ public class Team {
     public Stadium getStadium() {
         return stadium;
     }
+    public void setStadium(Stadium stadium) {
+        this.stadium = stadium;
+    }
+     
 
     @Override
     public boolean equals(Object o) {

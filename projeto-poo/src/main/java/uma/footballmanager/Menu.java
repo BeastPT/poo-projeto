@@ -19,7 +19,7 @@ public class Menu {
     public static int getUserOption(int maxValue) {
         int userOption;
         while (true) {
-            //System.out.print("Digite o número da opção desejada:");
+            System.out.print("Digite o número da opção desejada:");
             if (sc.hasNextInt()) {
                 userOption = sc.nextInt();
                 if (userOption >= 1 && userOption <= maxValue) {
@@ -44,16 +44,13 @@ public class Menu {
         }
         return getUserOption(maxValue);
     }
+    
     public static void mainMenu() {
+        System.out.println("Create Menu");
         
         String[] menuOptions = {
-                "Ligas",
-                "Equipas",
-                "Jogadores",
-                "Partidas",
-                "Estádio",
-                "Detalhes de um jogador",
-                "Salvar jogo",
+                "Gerir o Jogo",
+                "Carregar ou criar novo jogo",
                 "Sair"
         };
 
@@ -63,24 +60,9 @@ public class Menu {
                 leagueMenu();
                 break;
             case 2:
-                teamMenu();
+                saveMenu();
                 break;
             case 3:
-                playerMenu();
-                break;
-            case 4:
-                matchMenu();
-                break;
-            case 5:
-                stadiumMenu();
-                break;
-            case 6:
-                playernameMenu();
-                break;
-            case 7:
-                //saveMenu();
-                break;
-            case 8:
                 System.out.println("Sair do jogo.");
                 System.exit(0);
                 break;
@@ -91,6 +73,8 @@ public class Menu {
     }
 
      public static void saveMenu() {
+         System.out.println("Save Menu ");
+         
         String[] menuOptions = {
                 "Criar novo jogo",
                 "Guardar",
@@ -116,35 +100,32 @@ public class Menu {
             default:
                 System.out.println("Introduza um número entre 1 e " + menuOptions.length);
                 break;
-        }
+        }   
     }
    
-   
      public static void leagueMenu() {
+        System.out.println("League Menu "); 
+         
         String[] menuOptions = {
-                "Listar Ligas",
-                "Listar Equipas",
-                "Listar Jogadores",
-                "Listar Jogos",
-                "Listar Arbitros",
-                "Voltar"
+                "Mostrar as Ligas",
+                "Gerir todas as ligas",
+                "Remover Liga",
+               
+                "Voltar"       
         };
-
+     
         int option = createMenu(menuOptions);
         switch (option) {
             case 1:
                 listLeagues();
                 break;
             case 2:
-                listTeams();
+                showLeagueMenu();
                 break;
             case 3:
-                listAll();
+                removeLeague();
                 break;
             case 4:
-                listRef();
-                break;
-            case 5:
                 mainMenu();
                 break;
             default:
@@ -153,6 +134,91 @@ public class Menu {
         }
     }
      
+     
+    public static void removeLeague() {
+        List<League> league = game.getLeagues();
+
+    System.out.println("Escolha uma Liga para remover:");
+
+    for (int i = 0; i < league.size(); i++) {
+        League liga = league.get(i);
+        System.out.println((i + 1) + " - " + liga.getName());
+    }
+    int ligaOption = getUserOption(league.size());
+    if (ligaOption > 0 && ligaOption <= league.size()) {
+        League selectedLiga = league.get(ligaOption - 1);
+        
+        System.out.println("Tem certeza que deseja remover a liga '" + selectedLiga.getName() + "'? (S/N)");
+
+        Scanner scanner = new Scanner(System.in);
+        String confirmation = scanner.nextLine().trim().toUpperCase();
+
+        if (confirmation.equals("S")) {
+            league.remove(selectedLiga);
+            System.out.println("Liga removida com sucesso.");
+        } else {
+            System.out.println("Operação de remoção cancelada.");
+        }
+    } else {
+        System.out.println("Opção de liga inválida.");
+    }
+    
+    System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
+        char choice = sc.next().charAt(0);
+
+        while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
+            System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
+            choice = sc.next().charAt(0);
+        }
+
+        if (choice == 'v' || choice == 'V') {
+            removeLeague();
+        } else if (choice == 's' || choice == 'S') {
+            leagueMenu();
+        } 
+    }   
+    public static void showLeagueMenu() {
+        System.out.println("ShowLeague Menu ");
+        String[] menuOptions = {
+               "Mostrar Equipas das Ligas",
+               "Gerir as equipas",
+               "Mostrar todos os jogadores das Ligas",
+               "Adicionar ou Remover Equipa",
+               "Mostrar todos os jogos da Liga",// jogos de uma liga toda
+               "Mostrar Arbitros das Ligas",
+               "Voltar"
+                
+        };
+
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
+                listTeams();
+                break;
+            case 2:
+                teamMenu();
+                break;
+            case 3:
+                listAll();
+                break;
+            case 4:
+               // addRemoveTeam();
+                break;
+            case 5:
+               // showAllMatches();
+                break;
+            case 6:
+                listRef();
+                break;
+            case 7:
+                leagueMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
+    }
+    
     private static void listLeagues() {
         List<League> leagues = game.getLeagues();
 
@@ -170,7 +236,7 @@ public class Menu {
             System.out.println("Por favor, pressione 's' para retornar ao menu.");
             choice = sc.next().charAt(0);
         }
-        mainMenu();
+        leagueMenu() ;
     }
 
      
@@ -183,7 +249,7 @@ public class Menu {
         for (int i = 0; i < leagues.size(); i++) {
             System.out.println((i + 1) + " - " + leagues.get(i).getName());
         }
-        System.out.println("Escolha uma opção:");
+    
         int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
 
         if (selectedLeagueIndex >= 0 && selectedLeagueIndex < leagues.size()) {
@@ -209,7 +275,7 @@ public class Menu {
         if (choice == 'v' || choice == 'V') {
             listTeams();
         } else if (choice == 's' || choice == 'S') {
-            leagueMenu();
+            showLeagueMenu();
         } 
     }     
      
@@ -236,7 +302,7 @@ public class Menu {
                 }
             }
         } else {
-            System.out.println("Opção inválida de liga.");
+          
         }
         
         System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
@@ -250,7 +316,7 @@ public class Menu {
         if (choice == 'v' || choice == 'V') {
             listAll();
         } else if (choice == 's' || choice == 'S') {
-            leagueMenu();
+            showLeagueMenu();
         } 
         
      }
@@ -275,30 +341,46 @@ public class Menu {
                 System.out.println("Nome: " + referee.getName() + ", Experiência: " + referee.getExperience());
             }
         }
+        System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
+        char choice = sc.next().charAt(0);
+
+        while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
+            System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
+            choice = sc.next().charAt(0);
+        }
+
+        if (choice == 'v' || choice == 'V') {
+            listRef();
+        } else if (choice == 's' || choice == 'S') {
+            showLeagueMenu();
+        } 
+
+        
      }
      
      public static void teamMenu() {
+         
+         System.out.println("Team Menu ");
         String[] menuOptions = {
-            "Criar Equipa",
-            "Listar Jogadores",
+            "Gerir Jogadores ou criar",
+            "Listar Jogogadores de cada equipa",
             "Remover ou adicionar jogadores a uma equipa",
-            "Listar Jogos",
-            "Desempenho medio das equipas",
-            "Mostrar treinador",
-            "Estádio", // stadiumMenu()
+            "Desempenho das equipas",
+            "Gerir treinadores ou criar",
+            "Gerir Estádio ou criar", 
             "Voltar"
         };
 
         int option = createMenu(menuOptions);
         switch (option) {
             case 1:
-                // Criar equipa
+                playerMenu();
                 break;
             case 2:
                 listPlayers();
                 break;
             case 3:
-                //addRemovePlayer();
+                //addRemoveTeam();
                 break;
             case 4:
                 //listMatches();
@@ -307,21 +389,89 @@ public class Menu {
                 //listPerformance();
                 break;
             case 6:
-                listCoach();
+                coachMenu();
                 break;
             case 7:
                 stadiumMenu();
                 break;
             case 8:
-                mainMenu();
+                showLeagueMenu();
                 break;
             default:
                 System.out.println("Introduza um número entre 1 e " + menuOptions.length);
                 break;
         }
     }
+     /* falta criar
+    public static void list() {
+    List<League> leagues = game.getLeagues();
 
-     
+    System.out.println("====================================");
+    System.out.println("=========== Listar Ligas ===========");
+    System.out.println("====================================");       
+    for (int i = 0; i < leagues.size(); i++) {
+        System.out.println((i + 1) + " - " + leagues.get(i).getName());
+    }
+
+    int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
+
+    if (selectedLeagueIndex >= 0 && selectedLeagueIndex < leagues.size()) {
+        League selectedLeague = leagues.get(selectedLeagueIndex);
+        List<Team> teams = selectedLeague.getTeams();
+
+        System.out.println("===== Listar Equipas na Liga " + selectedLeague.getName() + " =====");
+        for (int i = 0; i < teams.size(); i++) {
+            System.out.println((i + 1) + " - " + teams.get(i).getName());
+        }
+
+        int selectedTeamIndex = getUserOption(teams.size()) - 1;
+
+        if (selectedTeamIndex >= 0 && selectedTeamIndex < teams.size()) {
+            Team selectedTeam = teams.get(selectedTeamIndex);
+
+            List<Match> matches = selectedTeam.matches;
+
+            if (matches.isEmpty()) {
+                System.out.println("A equipa " + selectedTeam.getName() + " não tem registros de desempenho.");
+            } else {
+                System.out.println("Desempenho da Equipa " + selectedTeam.getName() + ":");
+                for (Match match : matches) {
+                    System.out.println(", Golos Marcados: " + match.getGoals() + ", Golos Sofridos: " + match.getSufferedGoals());
+                }
+            }
+        } else {
+            System.out.println("Índice de equipe inválido.");
+        }
+    } else {
+        System.out.println("Índice de liga inválido.");
+    }
+}
+*/
+    
+    public static void coachMenu() {
+        System.out.println("Coach Menu ");
+    String[] menuOptions = {
+       "Ver treinadores das equipas",
+       "Criar novo treinador",
+       "Voltar"
+    };
+    int option = createMenu(menuOptions);
+    switch (option) {
+        case 1:
+            listCoach();
+            break;
+        case 2:
+            Coach.generateCoach();
+            break;
+        case 3:
+            teamMenu();
+            break;
+        default:
+            System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+            break;
+    }
+  }
+
      private static void listPlayers() {
         List<League> leagues = game.getLeagues();
 
@@ -332,7 +482,7 @@ public class Menu {
                 League league = leagues.get(i);
                 System.out.println((i + 1) + " - " + league.getName());
             }
-            System.out.println("Escolha uma opção:");
+           
             int leagueOption = getUserOption(leagues.size());
             
             if (leagueOption > 0 && leagueOption <= leagues.size()) {
@@ -343,7 +493,7 @@ public class Menu {
                 for (int i = 0; i < teams.size(); i++) {
                     System.out.println((i + 1) + " - " + teams.get(i).getName());
                 }
-                System.out.println("Escolha uma opção:");
+               
                 int teamOption = getUserOption(teams.size());
                 
                 if (teamOption > 0 && teamOption <= teams.size()) {
@@ -387,13 +537,11 @@ public class Menu {
         System.out.println("========== Escolher Liga ==========");
         System.out.println("===================================");   
 
-    // Itera sobre as ligas e exibe opções ao usuário
         for (int i = 0; i < leagues.size(); i++) {
             League league = leagues.get(i);
             System.out.println((i + 1) + " - " + league.getName());
         }
-        System.out.println("Escolha uma opção:");
-
+      
         int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
 
     
@@ -407,14 +555,14 @@ public class Menu {
                 Team team = teams.get(j);
                 System.out.println((j + 1) + " - " + team.getName());
             }
-            System.out.println("Escolha uma opção:");
+         
             int selectedTeamIndex = getUserOption(teams.size()) - 1;
 
             if (selectedTeamIndex >= 0 && selectedTeamIndex < teams.size()) {
                 Team selectedTeam = teams.get(selectedTeamIndex);
                 Coach coach = selectedTeam.getCoach();
 
-                System.out.println("Treinador da Equipa " + selectedTeam.getName() + ": " + coach.getName());
+                  coach.showData();
             } else {
                 System.out.println("Índice de equipa inválido.");
             }
@@ -433,79 +581,37 @@ public class Menu {
             if (choice == 'v' || choice == 'V') {
                 listCoach();
             } else if (choice == 's' || choice == 'S') {
-                teamMenu();
+                coachMenu();
             }
         }
      
       public static void playerMenu() {
+         System.out.println("Player Menu ");
+         
         String[] menuOptions = {
             "Criar Jogador",
-            "Detalhes de um jogador", //playernameMenu
-            "Listar Jogos",
-            "Estatisticas",
+            "Detalhes de cada jogador", 
             "Voltar"
         };
         int option = createMenu(menuOptions);
         switch (option) {
             case 1:
+                Player.generatePlayer();
                 break;
             case 2:
                 playernameMenu();
                 break;
             case 3:
-                //listMatches();
-                break;
-            case 4:
-                //listStats();
-                break;
-            case 5:
-                mainMenu();
+                teamMenu();
                 break;
             default:
                 System.out.println("Introduza um número entre 1 e " + menuOptions.length);
                 break;
         }
     }
-     
-  public static void matchMenu() {
-    String[] menuOptions = {
-       "Criar Jogo",
-       "Listar Jogos",
-       "Listar Equipas",
-       "Listar Jogadores",
-       "Listar Arbitros",
-       "Resultados anteriores",
-       "Voltar"
-    };
-
-    int option = createMenu(menuOptions);
-    switch (option) {
-        case 1:
-            // Criar jogo
-            break;
-        case 2:
-            //listMatches();
-            break;
-        case 3:
-            //listTeams();
-            break;
-        case 4:
-            //listPlayers();
-            break;
-        case 5:
-            //listRef();
-            break;
-        case 6:
-            mainMenu();
-            break;
-        default:
-            System.out.println("Introduza um número entre 1 e " + menuOptions.length);
-            break;
-    }
-  }
-
 
   public static void stadiumMenu() {
+      System.out.println("Stadium Menu ");
     String[] menuOptions = {
        "Ver detalhes do estádio",
        "Criar novo estádio",
@@ -520,7 +626,7 @@ public class Menu {
             Stadium.generateStadium();
             break;
         case 3:
-            mainMenu();
+            teamMenu();
             break;
         default:
             System.out.println("Introduza um número entre 1 e " + menuOptions.length);
@@ -572,68 +678,86 @@ public class Menu {
     } else {
         System.out.println("Não existe essa liga");
     }
+    
+    System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
+    char choice = sc.next().charAt(0);
+
+    while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
+          System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
+          choice = sc.next().charAt(0);
+    }
+
+    if (choice == 'v' || choice == 'V') {
+        seeStadium();
+    } else if (choice == 's' || choice == 'S') {
+        stadiumMenu();
+    }
 }
       
-      public static void playernameMenu() {
-        String[] menuOptions = {
-            "Número de jogos feitos",
-            "Total de minutos jogados",
-            "Número de jogos feitos",
-            "Número de golos feitos",
-            "Número de treinos feitos",
-            "Número de assistências feitas",
-            "Número de defensas feitas",//guarda redes
-            "Prémios/recordes do jogador",
-            "Número de cartões amarelos",
-            "Número de cartões vermelhos",
-            "Clubes anteriores",
-            "Lesões",
-            "Voltar",
-        };
-        int option = createMenu(menuOptions);
-        switch (option) {
-            case 1:
-                //listMatches();
-                break;
-            case 2:
-                //listMatches();
-                break;
-            case 3:
-                //listMatches();
-                break;
-            case 4:
-                //listMatches();
-                break;
-            case 5:
-                //listMatches();
-                break;
-            case 6:
-                //listMatches();
-                break;
-            case 7:
-                //listMatches();
-                break;
-            case 8:
-                //listMatches();
-                break;
-            case 9:
-                //listMatches();
-                break;
-            case 10:
-                //listMatches();
-                break;
-            case 11:
-                //listMatches();
-                break;
-            case 12:
-                //listMatches();
-                break;
-            case 13:
-                mainMenu();
-                break;
-            default:
-                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
-                break;
+    public static void playernameMenu() {
+    List<League> leagues = game.getLeagues();
+
+    System.out.println("====================================");
+    System.out.println("=========== Listar Ligas ===========");
+    System.out.println("====================================");
+    for (int i = 0; i < leagues.size(); i++) {
+        System.out.println((i + 1) + " - " + leagues.get(i).getName());
+    }
+  
+    int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
+
+    if (selectedLeagueIndex >= 0 && selectedLeagueIndex < leagues.size()) {
+        League selectedLeague = leagues.get(selectedLeagueIndex);
+        List<Team> teams = selectedLeague.getTeams();
+
+        System.out.println("===== Listar Equipas na Liga " + selectedLeague.getName() + " =====");
+        for (int i = 0; i < teams.size(); i++) {
+            System.out.println((i + 1) + " - " + teams.get(i).getName());
         }
-      }  
+
+        System.out.println("Escolha uma equipe:");
+        int selectedTeamIndex = getUserOption(teams.size()) - 1;
+
+        if (selectedTeamIndex >= 0 && selectedTeamIndex < teams.size()) {
+            Team selectedTeam = teams.get(selectedTeamIndex);
+            List<Player> players = selectedTeam.getPlayers();
+
+            System.out.println("===== Listar Jogadores na Equipa " + selectedTeam.getName() + " =====");
+            for (int i = 0; i < players.size(); i++) {
+                System.out.println((i + 1) + " - " + players.get(i).getName());
+            }
+
+            System.out.println("Escolha um jogador:");
+            int selectedPlayerIndex = getUserOption(players.size()) - 1;
+
+            if (selectedPlayerIndex >= 0 && selectedPlayerIndex < players.size()) {
+                Player player = players.get(selectedPlayerIndex);
+
+                  player.showData();
+                  
+            } else {
+                System.out.println("Índice de jogador inválido.");
+            }
+        } else {
+            System.out.println("Índice de equipe inválido.");
+        }
+    } else {
+        System.out.println("Índice de liga inválido.");
+    }
+  
+    System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
+    char choice = sc.next().charAt(0);
+
+    while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
+          System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
+          choice = sc.next().charAt(0);
+    }
+
+    if (choice == 'v' || choice == 'V') {
+        playernameMenu();
+    } else if (choice == 's' || choice == 'S') {
+        playerMenu();
+    }
+}
+
 }
