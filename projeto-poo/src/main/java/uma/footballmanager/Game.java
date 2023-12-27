@@ -55,6 +55,10 @@ public class Game {
     }
 
     public ArrayList<League> getLeagues() {
-        return leagues;
+        return new ArrayList<>(leagues);
+    }
+
+    public LocalDate getCurrentDate() {
+        return currentDate;
     }
 }

@@ -2,7 +2,7 @@ package uma.footballmanager;
 
 import java.util.Scanner;
 
-public class Stadium implements MenuData {
+public class Stadium implements IMenuData {
     private String name;
     private String address;
     private String city;
@@ -14,7 +14,7 @@ public class Stadium implements MenuData {
         this.city = city;
         this.capacity = capacity;
     }
-    
+
     public String getCity() {
         return city;
     }

@@ -1,9 +1,8 @@
 package uma.footballmanager;
 
 import com.google.gson.annotations.SerializedName;
-import java.util.Scanner;
 
-public class Player extends Person implements MenuData {
+public class Player extends Person implements IMenuData {
     @SerializedName("statistics")
     private PlayerStats stats;
     private Positions position;
@@ -62,78 +61,12 @@ public class Player extends Person implements MenuData {
 
      public static Player generatePlayer() {
         Person person = Person.generatePerson();
-        Positions position = generatePlayerPosition();
-        PlayerStats stats = generatePlayerStats();  
+        Positions position = Positions.generetePosition();
+        PlayerStats stats = PlayerStats.genereteEntity();
 
-    return new Player(person.getName(), person.getFirstName(), person.getLastName(),person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(),stats, position);
+        return new Player(person.getName(), person.getFirstName(), person.getLastName(),person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(),stats, position);
     }
 
-    private static Positions generatePlayerPosition() {
-        try (Scanner sc = new Scanner(System.in)) {
-            Positions playerPosition = null;
 
-            while (playerPosition == null) {
-                System.out.print("Escolha a posição do jogador (A para Avançado, M para Médio, D para Defesa, G para Guarda-Redes): ");
-                char choice = sc.next().charAt(0);
-
-                switch (choice) {
-                    case 'A':
-                        playerPosition = Positions.ATTACKER;
-                        break;
-                    case 'M':
-                        playerPosition = Positions.MIDFIELDER;
-                        break;
-                    case 'D':
-                        playerPosition = Positions.DEFENDER;
-                        break;
-                    case 'G':
-                        playerPosition = Positions.GOALKEEPER;
-                        break;
-                    default:
-                        System.out.println("Escolha inválida. Tente novamente.");
-                }
-            }
-            return playerPosition;
-        }
-    }
-   
-    public static PlayerStats generatePlayerStats() {
-        try (Scanner sc = new Scanner(System.in)) {
-            int attackStats, defenseStats, aggression;
-
-            do {
-                System.out.print("Insira as estatísticas de ataque do jogador (0-100): ");
-                while (!sc.hasNextInt()) {
-                    System.out.print("Inválido. Por favor insira um inteiro para o ataque de (0-100): ");
-                    sc.next(); 
-                }
-                attackStats = sc.nextInt();
-            } while (!validationStatsPlayer(attackStats));
-
-            do {
-                System.out.print("Insira as estatísticas de defesa do jogador (0-100): ");
-                while (!sc.hasNextInt()) {
-                    System.out.print("Inválido. Por favor insira um inteiro para a defesa de (0-100): ");
-                    sc.next(); 
-                }
-                defenseStats = sc.nextInt();
-            } while (!validationStatsPlayer(defenseStats));
-
-            do {
-                System.out.print("Insira a agressividade do jogador (0-100): ");
-                while (!sc.hasNextInt()) {
-                    System.out.print("Inválido. Por favor insira um inteiro para a agressividade de (0-100): ");
-                    sc.next(); 
-                }
-                aggression = sc.nextInt();
-            } while (!validationStatsPlayer(aggression));
-
-            return new PlayerStats(attackStats, defenseStats, aggression);
-        }
-    }
-
-    private static boolean validationStatsPlayer(int stats) {
-        return stats >= 0 && stats <= 100;
-    }
 }
 

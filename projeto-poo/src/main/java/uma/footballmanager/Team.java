@@ -1,6 +1,7 @@
 package uma.footballmanager;
 
 import java.util.List;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
@@ -45,26 +46,26 @@ public class Team {
             newAggressivity += player.getStats().aggressive();
             switch (player.getPosition()) {
                 case GOALKEEPER:
-                    newAttack += (int) (playerAttack*0.5);
-                    newDefense += (int) (playerDefense*5);
+                    newAttack += (int) (playerAttack * 0.5);
+                    newDefense += (int) (playerDefense * 5);
                     break;
                 case DEFENDER:
-                    newAttack += (int) (playerAttack*1);
-                    newDefense += (int) (playerDefense*2);
+                    newAttack += (int) (playerAttack * 1);
+                    newDefense += (int) (playerDefense * 2);
                     break;
                 case MIDFIELDER:
-                    newAttack += (int) (playerAttack*2);
-                    newDefense += (int) (playerDefense*1);
+                    newAttack += (int) (playerAttack * 2);
+                    newDefense += (int) (playerDefense * 1);
                     break;
                 case ATTACKER:
-                    newAttack += (int) (playerAttack*2.5);
-                    newDefense += (int) (playerDefense*0.5);
+                    newAttack += (int) (playerAttack * 2.5);
+                    newDefense += (int) (playerDefense * 0.5);
                     break;
             }
         }
         this.Attack = disperseValues(newAttack, true);
         this.Defense = disperseValues(newDefense, false);
-        this.Aggressive = Utils.disperseValues(((int) (newAggressivity/playerCounter)), 0, 34);
+        this.Aggressive = Utils.disperseValues(((int) (newAggressivity / playerCounter)), 0, 34);
     }
 
     private int disperseValues(int value, boolean disperseAttack) {
@@ -74,6 +75,7 @@ public class Team {
             return Utils.disperseValues(value, 600, 1200);
         }
     }
+
     public String getName() {
         return name;
     }
@@ -91,9 +93,9 @@ public class Team {
         }
         return Defense;
     }
-    
-    public List<Player> getPlayers() {
-    return players;
+
+    public ArrayList<Player> getPlayers() {
+        return new ArrayList<>(players);
     }
 
     public void addInjure(Player player, MatchSimulator match) {

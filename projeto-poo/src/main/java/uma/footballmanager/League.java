@@ -1,9 +1,11 @@
 package uma.footballmanager;
 
-import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Locale;
 
-public class League implements MenuData {
+public class League implements IMenuData {
     private final String name;
     private final String country;
     private final ArrayList<Team> teams;
@@ -59,6 +61,28 @@ public class League implements MenuData {
 
     public ArrayList<Referee> getReferees() {
         return new ArrayList<>(referees);
+    }
+
+    public void generateMatches() {
+        LocalDate date = LocalDate.of(2023, 8, 18);
+        ArrayList<LocalDate> test = new ArrayList<>();
+        for (int i = 0; i < teams.size(); i++) {
+            for (int j = i+1; j < teams.size(); j++) {
+                Team team1 = teams.get(i);
+                Team team2 = teams.get(j);
+                if (team1.equals(team2)) continue;
+                // TODO: Arranjar forma de pegar current date do Game, provavelmente criar class TimeManager
+                LocalDate gameDate = date.plusDays(Utils.getRandomInt(0, 7)).plusMonths(Utils.getRandomInt(0, 8));
+                test.add(gameDate);
+                //System.out.println(gameDate.toString());
+                //Match match = new Match(date.team1, team2);
+            }
+        }
+        Collections.sort(test);
+        for (LocalDate localDate : test) {
+            //System.out.println(localDate.toString());
+        }
+
     }
 
     @Override

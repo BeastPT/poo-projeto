@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Menu {
     private static final Scanner sc;
-    private static final Game game;
+    private static Game game;
     
     static {
         sc = new Scanner(System.in);
@@ -16,7 +16,34 @@ public class Menu {
         mainMenu();
     }
 
-    
+    public static int getUserOption(int maxValue) {
+        int userOption;
+        while (true) {
+            //System.out.print("Digite o número da opção desejada:");
+            if (sc.hasNextInt()) {
+                userOption = sc.nextInt();
+                if (userOption >= 1 && userOption <= maxValue) {
+                    break;
+                } else {
+                    System.out.println("Introduza um número entre 1 e " + maxValue);
+                }
+            } else {
+                System.out.println("O seu número tem de ser válido. Insira novamente o valor: ");
+                sc.next();
+            }
+        }
+        sc.nextLine();
+        return userOption;
+    }
+
+    private static int createMenu(String[] menuOptions) {
+        int maxValue = menuOptions.length;
+
+        for (int i = 0; i < maxValue; i++) {
+            System.out.println((i + 1) + " - " + menuOptions[i]);
+        }
+        return getUserOption(maxValue);
+    }
     public static void mainMenu() {
         
         String[] menuOptions = {
@@ -30,90 +57,67 @@ public class Menu {
                 "Sair"
         };
 
-        int maxValue = menuOptions.length;
-        int mainOption;
-
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            if (mainOption == 1) {
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
                 leagueMenu();
-            } else if (mainOption == 2) {
+                break;
+            case 2:
                 teamMenu();
-            } else if (mainOption == 3) {
+                break;
+            case 3:
                 playerMenu();
-            } else if (mainOption == 4) {
+                break;
+            case 4:
                 matchMenu();
-            } else if (mainOption == 5) {
+                break;
+            case 5:
                 stadiumMenu();
-            } else if (mainOption == 6) {
+                break;
+            case 6:
                 playernameMenu();
-            } else if (mainOption == 7) {
-               // saveMenu();
-            } else if (mainOption == maxValue) {
+                break;
+            case 7:
+                //saveMenu();
+                break;
+            case 8:
                 System.out.println("Sair do jogo.");
                 System.exit(0);
                 break;
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-        } while (mainOption != maxValue);
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
     }
 
-   public static int getUserOption(int maxValue) {
-        int userOption;
-        while (true) {
-            //System.out.print("Digite o número da opção desejada:");
-            if (sc.hasNextInt()) {
-                userOption = sc.nextInt();
-                if (userOption >= 1 && userOption <= maxValue) {
-                    break;
-                } else {
-                    System.out.println("Introduza um número entre 1 e " + maxValue);
-                }
-            } else {
-                System.out.println("O seu número tem de ser válido.");
-                sc.next();
-            }
-        }
-        sc.nextLine();
-        return userOption;
-    }
-    
-    /*
      public static void saveMenu() {
         String[] menuOptions = {
+                "Criar novo jogo",
                 "Guardar",
                 "Carregar",
                 "Voltar"
-            };
+        };
 
-        int maxValue = menuOptions.length;
-        int mainOption;
+        int options = createMenu(menuOptions);
 
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-
-        do {
-            mainOption = getUserOption(maxValue);
-
-            if (mainOption == 1) {
-               //SavesManager.saveGame(game);
-            } else if (mainOption == 2) {
-               SavesManager.loadData(fileName);
-            } else if (mainOption == maxValue) {
-                System.out.println("Voltar");
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-
-        } while (mainOption != maxValue);
+        switch (options) {
+            case 1:
+                game = SavesManager.createGame();
+                break;
+            case 2:
+                SavesManager.saveGame(game);
+                break;
+            case 3:
+                // TODO: Criar static menu na class SavesManager para listar os saves
+                break;
+            case 4:
+                mainMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
     }
- */
    
    
      public static void leagueMenu() {
@@ -125,51 +129,49 @@ public class Menu {
                 "Listar Arbitros",
                 "Voltar"
         };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-                    
-            mainOption = getUserOption(maxValue);
 
-            if (mainOption == 1) {
-               listLeagues();
-            } else if (mainOption == 2) {
-               listTeams();
-            } else if (mainOption == 3) {
-               listAll();
-            } else if (mainOption == 4) {
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
+                listLeagues();
+                break;
+            case 2:
+                listTeams();
+                break;
+            case 3:
+                listAll();
+                break;
+            case 4:
                 listRef();
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-        } while (mainOption != maxValue);
+                break;
+            case 5:
+                mainMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
     }
      
-     private static void listLeagues() {
-    List<League> leagues = game.getLeagues();
+    private static void listLeagues() {
+        List<League> leagues = game.getLeagues();
 
         System.out.println("==================================");
         System.out.println("========== Listar Ligas ==========");
-        System.out.println("=================================="); 
-    for (int i = 0; i < leagues.size(); i++) {
-        System.out.println((i + 1) + " - " + leagues.get(i).getName());
-    }
+        System.out.println("==================================");
+        for (int i = 0; i < leagues.size(); i++) {
+            System.out.println((i + 1) + " - " + leagues.get(i).getName());
+        }
 
-    System.out.println("Pressione 's' para retornar ao menu.");
-    char choice = sc.next().charAt(0);
-    
-    while (choice != 's' && choice != 'S') {
-        System.out.println("Por favor, pressione 's' para retornar ao menu.");
-        choice = sc.next().charAt(0);
+        System.out.println("Pressione 's' para retornar ao menu.");
+        char choice = sc.next().charAt(0);
+
+        while (choice != 's' && choice != 'S') {
+            System.out.println("Por favor, pressione 's' para retornar ao menu.");
+            choice = sc.next().charAt(0);
+        }
+        mainMenu();
     }
-    mainMenu();
-}
 
      
      private static void listTeams() {
@@ -219,7 +221,7 @@ public class Menu {
             League league = leagues.get(i);
             System.out.println((i + 1) + " - " + league.getName());
         }
-    int leagueOption = getUserOption(leagues.size());
+        int leagueOption = getUserOption(leagues.size());
         if (leagueOption > 0 && leagueOption <= leagues.size()) {
             League selectedLeague = leagues.get(leagueOption - 1);
 
@@ -286,35 +288,37 @@ public class Menu {
             "Estádio", // stadiumMenu()
             "Voltar"
         };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            //if (mainOption == 1) {
-        //}
-            if (mainOption == 2) {
-                listPlayers();
-            } else if (mainOption == 3) {
-             
-            } else if (mainOption == 4) {
-              //
-            } else if (mainOption == 5) {
-              //
-            } else if (mainOption == 6) {
-              listCoach();
-            } else if (mainOption == 7) {
-              stadiumMenu();
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
 
-        } while (mainOption != maxValue);
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
+                // Criar equipa
+                break;
+            case 2:
+                listPlayers();
+                break;
+            case 3:
+                //addRemovePlayer();
+                break;
+            case 4:
+                //listMatches();
+                break;
+            case 5:
+                //listPerformance();
+                break;
+            case 6:
+                listCoach();
+                break;
+            case 7:
+                stadiumMenu();
+                break;
+            case 8:
+                mainMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
     }
 
      
@@ -384,54 +388,54 @@ public class Menu {
         System.out.println("===================================");   
 
     // Itera sobre as ligas e exibe opções ao usuário
-    for (int i = 0; i < leagues.size(); i++) {
-        League league = leagues.get(i);
-        System.out.println((i + 1) + " - " + league.getName());
-    }
-    System.out.println("Escolha uma opção:");
-
-    int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
-
-    
-    if (selectedLeagueIndex >= 0 && selectedLeagueIndex < leagues.size()) {
-        League selectedLeague = leagues.get(selectedLeagueIndex);
-        List<Team> teams = selectedLeague.getTeams();
-
-        System.out.println("===== Escolher Equipa na Liga " + selectedLeague.getName() + " =====");
-
-        for (int j = 0; j < teams.size(); j++) {
-            Team team = teams.get(j);
-            System.out.println((j + 1) + " - " + team.getName());
+        for (int i = 0; i < leagues.size(); i++) {
+            League league = leagues.get(i);
+            System.out.println((i + 1) + " - " + league.getName());
         }
         System.out.println("Escolha uma opção:");
-        int selectedTeamIndex = getUserOption(teams.size()) - 1;
 
-        if (selectedTeamIndex >= 0 && selectedTeamIndex < teams.size()) {
-            Team selectedTeam = teams.get(selectedTeamIndex);
-            Coach coach = selectedTeam.getCoach();
+        int selectedLeagueIndex = getUserOption(leagues.size()) - 1;
 
-            System.out.println("Treinador da Equipa " + selectedTeam.getName() + ": " + coach.getName());
-        } else {
-            System.out.println("Índice de equipa inválido.");
+    
+        if (selectedLeagueIndex >= 0 && selectedLeagueIndex < leagues.size()) {
+            League selectedLeague = leagues.get(selectedLeagueIndex);
+            List<Team> teams = selectedLeague.getTeams();
+
+            System.out.println("===== Escolher Equipa na Liga " + selectedLeague.getName() + " =====");
+
+            for (int j = 0; j < teams.size(); j++) {
+                Team team = teams.get(j);
+                System.out.println((j + 1) + " - " + team.getName());
+            }
+            System.out.println("Escolha uma opção:");
+            int selectedTeamIndex = getUserOption(teams.size()) - 1;
+
+            if (selectedTeamIndex >= 0 && selectedTeamIndex < teams.size()) {
+                Team selectedTeam = teams.get(selectedTeamIndex);
+                Coach coach = selectedTeam.getCoach();
+
+                System.out.println("Treinador da Equipa " + selectedTeam.getName() + ": " + coach.getName());
+            } else {
+                System.out.println("Índice de equipa inválido.");
+            }
+            } else {
+                System.out.println("Índice de liga inválido.");
+            }
+
+            System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
+            char choice = sc.next().charAt(0);
+
+            while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
+                System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
+                choice = sc.next().charAt(0);
+            }
+
+            if (choice == 'v' || choice == 'V') {
+                listCoach();
+            } else if (choice == 's' || choice == 'S') {
+                teamMenu();
+            }
         }
-        } else {
-            System.out.println("Índice de liga inválido.");
-        }
-        
-        System.out.println("Pressione 'v' para retornar à lista ou 's' para ir para o menu.");
-        char choice = sc.next().charAt(0);
-
-        while (choice != 'v' && choice != 'V' && choice != 's' && choice != 'S') {
-            System.out.println("Por favor, pressione 's' para retornar à lista ou 'v' para ir para o menu.");
-            choice = sc.next().charAt(0);
-        }
-
-        if (choice == 'v' || choice == 'V') {
-            listCoach();
-        } else if (choice == 's' || choice == 'S') {
-            teamMenu();
-        } 
-    }
      
       public static void playerMenu() {
         String[] menuOptions = {
@@ -441,137 +445,133 @@ public class Menu {
             "Estatisticas",
             "Voltar"
         };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            if (mainOption == 1) {
-                
-            }else if (mainOption == 2) {
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
+                break;
+            case 2:
                 playernameMenu();
-            } else if (mainOption == 3) {
-              
-            } else if (mainOption == 4) {
-              
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-
-        } while (mainOption != maxValue);
+                break;
+            case 3:
+                //listMatches();
+                break;
+            case 4:
+                //listStats();
+                break;
+            case 5:
+                mainMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
     }
      
-      public static void matchMenu() {
-        String[] menuOptions = {
-           "Criar Jogo",
-           "Listar Jogos",
-           "Listar Equipas",
-           "Listar Jogadores",
-           "Listar Arbitros",
-           "Resultados anteriores",
-           "Voltar"
-        };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            if (mainOption == 1) {
-                Player.generatePlayer();
-            }else if (mainOption == 2) {
-                
-            } else if (mainOption == 3) {
-              
-            } else if (mainOption == 4) {
-                
-            } else if (mainOption == 5) { 
-                     
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-        } while (mainOption != maxValue);
-      }  
+  public static void matchMenu() {
+    String[] menuOptions = {
+       "Criar Jogo",
+       "Listar Jogos",
+       "Listar Equipas",
+       "Listar Jogadores",
+       "Listar Arbitros",
+       "Resultados anteriores",
+       "Voltar"
+    };
 
-      
-      public static void stadiumMenu() {
-        String[] menuOptions = {
-           "Ver detalhes do estádio",
-           "Criar novo estádio",
-           "Voltar"
-        };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            if (mainOption == 1) {
-                seeStadium();
-            }else if (mainOption == 2) {
-                Stadium.generateStadium();     
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-        } while (mainOption != maxValue);
-      }       
-      
-      private static void seeStadium() {
-        List<League> leagues = game.getLeagues(); 
-        if (!leagues.isEmpty()) {
-        System.out.println("Escolha uma Liga:");
+    int option = createMenu(menuOptions);
+    switch (option) {
+        case 1:
+            // Criar jogo
+            break;
+        case 2:
+            //listMatches();
+            break;
+        case 3:
+            //listTeams();
+            break;
+        case 4:
+            //listPlayers();
+            break;
+        case 5:
+            //listRef();
+            break;
+        case 6:
+            mainMenu();
+            break;
+        default:
+            System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+            break;
+    }
+  }
 
-        for (int i = 0; i < leagues.size(); i++) {
-            League league = leagues.get(i);
-            System.out.println((i + 1) + " - " + league.getName());
-        }
 
-        int leagueOption = getUserOption(leagues.size());
-        if (leagueOption > 0 && leagueOption <= leagues.size()) {
-            League selectedLeague = leagues.get(leagueOption - 1);
-            System.out.println("Equipas na Liga " + selectedLeague.getName() + ":");
+  public static void stadiumMenu() {
+    String[] menuOptions = {
+       "Ver detalhes do estádio",
+       "Criar novo estádio",
+       "Voltar"
+    };
+    int option = createMenu(menuOptions);
+    switch (option) {
+        case 1:
+            seeStadium();
+            break;
+        case 2:
+            Stadium.generateStadium();
+            break;
+        case 3:
+            mainMenu();
+            break;
+        default:
+            System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+            break;
+    }
+  }
 
-            List<Team> teams = selectedLeague.getTeams();
-            for (int i = 0; i < teams.size(); i++) {
-                Team team = teams.get(i);
-                System.out.println((i + 1) + " - " + team.getName());
-            }
-
-            int teamOption = getUserOption(teams.size());
-            if (teamOption > 0 && teamOption <= teams.size()) {
-                Team selectedTeam = teams.get(teamOption - 1);
-                Stadium stadium = selectedTeam.getStadium();
-
-                if (stadium != null) {
-                    System.out.println("Estádio da Equipa " + selectedTeam.getName() + ":");
-                    System.out.println("Nome: " + stadium.getName());
-                    System.out.println("Localização: " + stadium.getCity());
-                    System.out.println("Capacidade: " + stadium.getCapacity());
-                } else {
-                    System.out.println("A equipa selecionada não tem um estádio atribuído.");
-                }
-            } else {
-                System.out.println("Equipa não existente");
-            }
-        } else {
-            System.out.println("Não existe essa liga");
-        }
-        } else {
+    private static void seeStadium() {
+    List<League> leagues = game.getLeagues();
+    if (leagues.isEmpty()) {
         System.out.println("Sem liga");
-     }
+        return;
+    }
+
+    System.out.println("Escolha uma Liga:");
+
+    for (int i = 0; i < leagues.size(); i++) {
+        League league = leagues.get(i);
+        System.out.println((i + 1) + " - " + league.getName());
+    }
+
+    int leagueOption = getUserOption(leagues.size());
+    if (leagueOption > 0 && leagueOption <= leagues.size()) {
+        League selectedLeague = leagues.get(leagueOption - 1);
+        System.out.println("Equipas na Liga " + selectedLeague.getName() + ":");
+
+        List<Team> teams = selectedLeague.getTeams();
+        for (int i = 0; i < teams.size(); i++) {
+            Team team = teams.get(i);
+            System.out.println((i + 1) + " - " + team.getName());
+        }
+
+        int teamOption = getUserOption(teams.size());
+        if (teamOption > 0 && teamOption <= teams.size()) {
+            Team selectedTeam = teams.get(teamOption - 1);
+            Stadium stadium = selectedTeam.getStadium();
+
+            if (stadium != null) {
+                System.out.println("Estádio da Equipa " + selectedTeam.getName() + ":");
+                System.out.println("Nome: " + stadium.getName());
+                System.out.println("Localização: " + stadium.getCity());
+                System.out.println("Capacidade: " + stadium.getCapacity());
+            } else {
+                System.out.println("A equipa selecionada não tem um estádio atribuído.");
+            }
+        } else {
+            System.out.println("Equipa não existente");
+        }
+    } else {
+        System.out.println("Não existe essa liga");
+    }
 }
       
       public static void playernameMenu() {
@@ -590,43 +590,50 @@ public class Menu {
             "Lesões",
             "Voltar",
         };
-        int maxValue = menuOptions.length;
-        int mainOption;
-        for (int i = 0; i < maxValue; i++) {
-                System.out.println((i + 1) + " - " + menuOptions[i]);
-            }
-        do {
-            System.out.println("Escolha uma opção:");
-            mainOption = getUserOption(maxValue);
-            if (mainOption == 1) {
-                Player.generatePlayer();
-            }else if (mainOption == 2) {
-                
-            } else if (mainOption == 3) {
-              
-            } else if (mainOption == 4) {
-                
-            } else if (mainOption == 5) { 
-                   
-            } else if (mainOption == 6) { 
-                
-            } else if (mainOption == 7) { 
-                
-            } else if (mainOption == 8) { 
-                
-            } else if (mainOption == 9) { 
-                
-            } else if (mainOption == 10) { 
-                
-            } else if (mainOption == 11) { 
-                
-            } else if (mainOption == 12) {    
-                
-            } else if (mainOption == maxValue) {
-                mainMenu(); //voltar atras
-            } else {
-                System.out.println("Introduza um número entre 1 e " + maxValue);
-            }
-        } while (mainOption != maxValue);
+        int option = createMenu(menuOptions);
+        switch (option) {
+            case 1:
+                //listMatches();
+                break;
+            case 2:
+                //listMatches();
+                break;
+            case 3:
+                //listMatches();
+                break;
+            case 4:
+                //listMatches();
+                break;
+            case 5:
+                //listMatches();
+                break;
+            case 6:
+                //listMatches();
+                break;
+            case 7:
+                //listMatches();
+                break;
+            case 8:
+                //listMatches();
+                break;
+            case 9:
+                //listMatches();
+                break;
+            case 10:
+                //listMatches();
+                break;
+            case 11:
+                //listMatches();
+                break;
+            case 12:
+                //listMatches();
+                break;
+            case 13:
+                mainMenu();
+                break;
+            default:
+                System.out.println("Introduza um número entre 1 e " + menuOptions.length);
+                break;
+        }
       }  
 }

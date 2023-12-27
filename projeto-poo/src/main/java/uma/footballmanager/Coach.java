@@ -3,7 +3,7 @@ package uma.footballmanager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Coach extends Person implements MenuData {
+public class Coach extends Person implements IMenuData {
     private String tactic;
     private final ArrayList<CoachCareer> career;
 

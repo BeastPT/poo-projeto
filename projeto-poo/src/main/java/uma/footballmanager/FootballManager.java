@@ -8,6 +8,7 @@ import java.time.LocalDate;
 public class FootballManager {
     public static void main(String[] args) {
         //Game game = SavesManager.createGame();
+        //game.getLeagues().get(0).generateMatches();
         //debugMatch(game);
         //SavesManager.saveGame(game);
         Menu.mainMenu();
