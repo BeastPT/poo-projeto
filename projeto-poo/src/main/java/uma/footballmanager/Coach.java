@@ -3,7 +3,6 @@ package uma.footballmanager;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class Coach extends Person implements IMenuData {
     private final String tactic;
     private final ArrayList<CoachCareer> career;
@@ -34,7 +33,10 @@ public class Coach extends Person implements IMenuData {
         System.out.println("Tatica utilizada: " + tactic);
         System.out.println("Carreira: " + career);
     }
-
+    /**
+     * Gera um treinador com recurso ao utilizador
+     * @return coach
+     */
     public static Coach generateCoach() {
         Person person = Person.generatePerson();
 
@@ -49,7 +51,11 @@ public class Coach extends Person implements IMenuData {
 
         return new Coach(person.getName(), person.getFirstName(), person.getLastName(), person.getBirth(), person.getNationality(), person.getHeight(), person.getWeight(), tactic);
     }
-
+    /**
+     * Verificação se a tatica tem os números de forma correta
+     * @param tactic
+     * @return true or false
+     */
     private static boolean isValidTactic(String tactic) {
         String[] parts = tactic.split("-");
         int sum = 0;
