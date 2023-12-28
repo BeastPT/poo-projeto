@@ -170,10 +170,12 @@ public class Menu {
             case 5:
                 league.addReferee(Referee.generateReferee());
                 System.out.println("Árbitro adicionada com sucesso.");
+                leagueMenu(league);
                 break;
             case 6:
                 league.addTeam(Team.generateTeam());
                 System.out.println("Equipa adicionada com sucesso.");
+                leagueMenu(league);
                 break;
             case 7:
                 league.generateMatches();
