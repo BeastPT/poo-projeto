@@ -50,6 +50,10 @@ public class Player extends Person implements IMenuData {
         return getName().equals(player.getName());
     }
 
+    /**
+     * Gera um jogador com base nos dados inseridos pelo utilizador
+     * @return Jogador
+     */
     public static Player generatePlayer() {
         Person person = Person.generatePerson();
         Positions position = Positions.generetePosition();

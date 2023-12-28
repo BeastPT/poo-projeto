@@ -21,6 +21,10 @@ public class Referee extends Person implements IMenuData {
         System.out.println("1 - Voltar");
     }
 
+    /**
+     * Gera um árbitro com base nos dados inseridos pelo utilizador
+     * @return Árbitro
+     */
     public static Referee generateReferee() {
         Person person = Person.generatePerson();
 

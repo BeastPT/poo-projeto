@@ -35,6 +35,10 @@ public class Stadium implements IMenuData {
         System.out.println("Capacidade: " + capacity);
     }
 
+    /**
+     * Gera um estádio com base nos dados inseridos pelo utilizador
+     * @return Estádio
+     */
     public static Stadium generateStadium() {
         Scanner sc = new Scanner(System.in);
 

@@ -25,6 +25,10 @@ public enum Positions {
         return this.name;
     }
 
+    /**
+     * Gera uma posição com base nos dados inseridos pelo utilizador
+     * @return Posição
+     */
     public static Positions generetePosition() {
         Scanner sc = new Scanner(System.in);
         Positions playerPosition = null;

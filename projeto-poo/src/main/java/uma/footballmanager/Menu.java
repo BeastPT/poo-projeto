@@ -131,11 +131,11 @@ public class Menu {
             case 1:
                 league.showData();
                 int val = getUserOption(league.getTeams().size() + 1);
-                teamMenu(league.getTeams().get(val - 1), league);
                 if (val == league.getTeams().size() + 1) {
                     leagueMenu(league);
                     break;
                 }
+                teamMenu(league.getTeams().get(val - 1), league);
                 break;
             case 2:
                 var matchs = league.getMatches();

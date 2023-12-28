@@ -82,7 +82,11 @@ public class League implements IMenuData {
         teams.set(index, team);
     }
 
-
+    /**
+     * Gera um jogo entre duas equipas e adiciona o jogo a lista de jogos
+     * @param team1 Equipa 1
+     * @param team2 Equipa 2
+     */
     private void generateMatch(Team team1, Team team2) {
         if (team1.equals(team2)) return;
 
@@ -95,6 +99,9 @@ public class League implements IMenuData {
         addMatch(match2);
     }
 
+    /**
+     * Gera todos os jogos entre todas equipas da liga
+     */
     public void generateMatches() {
         for (int i = 0; i < teams.size(); i++) {
             for (int j = i + 1; j < teams.size(); j++) {
@@ -106,6 +113,10 @@ public class League implements IMenuData {
         sortMatchByDate();
     }
 
+    /**
+     * Gera todos os jogos entre uma equipa e todas as outras equipas da liga
+     * @param team Equipa
+     */
     private void generateMatches(Team team) {
         for (Team team1 : teams) {
             generateMatch(team, team1);
@@ -113,6 +124,9 @@ public class League implements IMenuData {
         sortMatchByDate();
     }
 
+    /**
+     * Ordena os jogos por data
+     */
     private void sortMatchByDate() {
         matches.sort((o1, o2) -> {
             if (o1.getDate().isBefore(o2.getDate())) {
@@ -158,6 +172,12 @@ public class League implements IMenuData {
         this.referees.add(referee);
     }
 
+    /**
+     * Coleta os jogos de uma equipa, se allMatchs for true, coleta todos os jogos, se não coleta apenas os jogos não terminados
+     * @param team Equipa
+     * @param allMatchs Todos os jogos
+     * @return Lista de Jogos
+     */
     public ArrayList<Match> getMatches(Team team, boolean allMatchs) {
         if (allMatchs)
             return matches.stream()

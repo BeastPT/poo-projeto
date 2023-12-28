@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class SavesManager {
     private static String currentGameId;
     private final static Gson gson;
-    private final static String EXTENSION = ".json";
+    private final static String EXTENSION = ".txt";
     private final static String PATH = System.getProperty("user.dir") + "\\saves\\";
 
     private final static String DEFAULT_GAME = "defaultGame";

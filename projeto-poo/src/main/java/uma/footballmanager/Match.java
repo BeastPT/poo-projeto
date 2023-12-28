@@ -60,6 +60,9 @@ public class Match {
         }
     }
 
+    /**
+     * Simula o jogo
+     */
     public void simulateMatch() {
         if (finished) {
             System.out.println("Já foi simulado");

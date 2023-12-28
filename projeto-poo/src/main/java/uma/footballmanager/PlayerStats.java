@@ -3,6 +3,10 @@ package uma.footballmanager;
 import java.util.Scanner;
 
 public record PlayerStats(Integer defense, Integer attack, Integer aggressive) implements IMenuData {
+    /**
+     * Gera as estatísticas de um jogador com base nos dados inseridos pelo utilizador
+     * @return Estatísticas do jogador
+     */
     public static PlayerStats generetePlayerStats() {
         Scanner sc = new Scanner(System.in);
         int attackStats, defenseStats, aggression;

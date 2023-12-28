@@ -27,6 +27,9 @@ public class Team implements IMenuData {
         this.players = players;
     }
 
+    /**
+     * Atualiza as Stats da Equipa em base dos valores de cada jogador
+     */
     public void updateStats() {
         int newAttack = 0;
         int newDefense = 0;
@@ -92,6 +95,11 @@ public class Team implements IMenuData {
         return new ArrayList<>(players);
     }
 
+    /**
+     * Adiciona uma lesao a um jogador na equipa
+     * @param player Jogador a adicionar a lesao
+     * @param match Jogo da Lesão
+     */
     public void addInjure(Player player, MatchSimulator match) {
         Player p = getPlayer(player);
         if (p != null) {
@@ -150,6 +158,10 @@ public class Team implements IMenuData {
         return Objects.equals(name, team.name);
     }
 
+    /**
+     * Gera uma equipa com recurso a inputs do utilizador
+     * @return Team
+     */
     public static Team generateTeam() {
         Scanner sc = new Scanner(System.in);
 
@@ -174,6 +186,11 @@ public class Team implements IMenuData {
         return new Team(name, code, yearFounded, players);
     }
 
+    /**
+     * Substitui um jogador por outro
+     * @param previousPlayer Jogador a substituir
+     * @param player Jogador a adicionar
+     */
     public void replacePlayer(Player previousPlayer, Player player) {
         int index = players.indexOf(previousPlayer);
         players.set(index, player);

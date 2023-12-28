@@ -50,6 +50,9 @@ public class MatchSimulator {
         this.referee = referee;
     }
 
+    /**
+     * Atualiza as Stats da Equipa em base dos valores de cada jogador
+     */
     public void updateStats() {
         this.homeTeamAttack = (int) (homeTeam.getAttack() * 1.1);
         this.homeTeamDefense = (int) (homeTeam.getDefense() * 1.1);
@@ -67,6 +70,10 @@ public class MatchSimulator {
         fixAttacks();
     }
 
+    /**
+     * Verifica se o árbitro esta a favorecer a equipa da casa
+     * @return true se o árbitro estiver a favorecer a equipa da casa
+     */
     private boolean riggedMatch() {
         return Utils.getRandomInt() < referee.getExperience() && referee.getBirth().place().equals(homeTeam.getStadium().getCity());
     }
@@ -75,18 +82,23 @@ public class MatchSimulator {
         return disperseValues(attack, -90, 70);
     }
 
+    /**
+     * Corrige os valores de ataque para que não sejam negativos e sejam entre 0 e 100
+     * Valores não verificados para todas as equipas, suscetando a erros
+     */
     private void fixAttacks() {
-        //System.out.println("--PreSH: " + homeAttack);
-        //System.out.println("--PreSV: " + visitingAttack);
         homeAttack = disperseAttacks(homeAttack);
         visitingAttack = disperseAttacks(visitingAttack);
         if (homeAttack < 0 || visitingAttack < 0) {
+            // TODO: SIMULATE PARA AS 3 LIGAS DEFAULT
             throw new RuntimeException("NEGATIVE VALUES ATTACKS");
         }
-        //System.out.println("--SH: " + homeAttack);
-        //System.out.println("--SV: " + visitingAttack);
     }
 
+    /**
+     * Da um bonus a equipa que começa com a bola
+     * @param chance chance de a equipa da casa começar com a bola
+     */
     private void buffStartingTeam(int chance) {
         if (chance < 50) {
             System.out.println("A equipa da casa começa com a bola");
@@ -97,6 +109,10 @@ public class MatchSimulator {
         }
     }
 
+    /**
+     * Retira o bonus a equipa que começa com a bola
+     * @param chance chance de a equipa da casa começar com a bola
+     */
     private void debuffStartingTeam(int chance) {
         if (chance < 50) {
             homeAttack = (int) (homeAttack * 0.85);
@@ -105,6 +121,11 @@ public class MatchSimulator {
         }
     }
 
+    /**
+     * Altera a agressividade das equipas
+     * @param buffAgressive se a agressividade esta a ser aumentada
+     * @return se a agressividade esta a ser aumentada
+     */
     private boolean changeAggressivity(boolean buffAgressive) {
         if (goals.size() > sufferedGoals.size() && !buffAgressive) {
             visitingAggressivity = (int) (visitingAggressivity * 1.1);
@@ -120,6 +141,11 @@ public class MatchSimulator {
         return buffAgressive;
     }
 
+    /**
+     * Simula um golo
+     * @param i minuto do jogo
+     * @return se houve golo
+     */
     private boolean simulateGoal(int i) {
         int attack;
         boolean homeTeamGoal = false;
@@ -148,6 +174,9 @@ public class MatchSimulator {
         return false;
     }
 
+    /**
+     * Simula uma lesão
+     */
     private void simulateInjure() {
         Positions pos = getInjurePosition();
         Team team = (getRandomInt() < 50) ? homeTeam : visitingTeam;
@@ -158,6 +187,10 @@ public class MatchSimulator {
         team.addInjure(player, this);
     }
 
+    /**
+     * Simula o jogo por completo
+     * @return MatchSimulator
+     */
     public MatchSimulator simulate() {
         int startChance = getRandomInt();
         buffStartingTeam(startChance);
@@ -199,6 +232,10 @@ public class MatchSimulator {
         return this;
     }
 
+    /**
+     * Seleciona a posição do jogador que sofreu a lesão
+     * @return posição do jogador que sofreu a lesão
+     */
     private Positions getInjurePosition() {
         int random = getRandomInt();
         if (random < 1) {
@@ -212,6 +249,10 @@ public class MatchSimulator {
         }
     }
 
+    /**
+     * Seleciona a posição do jogador que marcou o golo
+     * @return posição do jogador que marcou o golo
+     */
     private Positions getGoalPosition() {
         int random = getRandomInt();
         if (random < 2) {
@@ -225,6 +266,12 @@ public class MatchSimulator {
         }
     }
 
+    /**
+     * Adiciona um golo ao jogo
+     * @param minute minuto do jogo
+     * @param player jogador que marcou o golo
+     * @param isHomeTeam se o golo foi marcado pela equipa da casa
+     */
     private void addGoal(int minute, Player player, boolean isHomeTeam) {
         System.out.println("Golo do jogador " + player.getName() + " da equipa " + ((isHomeTeam) ? homeTeam.getName() : visitingTeam.getName()) + " no minuto " + minute);
         if (isHomeTeam) {
